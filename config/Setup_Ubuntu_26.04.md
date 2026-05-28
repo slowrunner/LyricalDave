@@ -20,15 +20,16 @@ v2.0.7
   - Hostname: U26LDave
 
 === Diable IPv6 ===
-- mount
-- nano current/cmdline.txt
-   add ipv6.disable=1 to end of line
+- mount  
+- nano current/cmdline.txt  
+   - add ipv6.disable=1 to end of line
 
 ==== First Boot ====
   - arp -a to find ip 
   - user: ubuntu  machine: U26LDave , WiFi connect
   - ps -ef | grep unattended
   - sudo kill xxxx
+  - wait for any ```ps -ef | grep dpkg``` to complete
 
 === UPDATE AND UPGRADE ===
 
@@ -79,6 +80,14 @@ Mem:           3.7Gi       426Mi       3.0Gi       1.3Mi       426Mi       3.3Gi
 Swap:             0B          0B          0B
 ```
 
+=== CONFIGURE PASSWORD-LESS SUDO
+```
+sudo nano /etc/sudoers
+
+make sudo group look like:
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) NOPASSWD: ALL
+```
 
 ======= Bring Down Git Repo =======  
 On GitHub, navigate to the main page of the repository.  
@@ -89,30 +98,24 @@ cd ~
 git clone https://github.com/slowrunner/LyricalDave.git
 cd LyricalDave
 ```
-=== Configure RTC Charging ===
-```
-sudo nano /boot/firmware/config.txt
-
-add:
-   dtparam=rtc_bbat_vchg=3000000
-to after [all]
-
-cd config
-diff config.txt /boot/firmware/config.txt
-```
-
-After reboot:
-
-Check:
-```
-ubuntu@u26llpi5:~$ cat /sys/class/rtc/rtc0/charging_voltage
-3000000
-```
 
 === configure shortcut to ROS2 workspace ===
 ```
 cd config
-cp tilde_tp.sh ~/tp.sh
+cp tilde_go.sh ~/go.sh
+```
+
+==== Configure git credentials =======
+```
+cd ~/LyricalDave
+
+git config --global user.name "slowrunner"
+git config --global user.email "slowrunner@users.noreply.github.com"  (does not expose)
+git config --global credential.helper store
+git config --list
+
+edit README.md
+add/commit/push (paste token)
 ```
 
 === configure life.log ====
@@ -129,27 +132,7 @@ sudo chmod 666 life.log.bak
 
 sudo reboot
 ```
-==== Configure git credentials =======
-```
-cd ~/U26LLPi5
 
-git config --global user.name "slowrunner"
-git config --global user.email "slowrunner@users.noreply.github.com"  (does not expose)
-git config --global credential.helper store
-git config --list
-
-edit README.md
-add/commit/push (paste token)
-```
-
-=== CONFIGURE PASSWORD-LESS SUDO
-```
-sudo nano /etc/sudoers
-
-make sudo group look like:
-# Allow members of group sudo to execute any command
-%sudo	ALL=(ALL:ALL) NOPASSWD: ALL
-```
 === Install htop
 ```
 sudo snap install htop
