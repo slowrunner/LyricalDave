@@ -1,0 +1,1 @@
+SUBSYSTEM=="misc", KERNEL=="vcio", GROUP="video", MODE="0660"

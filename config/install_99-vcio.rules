@@ -1,0 +1,10 @@
+#!/bin/bash
+
+repo="LyricalDave"
+
+
+echo -e "setup non-root vcgencmd access rule"
+sudo cp ~/$repo/config/99-vcio.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=misc
+ls -la /dev/vcio
+echo -e "should be: crw-rw---- 1 root video "

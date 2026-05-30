@@ -117,9 +117,140 @@ git config --list
 edit README.md
 add/commit/push (paste token)
 ```
+=== configure plib ====
+
+## Install numpy for wheellog
+```
+pip3 install numpy
+```
+
+If need to change user and repo on all plib files:
+```
+sed -i 's/old_user/new_user/g' *
+sed -i 's/old_repo/new_repo/g' *
+```
+Tests:
+
+```
+./wheellog.py
+```
+=== Configure ALSA and PulseAudio for USB Audio (UACDemoV10) ===
+
+## Install packages
+```
+sudo apt install alsa-utils pavucontrol ffmpeg espeak-ng
+```
+
+## Configure ALSA default device
+```
+cp config/tilde_dot_asoundrc ~/.asoundrc
+```
+
+--- tilde_dot_asoundrc ---
+```
+pcm.!default {
+  type plug
+  slave {
+    pcm "hw:UACDemoV10,0"
+  }
+}
+
+ctl.!default {
+  type hw
+  card UACDemoV10
+}
+```
+
+## Verify USB card is present and get its name
+
+```
+aplay -l
+cat /proc/asound/cards
+
+Expected: card N: UACDemoV10 [UACDemoV1.0] ... Jieli Technology
+```
+
+## Store ALSA state bound to named card (not card number)
+```
+sudo alsactl store UACDemoV10
+systemctl status alsa-restore    # verify service exists
+```
+## Test ALSA directly (bypasses PulseAudio)
+
+speaker-test -c2 -t wav -D hw:UACDemoV10,0
+
+## Configure PulseAudio default sink
+
+PulseAudio runs on top of ALSA and overrides .asoundrc for most apps.  
+Must be set separately.  
+
+## Verify PulseAudio is running
+```
+systemctl --user status pulseaudio
+```
+Check available sinks
+```
+pactl list sinks short
+```
+Set USB card as default sink
+```
+pactl set-default-sink alsa_output.usb-Jieli_Technology_UACDemoV1.0_1120040804060316-00.analog-stereo
+```
+Persist across reboots via client.conf
+```
+echo "default-sink = alsa_output.usb-Jieli_Technology_UACDemoV1.0_1120040804060316-00.analog-stereo" > ~/.config/pulse/client.conf
+```
+Restart PulseAudio to apply
+```
+systemctl --user restart pulseaudio
+```
+Verify default sink changed
+```
+pactl info | grep -i "default sink"
+Expected: Default Sink: alsa_output.usb-Jieli_Technology_UACDemoV1.0_1120040804060316-00.analog-stereo
+```
+## Test PulseAudio path (no -D flag = uses PulseAudio default)
+```
+speaker-test -c2 -t wav
+espeak-ng hello
+
+plib/speak.py
+
+```
+
+## Notes
+- The dB range warnings in journalctl for the PCM element are harmless  
+- The HDMI module-alsa-card failures are harmless (Pi4 HDMI audio quirk)  
+- Card numbers (hw:0, hw:1) can shift on reboot; always use names (UACDemoV10)  
+- .asoundrc controls ALSA-direct apps; client.conf controls PulseAudio apps  
+- pavucontrol is useful for runtime sink switching and volume control  
+
+## Reboot and verify
+```
+reboot
+pactl info | grep -i "default sink"
+espeak-ng "audio is working"
+```
+
+try systests/audio/tts/try_espeak-ng.py
+
+
+=== configure non-root vcgencmd access ====
+```
+cd config
+./install_99-vcio_rules.sh
+
+try:
+vcgencmd measure_temp
+plib/status.py
+
+```
+
 
 === configure life.log ====
 ```
+mkdir ~/LyricalDave/logs
+
 more config/crontab-e (copy the lines to paste buffer)
 sudo crontab -e
 1 for nano
@@ -128,7 +259,9 @@ paste lines to end of file, save
 cd ../logs
 cp life.log.sav life.log
 sudo chmod 666 life.log
-sudo chmod 666 life.log.bak
+mkdir tmp/
+touch tmp/life.log.bak
+sudo chmod 666 tmp/life.log.bak
 
 sudo reboot
 ```

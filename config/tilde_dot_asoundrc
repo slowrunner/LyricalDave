@@ -1,0 +1,11 @@
+pcm.!default {
+  type plug
+  slave {
+    pcm "hw:UACDemoV10,0"
+  }
+}
+
+ctl.!default {
+  type hw
+  card UACDemoV10
+}
