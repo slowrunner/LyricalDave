@@ -87,13 +87,13 @@ def main():
                     last_leg_count = 0
                     warning_led_on = False
                     leds.wifi_blinker_off(egpg)
-                    # os.system("/home/ubuntu/KiltedDave/utils/logMaintenance.py 'safetyShutdown: voltage warning blinker deactivated '")
+                    # os.system("/home/ubuntu/LyricalDave/utils/logMaintenance.py 'safetyShutdown: voltage warning blinker deactivated '")
         if (warning_led_on == False) and battery.on_last_leg(egpg):
             last_leg_count += 1
             if last_leg_count > 4:
                 warning_led_on = True
                 leds.wifi_blinker_on(egpg,color=leds.ORANGE)
-                os.system("/home/ubuntu/KiltedDave/utils/logMaintenance.py 'safetyShutdown: voltage warning blinker activated '")
+                os.system("/home/ubuntu/LyricalDave/utils/logMaintenance.py 'safetyShutdown: voltage warning blinker activated '")
                 last_leg_count = 150  # allow plenty of bouncing around the low mark
                 speak.shout("15 minute warning.  Battery Voltage is {:.1f} volts.  Need to be Docked".format(egpg.volt()+battery.REV_PROTECT_DIODE))
         if (batteryLowCount > 3):
@@ -102,7 +102,7 @@ def main():
           print ("BATTERY %.2f volts BATTERY LOW - SHUTTING DOWN NOW" % vBatt)
           egpg.reset_all()
           time.sleep(1)
-          os.system("/home/ubuntu/KiltedDave/utils/logMaintenance.py 'SAFETY SHUTDOWN - BATTERY LOW'")
+          os.system("/home/ubuntu/LyricalDave/utils/logMaintenance.py 'SAFETY SHUTDOWN - BATTERY LOW'")
           str_log_voltages = "** "+battery.voltages_string(egpg)+" **"
           lifeLog.logger.info(str_log_voltages)
 

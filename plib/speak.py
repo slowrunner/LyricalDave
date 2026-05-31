@@ -98,7 +98,7 @@ def say_piper(phrase,vol=75,anytime=False):
         # subprocess.check_output(['espeak -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
         # subprocess.check_output(['espeak-ng -s150 -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
         # subprocess.check_output(['espeak-ng -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
-        # subprocess.check_output(['echo "%s" | piper --model /home/ubuntu/KiltedDave/models/piper-tts/en_US-arctic-medium.onnx    --output_raw | aplay -D plughw:2,0 -r 22050 -f S16_LE -t raw -' % phrase], stderr=subprocess.STDOUT, shell=True)
+        # subprocess.check_output(['echo "%s" | piper --model /home/ubuntu/LyricalDave/models/piper-tts/en_US-arctic-medium.onnx    --output_raw | aplay -D plughw:2,0 -r 22050 -f S16_LE -t raw -' % phrase], stderr=subprocess.STDOUT, shell=True)
         # subprocess.check_output(['./piper.sh "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
         cmd = "amixer -D pulse set Master {:d}%".format(int(vol))
         # print("cmd:",cmd)

@@ -5,7 +5,7 @@ Raspberry Pi 4 Setup
 Setup 64-bit Ubuntu 26.04 Server Resolute Racoon
 
 
-As Of: 28 May  2026
+As Of: 31 May  2026
 
 Ubuntu 26.04 server for Raspberry Pi Image
 
@@ -25,18 +25,18 @@ v2.0.7
    - add ipv6.disable=1 to end of line
 
 ==== First Boot ====
-  - arp -a to find ip 
-  - user: ubuntu  machine: U26LDave , WiFi connect
-  - ps -ef | grep unattended
-  - sudo kill xxxx
-  - wait for any ```ps -ef | grep dpkg``` to complete
+  - arp -a to find ip  
+  - user: ubuntu  machine: U26LDave , WiFi connect  
+  - ps -ef | grep unattended  
+  - sudo kill xxxx  
+  - wait for any ```ps -ef | grep dpkg``` to complete  
 
-=== UPDATE AND UPGRADE ===
+=== UPDATE AND UPGRADE ===  
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y  
 
 
-=== 
+===   
 ```
 uname -a
 Linux U26LDave 7.0.0-1010-raspi #10-Ubuntu SMP PREEMPT_DYNAMIC Wed Apr 29 16:04:13 UTC 2026 aarch64 GNU/Linux
@@ -105,6 +105,16 @@ cd config
 cp tilde_go.sh ~/go.sh
 ```
 
+==== Disable unattended upgrades ===
+```
+sudo systemctl disable --now unattended-upgrades.service
+sudo systemctl disable --now apt-daily.timer
+sudo systemctl disable --now apt-daily-upgrade.timer
+sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+- set both variables to 0
+
+
+```
 ==== Configure git credentials =======
 ```
 cd ~/LyricalDave
@@ -264,6 +274,9 @@ touch tmp/life.log.bak
 sudo chmod 666 tmp/life.log.bak
 
 sudo reboot
+
+(Had to add virtual environment python for each nohup and in crontab-e)
+(Had to add multiprocessing start with fork line for Python 3.14)
 ```
 
 === Install htop
@@ -271,21 +284,33 @@ sudo reboot
 sudo snap install htop
 ```
 
+==== Setup 2GB Swap ====
 
-=== [Do Not Perform Yet] To disable boot to desktop:
-- sudo systemctl set-default multi-user.target
-- reboot
-(to re-enable sudo systemctl set-default graphical.target)
-
-Memory without desktop:
 ```
-$ free -h
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+# lower "swappiness" for uSDcard operation
+sudo sysctl vm.swappiness=10
+echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
+
+```
+
+
+
+
+```
+ubuntu@U26LDave:~/LyricalDave$ free -h
                total        used        free      shared  buff/cache   available
-Mem:           3.9Gi       368Mi       3.1Gi       3.8Mi       490Mi       3.5Gi
-Swap:          1.0Gi          0B       1.0Gi
+Mem:           3.7Gi       487Mi       2.9Gi       1.4Mi       474Mi       3.2Gi
+Swap:          2.0Gi          0B       2.0Gi
 ```
 
-=== [Not Yet]  Install ROS 2 Lyrical Luth Desktop ====
+=== READY for ROS 2 Lyrical Luth Install ====
 
 
 ===== DONE =====

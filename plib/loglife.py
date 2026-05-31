@@ -8,11 +8,11 @@
 # touch HOME/logs/life.log
 # chmod 777 HOME/logs/life.log
 #
-HOME="/home/ubuntu/LyricalDave"
+homedir="/home/ubuntu/LyricalDave"
 
 import time
 import sys
-sys.path.insert(1,HOME+"/plib/")
+sys.path.insert(1,homedir+"/plib/")
 import multiprocessing
 import logging
 import traceback
@@ -20,10 +20,11 @@ import signal
 from noinit_easygopigo3 import EasyGoPiGo3
 import battery
 
+
 # create logger
 logger = logging.getLogger('lifelog')
 logger.setLevel(logging.INFO)
-loghandler = logging.FileHandler(HOME+'/logs/life.log')
+loghandler = logging.FileHandler(homedir+'/logs/life.log')
 logformatter = logging.Formatter('%(asctime)s|%(message)s',"%Y-%m-%d %H:%M")
 loghandler.setFormatter(logformatter)
 logger.addHandler(loghandler)
@@ -46,6 +47,7 @@ def set_cntl_c_handler(toRun=None):
   global _funcToRun
   _funcToRun = toRun
   signal.signal(signal.SIGINT, signal_handler)
+
 
 
 class digitalEntity():
@@ -108,8 +110,14 @@ class digitalEntity():
 
 def main():
 
+  # revert change in Python3.14 from forkserver back to fork used in prior versions
+  # to prevent ps -ef | grep python from seeing messy verbose loglife multi-processes
+  multiprocessing.set_start_method('fork')
+
   tt=digitalEntity(dEname="lifelogger",tSleep=180)  #create
+
   set_cntl_c_handler(tt.cancel)
+
 
   try:
     while True:

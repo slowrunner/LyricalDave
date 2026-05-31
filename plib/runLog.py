@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# runLog.py   Utils for the run log located in /home/ubuntu/KiltedDave/run.log
+# runLog.py   Utils for the run log located in /home/ubuntu/LyricalDave/run.log
 #
 # decorator @runLog.logRun will log a start and end entry:
 #          "YYYY-MM-DD HH:MM|<file>.<func>: Started"
