@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/env python3 
 
 #
 # Based on https://github.com/scottmayberry/MPU9255/blob/master/MPUTRIAL.py
