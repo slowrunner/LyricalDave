@@ -1,18 +1,25 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: imusensor
 Version: 1.0.1
 Summary: Linking Raspberry pi with MPU9250
 Home-page: https://github.com/niru-5/imu-mpu9250/tree/master
 Author: Niranjan Kukkala
 Author-email: niranjan.reddy.wo@gmail.com
-License: UNKNOWN
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
 
 # Update  
 Adding blog links to provide more information about the math behind the code.    
@@ -239,5 +246,3 @@ Most of the documentation for interfacing MPU9250 with arduino is present. Our w
 1) [bolderflight/MPU9250](https://github.com/bolderflight/MPU9250): This is a nice library for interfacing MPU9250 with arduino. 
 2) [kriswiner/MPU9250](https://github.com/kriswiner/MPU9250): This is a library for getting some accurate orientation from MPU9250. The author has answered a lot of questions in the issues and most of them are very enlightening for anybody working with IMUs. Highly recommend it.
 3) [TKJElectronics/KalmanFilter ](https://github.com/TKJElectronics/KalmanFilter): This is an implementation of second order kalman filter for IMU when using with arduino. 
-
-
