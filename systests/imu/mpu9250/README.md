@@ -6,13 +6,18 @@ GIT: https://github.com/niru-5/imusensor  (with examples)
 
 * Install
 
+```
+cd imusensor
+python3 setup.py install
+```
+
 The pypi version is not up to date with the GitHub version
 (pip3 install imusensor  -- installs to user site dist packages)
 
 
 * Check if present
 
-sudo i2cdetect -y
+sudo i2cdetect -y 1
 
 should see 68 in the list
 
