@@ -1,0 +1,18 @@
+[0.000000] (-) TimerEvent: {}
+[0.000631] (-) JobUnselected: {'identifier': 'dave'}
+[0.001013] (-) JobUnselected: {'identifier': 'dave_interfaces'}
+[0.001073] (-) JobUnselected: {'identifier': 'demo_nodes_py'}
+[0.001121] (-) JobUnselected: {'identifier': 'explorer_wanderer'}
+[0.001169] (-) JobUnselected: {'identifier': 'gpg3_cartographer'}
+[0.001217] (-) JobUnselected: {'identifier': 'gpg3_navigation2'}
+[0.001447] (-) JobUnselected: {'identifier': 'nav2_gopigo3'}
+[0.002192] (-) JobUnselected: {'identifier': 'ros2_gopigo3_msg'}
+[0.002291] (-) JobUnselected: {'identifier': 'ros2_libcamera_pub'}
+[0.002773] (-) JobUnselected: {'identifier': 'scan_client'}
+[0.002838] (-) JobUnselected: {'identifier': 'teleop_gopigo3_keyboard'}
+[0.002908] (ros2_gopigo3_node) JobQueued: {'identifier': 'ros2_gopigo3_node', 'dependencies': OrderedDict({'ros2_gopigo3_msg': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg'})}
+[0.003005] (ros2_gopigo3_node) JobStarted: {'identifier': 'ros2_gopigo3_node'}
+[0.099326] (-) TimerEvent: {}
+[0.199912] (-) TimerEvent: {}
+[0.227982] (ros2_gopigo3_node) JobEnded: {'identifier': 'ros2_gopigo3_node', 'rc': 0}
+[0.230340] (-) EventReactorShutdown: {}

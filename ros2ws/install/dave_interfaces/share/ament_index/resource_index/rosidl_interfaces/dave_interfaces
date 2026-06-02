@@ -1,0 +1,12 @@
+msg/BatteryState.idl
+msg/BatteryState.msg
+msg/DockStatus.idl
+msg/DockStatus.msg
+srv/Dock.idl
+srv/Dock.srv
+srv/DriveDistance.idl
+srv/DriveDistance.srv
+srv/Say.idl
+srv/Say.srv
+srv/Undock.idl
+srv/Undock.srv

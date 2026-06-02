@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dave_interfaces/srv/Say.srv
+// generated code does not contain a copyright notice
+
+
+module dave_interfaces {
+  module srv {
+    struct Say_Request {
+      string saystring;
+    };
+    struct Say_Response {
+      boolean spoken;
+    };
+  };
+};

@@ -1,0 +1,81 @@
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.7 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (5.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3
+Built target ament_cmake_python_sync_nav2_gopigo3
+running egg_info
+creating nav2_gopigo3.egg-info
+writing nav2_gopigo3.egg-info/PKG-INFO
+writing dependency_links to nav2_gopigo3.egg-info/dependency_links.txt
+writing top-level names to nav2_gopigo3.egg-info/top_level.txt
+writing manifest file 'nav2_gopigo3.egg-info/SOURCES.txt'
+reading manifest file 'nav2_gopigo3.egg-info/SOURCES.txt'
+writing manifest file 'nav2_gopigo3.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_nav2_gopigo3_egg
+-- Install configuration: ""
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/localization.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/nav2.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/slam.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/slam.tb4.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/slam.launch.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/localization.launch.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/nav2.launch.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/maze.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/depot.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/warehouse.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/maze.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/warehouse.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/depot.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/pythonpath.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/pythonpath.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/gopigo3_navigator.py
+Compiling '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/gopigo3_navigator.py'...
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/package_run_dependencies/nav2_gopigo3
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/parent_prefix_path/nav2_gopigo3
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/path.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/path.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.bash
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.fish
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.zsh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/packages/nav2_gopigo3
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/top_level.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/SOURCES.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/dependency_links.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/PKG-INFO
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/__init__.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/gopigo3_navigator.py
+Listing '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3'...
+Compiling '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/__init__.py'...
+Compiling '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/gopigo3_navigator.py'...
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/cmake/nav2_gopigo3Config.cmake
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/cmake/nav2_gopigo3Config-version.cmake
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.xml

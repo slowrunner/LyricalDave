@@ -1,0 +1,24 @@
+[  1%] Built target ros2_gopigo3_msg__rs
+[  3%] Built target ros2_gopigo3_msg__rosidl_generator_type_description
+[  5%] Built target ros2_gopigo3_msg__cpp
+[ 25%] Built target ros2_gopigo3_msg__rosidl_generator_c
+[ 34%] Built target ros2_gopigo3_msg__rosidl_typesupport_fastrtps_c
+[ 43%] Built target ros2_gopigo3_msg__rosidl_typesupport_c
+[ 52%] Built target ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp
+[ 61%] Built target ros2_gopigo3_msg__rosidl_typesupport_introspection_c
+[ 70%] Built target ros2_gopigo3_msg__rosidl_typesupport_introspection_cpp
+[ 80%] Built target ros2_gopigo3_msg__rosidl_typesupport_cpp
+[ 80%] Built target ros2_gopigo3_msg
+[ 81%] Built target ros2_gopigo3_msg__py
+[ 89%] Built target ros2_gopigo3_msg__rosidl_generator_py
+[ 89%] Built target ament_cmake_python_sync_ros2_gopigo3_msg
+[ 92%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c
+[ 96%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_c
+[100%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c
+running egg_info
+writing ros2_gopigo3_msg.egg-info/PKG-INFO
+writing dependency_links to ros2_gopigo3_msg.egg-info/dependency_links.txt
+writing top-level names to ros2_gopigo3_msg.egg-info/top_level.txt
+reading manifest file 'ros2_gopigo3_msg.egg-info/SOURCES.txt'
+writing manifest file 'ros2_gopigo3_msg.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_ros2_gopigo3_msg_egg

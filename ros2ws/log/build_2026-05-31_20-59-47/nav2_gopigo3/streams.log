@@ -1,0 +1,57 @@
+[0.135s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+[0.410s] Built target ament_cmake_python_sync_nav2_gopigo3
+[2.072s] running egg_info
+[2.230s] writing nav2_gopigo3.egg-info/PKG-INFO
+[2.233s] writing dependency_links to nav2_gopigo3.egg-info/dependency_links.txt
+[2.234s] writing top-level names to nav2_gopigo3.egg-info/top_level.txt
+[2.848s] reading manifest file 'nav2_gopigo3.egg-info/SOURCES.txt'
+[2.852s] writing manifest file 'nav2_gopigo3.egg-info/SOURCES.txt'
+[3.122s] Built target ament_cmake_python_build_nav2_gopigo3_egg
+[4.133s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+[4.139s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3
+[4.187s] -- Install configuration: ""
+[4.189s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config
+[4.190s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/localization.yaml
+[4.191s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/nav2.yaml
+[4.192s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/slam.yaml
+[4.193s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/config/slam.tb4.yaml
+[4.193s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch
+[4.193s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/slam.launch.py
+[4.194s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/localization.launch.py
+[4.194s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/launch/nav2.launch.py
+[4.194s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps
+[4.195s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/maze.pgm
+[4.198s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/depot.pgm
+[4.199s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/warehouse.yaml
+[4.199s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/maze.yaml
+[4.200s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/warehouse.pgm
+[4.200s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/maps/depot.yaml
+[4.201s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/pythonpath.sh
+[4.201s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/pythonpath.dsv
+[4.202s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/gopigo3_navigator.py
+[4.537s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/package_run_dependencies/nav2_gopigo3
+[4.538s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/parent_prefix_path/nav2_gopigo3
+[4.539s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/ament_prefix_path.sh
+[4.539s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/ament_prefix_path.dsv
+[4.540s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/path.sh
+[4.542s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/environment/path.dsv
+[4.544s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.bash
+[4.546s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.fish
+[4.547s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.sh
+[4.547s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.zsh
+[4.548s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/local_setup.dsv
+[4.548s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.dsv
+[4.548s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/ament_index/resource_index/packages/nav2_gopigo3
+[4.553s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info
+[4.554s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/top_level.txt
+[4.554s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/SOURCES.txt
+[4.554s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/dependency_links.txt
+[4.556s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3-1.0.4-py3.14.egg-info/PKG-INFO
+[4.558s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3
+[4.558s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/__init__.py
+[4.561s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3/gopigo3_navigator.py
+[4.832s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages/nav2_gopigo3'...
+[4.912s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/cmake/nav2_gopigo3Config.cmake
+[4.914s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/cmake/nav2_gopigo3Config-version.cmake
+[4.915s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.xml
+[4.925s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3

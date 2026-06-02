@@ -1,0 +1,31 @@
+[5.259s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/explorer_wanderer build --build-base /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build install --record /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/install.log --single-version-externally-managed install_data
+[6.550s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[6.550s]   warnings.warn(msg)
+[7.051s] running egg_info
+[7.121s] writing ../../build/explorer_wanderer/explorer_wanderer.egg-info/PKG-INFO
+[7.124s] writing dependency_links to ../../build/explorer_wanderer/explorer_wanderer.egg-info/dependency_links.txt
+[7.127s] writing entry points to ../../build/explorer_wanderer/explorer_wanderer.egg-info/entry_points.txt
+[7.130s] writing requirements to ../../build/explorer_wanderer/explorer_wanderer.egg-info/requires.txt
+[7.132s] writing top-level names to ../../build/explorer_wanderer/explorer_wanderer.egg-info/top_level.txt
+[7.472s] reading manifest file '../../build/explorer_wanderer/explorer_wanderer.egg-info/SOURCES.txt'
+[7.475s] writing manifest file '../../build/explorer_wanderer/explorer_wanderer.egg-info/SOURCES.txt'
+[7.476s] running build
+[7.476s] running build_py
+[7.477s] copying explorer_wanderer/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build/lib/explorer_wanderer
+[7.478s] copying explorer_wanderer/wanderer.py -> /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build/lib/explorer_wanderer
+[7.480s] copying explorer_wanderer/discoverer_server.py -> /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build/lib/explorer_wanderer
+[7.482s] copying explorer_wanderer/wanderer_server.py -> /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build/lib/explorer_wanderer
+[7.484s] running install
+[7.512s] running install_lib
+[7.721s] running install_data
+[7.724s] copying resource/explorer_wanderer -> /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/ament_index/resource_index/packages
+[7.725s] copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer
+[7.728s] running install_egg_info
+[7.893s] removing '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages/explorer_wanderer-0.0.1-py3.14.egg-info' (and everything under it)
+[7.894s] Copying ../../build/explorer_wanderer/explorer_wanderer.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages/explorer_wanderer-0.0.1-py3.14.egg-info
+[7.903s] running install_scripts
+[8.512s] Installing discoverer_server script to /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[8.513s] Installing wanderer script to /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[8.519s] Installing wanderer_server script to /home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/explorer_wanderer
+[8.521s] writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/install.log'
+[8.966s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/explorer_wanderer build --build-base /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build install --record /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/install.log --single-version-externally-managed install_data

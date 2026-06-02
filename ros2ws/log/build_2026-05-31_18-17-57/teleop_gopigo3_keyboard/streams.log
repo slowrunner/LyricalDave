@@ -1,0 +1,45 @@
+[8.225s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_gopigo3_keyboard build --build-base /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build install --record /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/install.log --single-version-externally-managed install_data
+[9.975s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[9.978s]   warnings.warn(msg)
+[10.496s] /usr/lib/python3/dist-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[10.497s] !!
+[10.497s] 
+[10.498s]         ********************************************************************************
+[10.498s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[10.502s] 
+[10.502s]         License :: BSD
+[10.503s] 
+[10.504s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[10.504s]         ********************************************************************************
+[10.508s] 
+[10.509s] !!
+[10.509s]   self._finalize_license_expression()
+[11.528s] running egg_info
+[11.699s] creating ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info
+[11.701s] writing ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/PKG-INFO
+[11.705s] writing dependency_links to ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/dependency_links.txt
+[11.706s] writing entry points to ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/entry_points.txt
+[11.709s] writing requirements to ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/requires.txt
+[11.710s] writing top-level names to ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/top_level.txt
+[11.710s] writing manifest file '../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/SOURCES.txt'
+[12.065s] reading manifest file '../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/SOURCES.txt'
+[12.067s] adding license file 'LICENSE'
+[12.072s] writing manifest file '../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info/SOURCES.txt'
+[12.072s] running build
+[12.076s] running build_py
+[12.077s] creating /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build/lib
+[12.077s] copying teleop_gopigo3_keyboard.py -> /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build/lib
+[12.077s] running install
+[12.099s] running install_lib
+[12.270s] copying /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build/lib/teleop_gopigo3_keyboard.py -> /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages
+[12.275s] byte-compiling /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages/teleop_gopigo3_keyboard.py to teleop_gopigo3_keyboard.cpython-314.pyc
+[12.282s] running install_data
+[12.284s] creating /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/ament_index/resource_index/packages
+[12.286s] copying resource/teleop_gopigo3_keyboard -> /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/ament_index/resource_index/packages
+[12.286s] copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard
+[12.287s] running install_egg_info
+[12.468s] Copying ../../build/teleop_gopigo3_keyboard/teleop_gopigo3_keyboard.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages/teleop_gopigo3_keyboard-2.3.2-py3.14.egg-info
+[12.478s] running install_scripts
+[13.318s] Installing teleop_gopigo3_keyboard script to /home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/teleop_gopigo3_keyboard
+[13.321s] writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/install.log'
+[13.601s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_gopigo3_keyboard build --build-base /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build install --record /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/install.log --single-version-externally-managed install_data

@@ -1,0 +1,38 @@
+[6.762s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/dave': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/dave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dave build --build-base /home/ubuntu/LyricalDave/ros2ws/build/dave/build install --record /home/ubuntu/LyricalDave/ros2ws/build/dave/install.log --single-version-externally-managed install_data
+[7.799s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[7.800s]   warnings.warn(msg)
+[8.574s] running egg_info
+[8.697s] writing ../../build/dave/dave.egg-info/PKG-INFO
+[8.698s] writing dependency_links to ../../build/dave/dave.egg-info/dependency_links.txt
+[8.701s] writing entry points to ../../build/dave/dave.egg-info/entry_points.txt
+[8.702s] writing requirements to ../../build/dave/dave.egg-info/requires.txt
+[8.702s] writing top-level names to ../../build/dave/dave.egg-info/top_level.txt
+[8.931s] reading manifest file '../../build/dave/dave.egg-info/SOURCES.txt'
+[8.937s] writing manifest file '../../build/dave/dave.egg-info/SOURCES.txt'
+[8.938s] running build
+[8.939s] running build_py
+[8.943s] copying dave/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.943s] copying dave/test_dock.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.944s] copying dave/say_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.944s] copying dave/dave_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.945s] copying dave/drive_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.946s] copying dave/say_svc_client.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.948s] copying dave/docking_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.949s] copying dave/battery_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+[8.950s] running install
+[8.972s] running install_lib
+[9.091s] running install_data
+[9.092s] copying resource/dave -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/ament_index/resource_index/packages
+[9.093s] copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave
+[9.095s] running install_egg_info
+[9.254s] removing '/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave-0.0.0-py3.14.egg-info' (and everything under it)
+[9.256s] Copying ../../build/dave/dave.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave-0.0.0-py3.14.egg-info
+[9.268s] running install_scripts
+[10.074s] Installing battery_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.076s] Installing dave_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.078s] Installing docking_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.079s] Installing say_client script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.080s] Installing say_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.081s] Installing test_dock script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+[10.084s] writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/dave/install.log'
+[10.436s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/dave' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/dave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dave build --build-base /home/ubuntu/LyricalDave/ros2ws/build/dave/build install --record /home/ubuntu/LyricalDave/ros2ws/build/dave/install.log --single-version-externally-managed install_data

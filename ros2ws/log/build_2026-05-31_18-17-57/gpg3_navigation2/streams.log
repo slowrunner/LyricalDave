@@ -1,0 +1,78 @@
+[0.048s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2
+[0.081s] [0mCMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+[0.081s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.082s]   CMake.
+[0.082s] 
+[0.083s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.083s]   to tell CMake that the project requires at least <min> but has been updated
+[0.087s]   to work with policies introduced by <max> or earlier.
+[0.087s] 
+[0.090s] [0m
+[0.336s] -- The C compiler identification is GNU 15.2.0
+[0.684s] -- The CXX compiler identification is GNU 15.2.0
+[0.724s] -- Detecting C compiler ABI info
+[1.203s] -- Detecting C compiler ABI info - done
+[1.284s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.287s] -- Detecting C compile features
+[1.290s] -- Detecting C compile features - done
+[1.357s] -- Detecting CXX compiler ABI info
+[1.821s] -- Detecting CXX compiler ABI info - done
+[1.893s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.896s] -- Detecting CXX compile features
+[1.900s] -- Detecting CXX compile features - done
+[1.946s] -- Found ament_cmake: 2.8.7 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[4.130s] -- Configuring done (4.0s)
+[4.155s] -- Generating done (0.0s)
+[4.166s] -- Build files have been written to: /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2
+[4.184s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2
+[4.187s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2 -- -j4 -l4
+[4.372s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2 -- -j4 -l4
+[4.376s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2
+[4.413s] -- Install configuration: ""
+[4.414s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch
+[4.416s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch/navigation2_use_sim_time.launch.py
+[4.418s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch/navigation2.launch.py
+[4.419s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map
+[4.421s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/gpg3_world.yaml
+[4.423s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/gpg3_world.pgm
+[4.424s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan_map.pgm
+[4.426s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/Notes_MyMakeROSMap.txt
+[4.427s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/cart_office.yaml
+[4.429s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/house_tile_cart.pgm
+[4.431s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/house_tile_cart.yaml
+[4.432s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.yaml
+[4.434s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/FloorPlan_19.248x12.006m.jpg
+[4.436s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/cart_office.pgm
+[4.437s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/README.md
+[4.438s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/Notes_Maps.txt
+[4.440s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/FloorPlan_19.248x12.006m.pgm
+[4.442s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan_map.yaml
+[4.443s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.info.txt
+[4.445s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.pgm
+[4.447s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param
+[4.450s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopigo3_use_sim_time.yaml
+[4.452s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/burger_use_sim_time.yaml
+[4.455s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/burger.yaml
+[4.456s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopi5go_dave.yaml
+[4.457s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/waffle_pi.yaml
+[4.459s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/waffle_pi_use_sim_time.yaml
+[4.460s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopigo3.yaml
+[4.462s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/rviz
+[4.466s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/rviz/navigation2.rviz
+[4.467s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/package_run_dependencies/gpg3_navigation2
+[4.469s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/parent_prefix_path/gpg3_navigation2
+[4.471s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/ament_prefix_path.sh
+[4.473s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/ament_prefix_path.dsv
+[4.475s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/path.sh
+[4.477s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/path.dsv
+[4.479s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.bash
+[4.482s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.fish
+[4.483s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.sh
+[4.485s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.zsh
+[4.487s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.dsv
+[4.489s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.dsv
+[4.492s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/packages/gpg3_navigation2
+[4.494s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/cmake/gpg3_navigation2Config.cmake
+[4.495s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/cmake/gpg3_navigation2Config-version.cmake
+[4.497s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.xml
+[4.506s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2

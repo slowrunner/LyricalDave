@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3
+Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3

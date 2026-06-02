@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.001456] (-) JobUnselected: {'identifier': 'dave_interfaces'}
+[0.002276] (-) JobUnselected: {'identifier': 'demo_nodes_py'}
+[0.002513] (-) JobUnselected: {'identifier': 'explorer_wanderer'}
+[0.002589] (-) JobUnselected: {'identifier': 'gpg3_cartographer'}
+[0.002658] (-) JobUnselected: {'identifier': 'gpg3_navigation2'}
+[0.002726] (-) JobUnselected: {'identifier': 'nav2_gopigo3'}
+[0.002787] (-) JobUnselected: {'identifier': 'ros2_gopigo3_msg'}
+[0.002848] (-) JobUnselected: {'identifier': 'ros2_gopigo3_node'}
+[0.002909] (-) JobUnselected: {'identifier': 'ros2_libcamera_pub'}
+[0.002969] (-) JobUnselected: {'identifier': 'scan_client'}
+[0.003030] (-) JobUnselected: {'identifier': 'teleop_gopigo3_keyboard'}
+[0.003101] (dave) JobQueued: {'identifier': 'dave', 'dependencies': OrderedDict()}
+[0.003182] (dave) JobStarted: {'identifier': 'dave'}
+[0.099163] (-) TimerEvent: {}
+[0.199782] (-) TimerEvent: {}
+[0.300373] (-) TimerEvent: {}
+[0.400886] (-) TimerEvent: {}
+[0.501395] (-) TimerEvent: {}
+[0.601914] (-) TimerEvent: {}
+[0.702439] (-) TimerEvent: {}
+[0.803157] (-) TimerEvent: {}
+[0.904158] (-) TimerEvent: {}
+[1.004949] (-) TimerEvent: {}
+[1.105510] (-) TimerEvent: {}
+[1.206007] (-) TimerEvent: {}
+[1.306677] (-) TimerEvent: {}
+[1.407216] (-) TimerEvent: {}
+[1.507776] (-) TimerEvent: {}
+[1.608250] (-) TimerEvent: {}
+[1.708765] (-) TimerEvent: {}
+[1.809298] (-) TimerEvent: {}
+[1.909829] (-) TimerEvent: {}
+[2.010348] (-) TimerEvent: {}
+[2.110863] (-) TimerEvent: {}
+[2.211367] (-) TimerEvent: {}
+[2.311864] (-) TimerEvent: {}
+[2.412367] (-) TimerEvent: {}
+[2.512894] (-) TimerEvent: {}
+[2.613538] (-) TimerEvent: {}
+[2.714453] (-) TimerEvent: {}
+[2.757938] (dave) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/LyricalDave/ros2ws/build/dave/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/ubuntu/LyricalDave/ros2ws/build/dave', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '10.0.0.129 64338 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib:/opt/ros/lyrical/lib/aarch64-linux-gnu:/opt/ros/lyrical/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/LyricalDave/ros2ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(gopigo3) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/LyricalDave/ros2ws/install', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '24', 'PATH': '/opt/ros/lyrical/bin:/home/ubuntu/.venv/gopigo3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': 'gopigo3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3:/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2:/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/ubuntu/.venv/gopigo3', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/LyricalDave/ros2ws/build/dave', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.129 64338 10.0.0.54 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/LyricalDave/ros2ws/build/dave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3:/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2:/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces'}, 'shell': False}
+[2.814586] (-) TimerEvent: {}
+[2.915117] (-) TimerEvent: {}
+[3.015665] (-) TimerEvent: {}
+[3.116161] (-) TimerEvent: {}
+[3.216723] (-) TimerEvent: {}
+[3.317382] (-) TimerEvent: {}
+[3.418145] (-) TimerEvent: {}
+[3.477123] (dave) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[3.477761] (dave) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[3.518275] (-) TimerEvent: {}
+[3.618831] (-) TimerEvent: {}
+[3.719340] (-) TimerEvent: {}
+[3.819821] (-) TimerEvent: {}
+[3.920301] (-) TimerEvent: {}
+[3.935224] (dave) StdoutLine: {'line': b'running develop\n'}
+[4.020437] (-) TimerEvent: {}
+[4.120922] (-) TimerEvent: {}
+[4.221406] (-) TimerEvent: {}
+[4.321892] (-) TimerEvent: {}
+[4.422384] (-) TimerEvent: {}
+[4.478656] (dave) StdoutLine: {'line': b'running egg_info\n'}
+[4.522537] (-) TimerEvent: {}
+[4.540787] (dave) StdoutLine: {'line': b'writing dave.egg-info/PKG-INFO\n'}
+[4.542481] (dave) StdoutLine: {'line': b'writing dependency_links to dave.egg-info/dependency_links.txt\n'}
+[4.543673] (dave) StdoutLine: {'line': b'writing entry points to dave.egg-info/entry_points.txt\n'}
+[4.544609] (dave) StdoutLine: {'line': b'writing requirements to dave.egg-info/requires.txt\n'}
+[4.545261] (dave) StdoutLine: {'line': b'writing top-level names to dave.egg-info/top_level.txt\n'}
+[4.622681] (-) TimerEvent: {}
+[4.671727] (dave) StdoutLine: {'line': b"reading manifest file 'dave.egg-info/SOURCES.txt'\n"}
+[4.675555] (dave) StdoutLine: {'line': b"writing manifest file 'dave.egg-info/SOURCES.txt'\n"}
+[4.722801] (-) TimerEvent: {}
+[4.741257] (dave) StdoutLine: {'line': b'running build_ext\n'}
+[4.741830] (dave) StdoutLine: {'line': b'Creating /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave.egg-link (link to .)\n'}
+[4.744236] (dave) StdoutLine: {'line': b'Installing battery_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.745108] (dave) StdoutLine: {'line': b'Installing dave_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.745839] (dave) StdoutLine: {'line': b'Installing docking_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.746539] (dave) StdoutLine: {'line': b'Installing drive_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.747248] (dave) StdoutLine: {'line': b'Installing say_client script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.747939] (dave) StdoutLine: {'line': b'Installing say_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.748594] (dave) StdoutLine: {'line': b'Installing test_dock script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave\n'}
+[4.749563] (dave) StdoutLine: {'line': b'\n'}
+[4.749976] (dave) StdoutLine: {'line': b'Installed /home/ubuntu/LyricalDave/ros2ws/build/dave\n'}
+[4.750213] (dave) StdoutLine: {'line': b'running symlink_data\n'}
+[4.750965] (dave) StdoutLine: {'line': b'symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/dave/resource/dave -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/ament_index/resource_index/packages\n'}
+[4.751896] (dave) StdoutLine: {'line': b'symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/dave/package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave\n'}
+[4.823066] (-) TimerEvent: {}
+[4.924015] (-) TimerEvent: {}
+[4.943482] (dave) CommandEnded: {'returncode': 0}
+[4.994613] (dave) JobEnded: {'identifier': 'dave', 'rc': 0}
+[4.997238] (-) EventReactorShutdown: {}

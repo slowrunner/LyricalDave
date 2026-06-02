@@ -1,0 +1,340 @@
+[0.092s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg
+[1.258s] -- The C compiler identification is GNU 15.2.0
+[1.260s] -- The CXX compiler identification is GNU 15.2.0
+[1.261s] -- Detecting C compiler ABI info
+[1.263s] -- Detecting C compiler ABI info - done
+[1.265s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.267s] -- Detecting C compile features
+[1.268s] -- Detecting C compile features - done
+[1.269s] -- Detecting CXX compiler ABI info
+[1.269s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[1.270s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.271s]   CMake.
+[1.272s] 
+[1.273s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.273s]   to tell CMake that the project requires at least <min> but has been updated
+[1.274s]   to work with policies introduced by <max> or earlier.
+[1.275s] 
+[1.276s] [0m
+[1.467s] -- Detecting CXX compiler ABI info - done
+[1.538s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.540s] -- Detecting CXX compile features
+[1.544s] -- Detecting CXX compile features - done
+[1.576s] -- Found ament_cmake: 2.8.7 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[2.936s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[2.976s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.229s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.426s] -- Found rosidl_adapter: 5.2.0 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[3.446s] -- Found std_msgs: 5.9.2 (/opt/ros/lyrical/share/std_msgs/cmake)
+[4.455s] -- Found Python3: /home/ubuntu/.venv/gopigo3/bin/python3 (found version "3.14.4") found components: Interpreter
+[10.091s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.466s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.397s] -- Found Python3: /home/ubuntu/.venv/gopigo3/bin/python3 (found version "3.14.4") found components: Interpreter Development NumPy Development.Module Development.Embed
+[16.781s] -- Found Python3: /home/ubuntu/.venv/gopigo3/bin/python3 (found version "3.14.4") found components: Interpreter
+[16.792s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[16.906s] -- Added test 'copyright' to check source files copyright and LICENSE
+[16.917s] -- Added test 'lint_cmake' to check CMake code style
+[16.927s] -- Added test 'xmllint' to check XML markup files
+[16.949s] -- Configuring done (16.8s)
+[17.325s] -- Generating done (0.4s)
+[17.457s] -- Build files have been written to: /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg
+[17.504s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg
+[17.509s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[17.866s] [  1%] [1m[34mGenerating Rust code for ROS interfaces[0m
+[20.094s] [  1%] Built target ros2_gopigo3_msg__rs
+[20.194s] [  3%] [1m[34mGenerating type hashes for ROS interfaces[0m
+[21.800s] [  3%] Built target ros2_gopigo3_msg__rosidl_generator_type_description
+[21.854s] [  5%] [1m[34mGenerating C code for ROS interfaces[0m
+[26.015s] [  7%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status__description.c.o[0m
+[26.209s] [  9%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c.o[0m
+[26.363s] [ 10%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__description.c.o[0m
+[26.591s] [ 12%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__functions.c.o[0m
+[26.854s] [ 14%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c.o[0m
+[27.019s] [ 16%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/srv/detail/spi__description.c.o[0m
+[27.310s] [ 18%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/srv/detail/spi__functions.c.o[0m
+[27.715s] [ 20%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/srv/detail/spi__type_support.c.o[0m
+[27.943s] [ 21%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_c.dir/rosidl_generator_c/ros2_gopigo3_msg/msg/detail/motor_status__functions.c.o[0m
+[28.181s] [ 23%] [1m[32mLinking C shared library libros2_gopigo3_msg__rosidl_generator_c.so[0m
+[28.387s] [ 23%] Built target ros2_gopigo3_msg__rosidl_generator_c
+[28.481s] [ 25%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[31.885s] [ 25%] Built target ros2_gopigo3_msg__cpp
+[31.936s] [ 27%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[33.962s] [ 29%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[33.996s] [ 30%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_gopigo3_msg/msg/motor_status__type_support.cpp.o[0m
+[34.078s] [ 32%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[34.079s] [ 34%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[34.457s] [ 36%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_gopigo3_msg/msg/motor_status_lr__type_support.cpp.o[0m
+[35.102s] [ 38%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_gopigo3_msg/srv/spi__type_support.cpp.o[0m
+[35.476s] [ 40%] [1m[32mLinking CXX shared library libros2_gopigo3_msg__rosidl_typesupport_c.so[0m
+[35.916s] [ 40%] Built target ros2_gopigo3_msg__rosidl_typesupport_c
+[38.329s] [ 41%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c.o[0m
+[38.550s] [ 43%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c.o[0m
+[38.787s] [ 45%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/srv/detail/spi__type_support.c.o[0m
+[39.366s] [ 47%] [1m[32mLinking C shared library libros2_gopigo3_msg__rosidl_typesupport_introspection_c.so[0m
+[39.449s] [ 49%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_gopigo3_msg/msg/detail/dds_fastrtps/motor_status__type_support.cpp.o[0m
+[39.706s] [ 49%] Built target ros2_gopigo3_msg__rosidl_typesupport_introspection_c
+[40.235s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support_c.cpp.o[0m
+[44.803s] [ 52%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support_c.cpp.o[0m
+[45.134s] [ 54%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_gopigo3_msg/msg/detail/dds_fastrtps/motor_status_lr__type_support.cpp.o[0m
+[48.632s] [ 56%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_gopigo3_msg/srv/detail/spi__type_support_c.cpp.o[0m
+[48.955s] [ 58%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_gopigo3_msg/srv/detail/dds_fastrtps/spi__type_support.cpp.o[0m
+[55.250s] [ 60%] [1m[32mLinking CXX shared library libros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.so[0m
+[55.707s] [ 60%] Built target ros2_gopigo3_msg__rosidl_typesupport_fastrtps_c
+[56.060s] [ 61%] [1m[32mLinking CXX shared library libros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[56.396s] [ 61%] Built target ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp
+[56.441s] [ 63%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[56.448s] [ 65%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[58.347s] [ 67%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_gopigo3_msg/msg/motor_status__type_support.cpp.o[0m
+[58.827s] [ 69%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_gopigo3_msg/msg/detail/motor_status__type_support.cpp.o[0m
+[61.172s] [ 70%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_gopigo3_msg/srv/spi__type_support.cpp.o[0m
+[61.531s] [ 72%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.cpp.o[0m
+[64.384s] [ 74%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_gopigo3_msg/srv/detail/spi__type_support.cpp.o[0m
+[65.095s] [ 76%] [32mBuilding CXX object CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_gopigo3_msg/msg/motor_status_lr__type_support.cpp.o[0m
+[68.014s] [ 78%] [1m[32mLinking CXX shared library libros2_gopigo3_msg__rosidl_typesupport_cpp.so[0m
+[68.392s] [ 78%] Built target ros2_gopigo3_msg__rosidl_typesupport_cpp
+[68.998s] [ 80%] [1m[32mLinking CXX shared library libros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.so[0m
+[69.396s] [ 80%] Built target ros2_gopigo3_msg__rosidl_typesupport_introspection_cpp
+[69.515s] [ 80%] Built target ros2_gopigo3_msg
+[69.628s] [ 81%] [1m[34mGenerating Python code for ROS interfaces[0m
+[73.696s] [ 81%] Built target ros2_gopigo3_msg__py
+[73.787s] [ 83%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_py.dir/rosidl_generator_py/ros2_gopigo3_msg/msg/_motor_status_s.c.o[0m
+[73.822s] [ 83%] Built target ament_cmake_python_sync_ros2_gopigo3_msg
+[74.469s] [ 85%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_py.dir/rosidl_generator_py/ros2_gopigo3_msg/srv/_spi_s.c.o[0m
+[75.473s] running egg_info
+[75.492s] [ 87%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg__rosidl_generator_py.dir/rosidl_generator_py/ros2_gopigo3_msg/msg/_motor_status_lr_s.c.o[0m
+[75.638s] creating ros2_gopigo3_msg.egg-info
+[75.639s] writing ros2_gopigo3_msg.egg-info/PKG-INFO
+[75.642s] writing dependency_links to ros2_gopigo3_msg.egg-info/dependency_links.txt
+[75.643s] writing top-level names to ros2_gopigo3_msg.egg-info/top_level.txt
+[75.644s] writing manifest file 'ros2_gopigo3_msg.egg-info/SOURCES.txt'
+[76.161s] [ 89%] [1m[32mLinking C shared library libros2_gopigo3_msg__rosidl_generator_py.so[0m
+[76.169s] reading manifest file 'ros2_gopigo3_msg.egg-info/SOURCES.txt'
+[76.176s] writing manifest file 'ros2_gopigo3_msg.egg-info/SOURCES.txt'
+[76.463s] [ 89%] Built target ros2_gopigo3_msg__rosidl_generator_py
+[76.471s] [ 89%] Built target ament_cmake_python_build_ros2_gopigo3_msg_egg
+[76.545s] [ 90%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[77.253s] [ 92%] [1m[32mLinking C shared module rosidl_generator_py/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c.so[0m
+[77.392s] [ 92%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c
+[77.487s] [ 96%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[77.488s] [ 96%] [32mBuilding C object CMakeFiles/ros2_gopigo3_msg_s__rosidl_typesupport_c.dir/rosidl_generator_py/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[78.034s] [ 98%] [1m[32mLinking C shared module rosidl_generator_py/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_c.so[0m
+[78.043s] [100%] [1m[32mLinking C shared module rosidl_generator_py/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c.so[0m
+[78.184s] [100%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_c
+[78.196s] [100%] Built target ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c
+[78.245s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[78.249s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg
+[78.284s] -- Install configuration: ""
+[78.285s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ament_index/resource_index/rosidl_interfaces/ros2_gopigo3_msg
+[78.287s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatus.json
+[78.288s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatusLR.json
+[78.289s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/srv/SPI.json
+[78.290s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.291s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.292s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.293s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__functions.c
+[78.294s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__struct.h
+[78.295s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__type_support.h
+[78.296s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__functions.h
+[78.297s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__type_support.c
+[78.298s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__description.c
+[78.299s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/spi.h
+[78.300s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.301s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/motor_status.h
+[78.302s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/motor_status_lr.h
+[78.303s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.304s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__struct.h
+[78.305s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c
+[78.306s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__functions.c
+[78.307s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__functions.c
+[78.308s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__functions.h
+[78.309s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__struct.h
+[78.310s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__description.c
+[78.311s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__functions.h
+[78.312s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__type_support.h
+[78.312s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c
+[78.313s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.h
+[78.314s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__description.c
+[78.315s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/rosidl_generator_c__visibility_control.h
+[78.317s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/library_path.sh
+[78.318s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/library_path.dsv
+[78.319s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_generator_c.so
+[78.320s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_generator_c.so" to ""
+[78.321s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.321s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.322s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.323s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__rosidl_typesupport_fastrtps_c.h
+[78.324s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.325s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[78.326s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.327s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__rosidl_typesupport_fastrtps_c.h
+[78.328s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__rosidl_typesupport_fastrtps_c.h
+[78.330s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.so
+[78.331s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[78.332s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.333s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.333s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.334s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__rosidl_typesupport_introspection_c.h
+[78.335s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__type_support.c
+[78.336s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.337s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.338s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c
+[78.339s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__rosidl_typesupport_introspection_c.h
+[78.339s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c
+[78.340s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__rosidl_typesupport_introspection_c.h
+[78.341s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[78.343s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_introspection_c.so
+[78.344s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_introspection_c.so" to ""
+[78.345s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_c.so
+[78.347s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_c.so" to ""
+[78.348s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.349s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.350s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/spi.hpp
+[78.351s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.352s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__type_support.hpp
+[78.352s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__traits.hpp
+[78.353s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__struct.hpp
+[78.355s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__builder.hpp
+[78.356s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.357s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/motor_status_lr.hpp
+[78.358s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/motor_status.hpp
+[78.358s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.359s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__builder.hpp
+[78.359s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__traits.hpp
+[78.360s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__traits.hpp
+[78.360s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__type_support.hpp
+[78.361s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__struct.hpp
+[78.362s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__builder.hpp
+[78.363s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__struct.hpp
+[78.363s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.hpp
+[78.364s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[78.365s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.366s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.367s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.367s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__rosidl_typesupport_fastrtps_cpp.hpp
+[78.368s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/dds_fastrtps
+[78.369s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.369s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[78.370s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.370s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__rosidl_typesupport_fastrtps_cpp.hpp
+[78.371s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__rosidl_typesupport_fastrtps_cpp.hpp
+[78.372s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/dds_fastrtps
+[78.373s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.so
+[78.373s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[78.374s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg
+[78.375s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv
+[78.376s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail
+[78.377s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__rosidl_typesupport_introspection_cpp.hpp
+[78.377s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/srv/detail/spi__type_support.cpp
+[78.378s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg
+[78.379s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail
+[78.379s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__type_support.cpp
+[78.380s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status__rosidl_typesupport_introspection_cpp.hpp
+[78.380s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__rosidl_typesupport_introspection_cpp.hpp
+[78.381s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/include/ros2_gopigo3_msg/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.cpp
+[78.382s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.so
+[78.383s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[78.384s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_cpp.so
+[78.384s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_typesupport_cpp.so" to ""
+[78.385s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/pythonpath.sh
+[78.386s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/pythonpath.dsv
+[78.387s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c.so
+[78.387s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c.so" to ""
+[78.388s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c.so
+[78.389s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c.so" to ""
+[78.390s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_c.so
+[78.391s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_c.so" to ""
+[78.392s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_generator_py.so
+[78.393s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/libros2_gopigo3_msg__rosidl_generator_py.so" to ""
+[78.393s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ament_index/resource_index/rust_packages/ros2_gopigo3_msg
+[78.395s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust
+[78.395s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/Cargo.toml
+[78.396s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src
+[78.397s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/srv
+[78.398s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/srv/rmw.rs
+[78.399s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/msg
+[78.399s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/msg/rmw.rs
+[78.400s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/lib.rs
+[78.401s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/msg.rs
+[78.402s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/src/srv.rs
+[78.403s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/rust/build.rs
+[78.404s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatus.idl
+[78.404s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatusLR.idl
+[78.405s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/srv/SPI.idl
+[78.405s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatus.msg
+[78.406s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/msg/MotorStatusLR.msg
+[78.407s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/srv/SPI.srv
+[78.409s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ament_index/resource_index/package_run_dependencies/ros2_gopigo3_msg
+[78.410s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ament_index/resource_index/parent_prefix_path/ros2_gopigo3_msg
+[78.411s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/ament_prefix_path.sh
+[78.413s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/ament_prefix_path.dsv
+[78.414s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/path.sh
+[78.414s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/environment/path.dsv
+[78.415s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/local_setup.bash
+[78.416s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/local_setup.fish
+[78.417s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/local_setup.sh
+[78.418s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/local_setup.zsh
+[78.418s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/local_setup.dsv
+[78.419s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.dsv
+[78.420s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ament_index/resource_index/packages/ros2_gopigo3_msg
+[78.421s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_generator_cExport.cmake
+[78.422s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_generator_cExport-noconfig.cmake
+[78.423s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[78.424s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[78.425s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_introspection_cExport.cmake
+[78.426s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[78.427s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_cExport.cmake
+[78.428s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_cExport-noconfig.cmake
+[78.429s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_generator_cppExport.cmake
+[78.430s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[78.431s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[78.433s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_introspection_cppExport.cmake
+[78.433s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[78.435s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_cppExport.cmake
+[78.436s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[78.437s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_generator_pyExport.cmake
+[78.438s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/export_ros2_gopigo3_msg__rosidl_generator_pyExport-noconfig.cmake
+[78.439s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg-0.0.0-py3.14.egg-info
+[78.440s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg-0.0.0-py3.14.egg-info/top_level.txt
+[78.440s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg-0.0.0-py3.14.egg-info/SOURCES.txt
+[78.441s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg-0.0.0-py3.14.egg-info/dependency_links.txt
+[78.442s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg-0.0.0-py3.14.egg-info/PKG-INFO
+[78.443s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg
+[78.444s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_introspection_c.so
+[78.445s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/__init__.py
+[78.446s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_introspection_c.c
+[78.447s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_c.c
+[78.449s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/py.typed
+[78.449s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/_ros2_gopigo3_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[78.450s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv
+[78.452s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv/__init__.py
+[78.453s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv/_spi.py
+[78.453s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv/_spi_s.c
+[78.454s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg
+[78.455s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/__init__.py
+[78.456s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status_lr.py
+[78.456s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status.py
+[78.457s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status_s.c
+[78.458s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status_lr_s.c
+[78.459s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_c.so
+[78.459s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/ros2_gopigo3_msg_s__rosidl_typesupport_fastrtps_c.so
+[78.761s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg'...
+[78.763s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/__init__.py'...
+[78.765s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg'...
+[78.767s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/__init__.py'...
+[78.769s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status.py'...
+[78.770s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/msg/_motor_status_lr.py'...
+[78.772s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv'...
+[78.774s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv/__init__.py'...
+[78.775s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages/ros2_gopigo3_msg/srv/_spi.py'...
+[78.827s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/rosidl_cmake-extras.cmake
+[78.828s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[78.829s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[78.830s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[78.832s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ament_cmake_export_targets-extras.cmake
+[78.833s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[78.834s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[78.836s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[78.837s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msgConfig.cmake
+[78.838s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/cmake/ros2_gopigo3_msgConfig-version.cmake
+[78.839s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.xml
+[78.849s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg

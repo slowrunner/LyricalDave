@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/requires.txt
+writing top-level names to ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/top_level.txt
+reading manifest file '../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info/SOURCES.txt'
+running build
+running build_py
+copying libcamera_jpg_pub.py -> /home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/build/lib
+running install
+running install_lib
+running install_data
+copying resource/ros2_libcamera_pub -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub
+running install_egg_info
+removing '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages/ros2_libcamera_pub-2.3.2-py3.14.egg-info' (and everything under it)
+Copying ../../build/ros2_libcamera_pub/ros2_libcamera_pub.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages/ros2_libcamera_pub-2.3.2-py3.14.egg-info
+running install_scripts
+Installing libcamera_jpg_pub script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/ros2_libcamera_pub
+writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/install.log'

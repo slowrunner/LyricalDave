@@ -1,0 +1,70 @@
+[6.691s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_nodes_py build --build-base /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build install --record /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/install.log --single-version-externally-managed install_data
+[7.780s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[7.780s]   warnings.warn(msg)
+[8.056s] /usr/lib/python3/dist-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[8.057s] !!
+[8.057s] 
+[8.058s]         ********************************************************************************
+[8.062s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[8.063s] 
+[8.063s]         License :: OSI Approved :: Apache Software License
+[8.063s] 
+[8.064s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[8.064s]         ********************************************************************************
+[8.065s] 
+[8.068s] !!
+[8.069s]   self._finalize_license_expression()
+[8.586s] running egg_info
+[8.697s] writing ../../build/demo_nodes_py/demo_nodes_py.egg-info/PKG-INFO
+[8.699s] writing dependency_links to ../../build/demo_nodes_py/demo_nodes_py.egg-info/dependency_links.txt
+[8.703s] writing entry points to ../../build/demo_nodes_py/demo_nodes_py.egg-info/entry_points.txt
+[8.703s] writing requirements to ../../build/demo_nodes_py/demo_nodes_py.egg-info/requires.txt
+[8.706s] writing top-level names to ../../build/demo_nodes_py/demo_nodes_py.egg-info/top_level.txt
+[8.947s] reading manifest file '../../build/demo_nodes_py/demo_nodes_py.egg-info/SOURCES.txt'
+[8.954s] writing manifest file '../../build/demo_nodes_py/demo_nodes_py.egg-info/SOURCES.txt'
+[8.954s] running build
+[8.958s] running build_py
+[8.958s] copying demo_nodes_py/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py
+[8.959s] copying demo_nodes_py/logging/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/logging
+[8.961s] copying demo_nodes_py/logging/use_logger_service.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/logging
+[8.964s] copying demo_nodes_py/parameters/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/parameters
+[8.965s] copying demo_nodes_py/parameters/set_parameters_callback.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/parameters
+[8.965s] copying demo_nodes_py/parameters/async_param_client.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/parameters
+[8.966s] copying demo_nodes_py/events/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/events
+[8.966s] copying demo_nodes_py/events/matched_event_detect.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/events
+[8.968s] copying demo_nodes_py/topics/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.970s] copying demo_nodes_py/topics/listener_serialized.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.971s] copying demo_nodes_py/topics/talker.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.973s] copying demo_nodes_py/topics/listener_qos.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.974s] copying demo_nodes_py/topics/listener.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.975s] copying demo_nodes_py/topics/talker_qos.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/topics
+[8.979s] copying demo_nodes_py/services/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/services
+[8.979s] copying demo_nodes_py/services/introspection.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/services
+[8.980s] copying demo_nodes_py/services/add_two_ints_server.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/services
+[8.982s] copying demo_nodes_py/services/add_two_ints_client_async.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/services
+[8.983s] copying demo_nodes_py/services/add_two_ints_client.py -> /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build/lib/demo_nodes_py/services
+[8.985s] running install
+[9.008s] running install_lib
+[9.146s] running install_data
+[9.147s] copying resource/demo_nodes_py -> /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/ament_index/resource_index/packages
+[9.150s] copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py
+[9.151s] copying demo_nodes_py/parameters/params.yaml -> /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py
+[9.152s] running install_egg_info
+[9.399s] removing '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages/demo_nodes_py-0.37.0-py3.14.egg-info' (and everything under it)
+[9.401s] Copying ../../build/demo_nodes_py/demo_nodes_py.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages/demo_nodes_py-0.37.0-py3.14.egg-info
+[9.417s] running install_scripts
+[10.504s] Installing add_two_ints_client script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.508s] Installing add_two_ints_client_async script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.511s] Installing add_two_ints_server script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.511s] Installing async_param_client script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.514s] Installing introspection script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.517s] Installing listener script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.518s] Installing listener_qos script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.518s] Installing listener_serialized script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.521s] Installing matched_event_detect script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.523s] Installing set_parameters_callback script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.526s] Installing talker script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.530s] Installing talker_qos script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.535s] Installing use_logger_service script to /home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/demo_nodes_py
+[10.544s] writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/install.log'
+[11.650s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_nodes_py build --build-base /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build install --record /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/install.log --single-version-externally-managed install_data

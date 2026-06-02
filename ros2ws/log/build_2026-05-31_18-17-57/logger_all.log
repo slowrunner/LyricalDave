@@ -1,0 +1,860 @@
+[-1780265875309904384.000s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[-1780265875309904384.000s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa1e4bb10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa1e42cf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa1e42cf0>>, mixin_verb=('build',))
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[-1780265875309904384.000s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/LyricalDave/ros2ws'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(cmds/old) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(params) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave' with type 'ros.ament_python' and name 'dave'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_interfaces' with type 'ros.ament_cmake' and name 'dave_interfaces'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/demo_nodes_py) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/demo_nodes_py' with type 'ros.ament_python' and name 'demo_nodes_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/explorer_wanderer) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/explorer_wanderer' with type 'ros.ament_python' and name 'explorer_wanderer'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_cartographer) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gpg3_cartographer' with type 'ros.ament_cmake' and name 'gpg3_cartographer'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/gpg3_navigation2) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gpg3_navigation2' with type 'ros.ament_cmake' and name 'gpg3_navigation2'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_gopigo3) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_gopigo3' with type 'ros.ament_cmake' and name 'nav2_gopigo3'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_msg' with type 'ros.ament_cmake' and name 'ros2_gopigo3_msg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_node' with type 'ros.ament_python' and name 'ros2_gopigo3_node'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_libcamera_pub' with type 'ros.ament_python' and name 'ros2_libcamera_pub'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scan_client' with type 'ros.ament_python' and name 'scan_client'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ros'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_gopigo3_keyboard' with type 'ros.ament_python' and name 'teleop_gopigo3_keyboard'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['ignore', 'ignore_ament_install']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'ignore'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'ignore_ament_install'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['colcon_pkg']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'colcon_pkg'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['colcon_meta']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'colcon_meta'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['ros']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'ros'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['cmake', 'python']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'cmake'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extensions ['python_setup_py']
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_identification:_identify(tests) by extension 'python_setup_py'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[-1780265875309904384.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ubuntu/LyricalDave/ros2ws/install
+[-1780265875309904384.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 204 installed packages in /opt/ros/lyrical
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'dave' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/dave', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/dave', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/dave', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'dave_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'dave_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/dave_interfaces', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'demo_nodes_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'demo_nodes_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'explorer_wanderer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'explorer_wanderer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'gpg3_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_cartographer', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'gpg3_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'gpg3_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'nav2_gopigo3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_gopigo3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/nav2_gopigo3', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_gopigo3_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_libcamera_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/ros2_libcamera_pub', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'scan_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/scan_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/scan_client', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/scan_client', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_gopigo3_keyboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_target' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_clean_cache' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_clean_first' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_force_configure' from command line to 'False'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'ament_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'catkin_cmake_args' from command line to 'None'
+[-1780265875309904384.000s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_gopigo3_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node', 'merge_install': False, 'path': '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_node', 'symlink_install': False, 'test_result_base': None}
+[-1780265875309904384.000s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[-1780265875309904384.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg' with build type 'ament_cmake'
+[-1780265875309904384.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/dave' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/dave_interfaces' with build type 'ament_cmake'
+[-1780265875309904384.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/LyricalDave/ros2ws/src/dave_interfaces'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo_nodes_py', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/dave'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/dave_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_nodes_py build --build-base /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build install --record /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/dave': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/dave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dave build --build-base /home/ubuntu/LyricalDave/ros2ws/build/dave/build install --record /home/ubuntu/LyricalDave/ros2ws/build/dave/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/dave' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/dave/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dave build --build-base /home/ubuntu/LyricalDave/ros2ws/build/dave/build install --record /home/ubuntu/LyricalDave/ros2ws/build/dave/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/pkgconfig/dave.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/dave/share/colcon-core/packages/dave)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explorer_wanderer', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/demo_nodes_py' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_nodes_py build --build-base /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/build install --record /home/ubuntu/LyricalDave/ros2ws/build/demo_nodes_py/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/pkgconfig/demo_nodes_py.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('demo_nodes_py', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(demo_nodes_py)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/demo_nodes_py/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/share/colcon-core/packages/demo_nodes_py)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_cartographer' with build type 'ament_cmake'
+[-1780265875309904384.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_cartographer'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_cartographer -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_msg -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/explorer_wanderer build --build-base /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build install --record /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_cartographer -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpg3_cartographer)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpg3_cartographer', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_cartographer
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/lib/pkgconfig/gpg3_cartographer.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/colcon-core/packages/gpg3_cartographer)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpg3_cartographer)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpg3_cartographer', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/lib/pkgconfig/gpg3_cartographer.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/gpg3_cartographer/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/gpg3_cartographer/share/colcon-core/packages/gpg3_cartographer)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2' with build type 'ament_cmake'
+[-1780265875309904384.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/dave_interfaces -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces -- -j4 -l4
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer' for CMake config files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/explorer_wanderer' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/explorer_wanderer build --build-base /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/build install --record /home/ubuntu/LyricalDave/ros2ws/build/explorer_wanderer/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/pkgconfig/explorer_wanderer.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explorer_wanderer', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explorer_wanderer)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/explorer_wanderer/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/share/colcon-core/packages/explorer_wanderer)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/nav2_gopigo3' with build type 'ament_cmake'
+[-1780265875309904384.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/LyricalDave/ros2ws/src/nav2_gopigo3'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/nav2_gopigo3 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/gpg3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2 -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2 -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpg3_navigation2)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpg3_navigation2', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/lib/pkgconfig/gpg3_navigation2.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/colcon-core/packages/gpg3_navigation2)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpg3_navigation2)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpg3_navigation2', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/lib/pkgconfig/gpg3_navigation2.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/colcon-core/packages/gpg3_navigation2)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_libcamera_pub' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_libcamera_pub', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_libcamera_pub'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake /home/ubuntu/LyricalDave/ros2ws/src/nav2_gopigo3 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_libcamera_pub': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_libcamera_pub build --build-base /home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/build install --record /home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3 -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_gopigo3)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/nav2_gopigo3
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_gopigo3', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/pkgconfig/nav2_gopigo3.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_gopigo3', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/colcon-core/packages/nav2_gopigo3)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_gopigo3)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_gopigo3', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/pkgconfig/nav2_gopigo3.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_gopigo3', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/nav2_gopigo3/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/share/colcon-core/packages/nav2_gopigo3)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('scan_client', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_libcamera_pub' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_libcamera_pub build --build-base /home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/build install --record /home/ubuntu/LyricalDave/ros2ws/build/ros2_libcamera_pub/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/pkgconfig/ros2_libcamera_pub.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_libcamera_pub', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_libcamera_pub)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/share/colcon-core/packages/ros2_libcamera_pub)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_gopigo3_keyboard', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/scan_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_client build --build-base /home/ubuntu/LyricalDave/ros2ws/build/scan_client/build install --record /home/ubuntu/LyricalDave/ros2ws/build/scan_client/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_gopigo3_keyboard build --build-base /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build install --record /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/scan_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_client build --build-base /home/ubuntu/LyricalDave/ros2ws/build/scan_client/build install --record /home/ubuntu/LyricalDave/ros2ws/build/scan_client/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/pkgconfig/scan_client.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('scan_client', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scan_client)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/colcon-core/packages/scan_client)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/teleop_gopigo3_keyboard' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_gopigo3_keyboard build --build-base /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/build install --record /home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/pkgconfig/teleop_gopigo3_keyboard.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_gopigo3_keyboard', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_gopigo3_keyboard)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/share/colcon-core/packages/teleop_gopigo3_keyboard)
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_msg)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_msg
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'ld_library_path_lib')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/pkgconfig/ros2_gopigo3_msg.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/colcon-core/packages/ros2_gopigo3_msg)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_msg)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'ld_library_path_lib')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/pkgconfig/ros2_gopigo3_msg.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/share/colcon-core/packages/ros2_gopigo3_msg)
+[-1780265875309904384.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_node' with build type 'ament_python'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_node', 'ament_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_node'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_node': AMENT_PREFIX_PATH=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/dave:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/apriltag_msgs/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_gopigo3_node build --build-base /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/build install --record /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/ros2_gopigo3_node' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/dave:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/apriltag_msgs/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_gopigo3_node build --build-base /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/build install --record /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/install.log --single-version-externally-managed install_data
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/pkgconfig/ros2_gopigo3_node.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_node', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_node)
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/colcon-core/packages/ros2_gopigo3_node)
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces -- -j4 -l4
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_interfaces)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces' for CMake module files
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'ld_library_path_lib')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/pkgconfig/dave_interfaces.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/colcon-core/packages/dave_interfaces)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_interfaces)
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces' for CMake module files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces' for CMake config files
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'cmake_prefix_path')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/cmake_prefix_path.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'ld_library_path_lib')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/ld_library_path_lib.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/bin'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/pkgconfig/dave_interfaces.pc'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_interfaces', 'pythonpath')
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/hook/pythonpath.sh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/bin'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.dsv'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.zsh'
+[-1780265875309904384.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/colcon-core/packages/dave_interfaces)
+[-1780265875309904384.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[-1780265875309904384.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[-1780265875309904384.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-1780265875309904384.000s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/LyricalDave/ros2ws/install/local_setup.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/LyricalDave/ros2ws/install/_local_setup_util_ps1.py'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/LyricalDave/ros2ws/install/setup.ps1'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/LyricalDave/ros2ws/install/local_setup.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/LyricalDave/ros2ws/install/_local_setup_util_sh.py'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/LyricalDave/ros2ws/install/setup.sh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/LyricalDave/ros2ws/install/local_setup.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/LyricalDave/ros2ws/install/setup.bash'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/LyricalDave/ros2ws/install/local_setup.zsh'
+[-1780265875309904384.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/LyricalDave/ros2ws/install/setup.zsh'

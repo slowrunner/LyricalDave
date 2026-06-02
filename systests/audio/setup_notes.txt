@@ -1,0 +1,7 @@
+Ubuntu 26.04 Audio Setup for LyricalDave
+
+See config/Setup_Ubuntu_26_04.md
+
+See: https://help.ubuntu.com/community/SoundTroubleshootingProcedure
+
+

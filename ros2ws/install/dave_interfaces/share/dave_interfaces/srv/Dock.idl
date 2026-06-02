@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dave_interfaces/srv/Dock.srv
+// generated code does not contain a copyright notice
+
+
+module dave_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "dave_interfaces.srv.Dock.srv " "\n"
+      "Request")
+    struct Dock_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Dock_Response {
+      boolean is_docked;
+
+      boolean is_charging;
+
+      boolean success;
+    };
+  };
+};

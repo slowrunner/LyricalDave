@@ -1,0 +1,23 @@
+running develop
+running egg_info
+writing dave.egg-info/PKG-INFO
+writing dependency_links to dave.egg-info/dependency_links.txt
+writing entry points to dave.egg-info/entry_points.txt
+writing requirements to dave.egg-info/requires.txt
+writing top-level names to dave.egg-info/top_level.txt
+reading manifest file 'dave.egg-info/SOURCES.txt'
+writing manifest file 'dave.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave.egg-link (link to .)
+Installing battery_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing dave_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing docking_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing drive_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing say_client script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing say_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing test_dock script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+
+Installed /home/ubuntu/LyricalDave/ros2ws/build/dave
+running symlink_data
+symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/dave/resource/dave -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/dave/package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave

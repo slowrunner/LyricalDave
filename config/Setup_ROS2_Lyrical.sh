@@ -4,6 +4,9 @@
 
 # REF:  https://docs.ros.org/en/lyrical/Installation/Ubuntu-Install-Debs.html
 
+# Redirect all stdout and stderr to tee
+exec > >(tee -a setup_ros2_lyrical.out) 2>&1
+
 # === Make sure system is up to date before continuing
 sudo apt update
 sudo apt upgrade -y
@@ -52,14 +55,19 @@ echo "source /opt/ros/lyrical/setup.bash" >> ~/.bashrc
 # === Tell ROS2 to inhabit "Domain 0" 
 echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
 
-# === Setup ROSDEP tool
-sudo apt install -y python3-rosdep2
 
-# ==== Create a ROS2 Workspace with source folder
+# === Install demo nodes
 
+sudo apt install ros-lyrical-demo-nodes-py
+sudo apt install ros-lyrical-demo-nodes-cpp
+
+sudo apt install ros-lyrical-image-transport
+sudo apt install ros-lyrical-image-transport-plugins
+
+sudo apt install ros-lyrical-apriltag
 
 # === Setup colcon_cd in .bashrc
-# echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
+echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 
 
-echo -e "execute ./run_demo.sh to verify installation"
+echo -e "execute cmds/run_demo.sh to verify installation"

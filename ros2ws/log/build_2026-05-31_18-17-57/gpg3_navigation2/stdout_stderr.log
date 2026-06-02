@@ -1,0 +1,72 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.7 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Configuring done (4.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/LyricalDave/ros2ws/build/gpg3_navigation2
+-- Install configuration: ""
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch/navigation2_use_sim_time.launch.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/launch/navigation2.launch.py
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/gpg3_world.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/gpg3_world.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan_map.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/Notes_MyMakeROSMap.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/cart_office.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/house_tile_cart.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/house_tile_cart.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/FloorPlan_19.248x12.006m.jpg
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/cart_office.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/README.md
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/Notes_Maps.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/FloorPlan_19.248x12.006m.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan_map.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.info.txt
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/map/floorplan.map.pgm
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopigo3_use_sim_time.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/burger_use_sim_time.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/burger.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopi5go_dave.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/waffle_pi.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/waffle_pi_use_sim_time.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/param/gopigo3.yaml
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/rviz
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/rviz/navigation2.rviz
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/package_run_dependencies/gpg3_navigation2
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/parent_prefix_path/gpg3_navigation2
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/path.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/environment/path.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.bash
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.fish
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.sh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.zsh
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/local_setup.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.dsv
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/ament_index/resource_index/packages/gpg3_navigation2
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/cmake/gpg3_navigation2Config.cmake
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/cmake/gpg3_navigation2Config-version.cmake
+-- Installing: /home/ubuntu/LyricalDave/ros2ws/install/gpg3_navigation2/share/gpg3_navigation2/package.xml

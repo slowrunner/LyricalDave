@@ -1,0 +1,40 @@
+[5.143s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/scan_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_client build --build-base /home/ubuntu/LyricalDave/ros2ws/build/scan_client/build install --record /home/ubuntu/LyricalDave/ros2ws/build/scan_client/install.log --single-version-externally-managed install_data
+[6.164s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[6.164s]   warnings.warn(msg)
+[6.452s] /usr/lib/python3/dist-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[6.454s] !!
+[6.455s] 
+[6.455s]         ********************************************************************************
+[6.455s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[6.459s] 
+[6.459s]         License :: BSD
+[6.460s] 
+[6.460s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[6.461s]         ********************************************************************************
+[6.461s] 
+[6.465s] !!
+[6.466s]   self._finalize_license_expression()
+[6.986s] running egg_info
+[7.215s] writing ../../build/scan_client/scan_client.egg-info/PKG-INFO
+[7.221s] writing dependency_links to ../../build/scan_client/scan_client.egg-info/dependency_links.txt
+[7.228s] writing entry points to ../../build/scan_client/scan_client.egg-info/entry_points.txt
+[7.232s] writing requirements to ../../build/scan_client/scan_client.egg-info/requires.txt
+[7.237s] writing top-level names to ../../build/scan_client/scan_client.egg-info/top_level.txt
+[7.741s] reading manifest file '../../build/scan_client/scan_client.egg-info/SOURCES.txt'
+[7.746s] adding license file 'LICENSE'
+[7.752s] writing manifest file '../../build/scan_client/scan_client.egg-info/SOURCES.txt'
+[7.756s] running build
+[7.757s] running build_py
+[7.757s] copying scan_client.py -> /home/ubuntu/LyricalDave/ros2ws/build/scan_client/build/lib
+[7.759s] running install
+[7.783s] running install_lib
+[7.967s] running install_data
+[7.968s] copying resource/scan_client -> /home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/ament_index/resource_index/packages
+[7.972s] copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/scan_client/share/scan_client
+[7.972s] running install_egg_info
+[8.140s] removing '/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages/scan_client-0.1-py3.14.egg-info' (and everything under it)
+[8.142s] Copying ../../build/scan_client/scan_client.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages/scan_client-0.1-py3.14.egg-info
+[8.151s] running install_scripts
+[8.859s] Installing scan_client script to /home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/scan_client
+[8.862s] writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/scan_client/install.log'
+[9.515s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/src/scan_client' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/scan_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scan_client build --build-base /home/ubuntu/LyricalDave/ros2ws/build/scan_client/build install --record /home/ubuntu/LyricalDave/ros2ws/build/scan_client/install.log --single-version-externally-managed install_data

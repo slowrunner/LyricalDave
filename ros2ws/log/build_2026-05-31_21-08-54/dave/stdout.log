@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/dave/dave.egg-info/PKG-INFO
+writing dependency_links to ../../build/dave/dave.egg-info/dependency_links.txt
+writing entry points to ../../build/dave/dave.egg-info/entry_points.txt
+writing requirements to ../../build/dave/dave.egg-info/requires.txt
+writing top-level names to ../../build/dave/dave.egg-info/top_level.txt
+reading manifest file '../../build/dave/dave.egg-info/SOURCES.txt'
+writing manifest file '../../build/dave/dave.egg-info/SOURCES.txt'
+running build
+running build_py
+copying dave/__init__.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/test_dock.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/say_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/dave_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/drive_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/say_svc_client.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/docking_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+copying dave/battery_node.py -> /home/ubuntu/LyricalDave/ros2ws/build/dave/build/lib/dave
+running install
+running install_lib
+running install_data
+copying resource/dave -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/dave/share/dave
+running install_egg_info
+removing '/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave-0.0.0-py3.14.egg-info' (and everything under it)
+Copying ../../build/dave/dave.egg-info to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave-0.0.0-py3.14.egg-info
+running install_scripts
+Installing battery_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing dave_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing docking_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing drive_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing say_client script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing say_node script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+Installing test_dock script to /home/ubuntu/LyricalDave/ros2ws/install/dave/lib/dave
+writing list of installed files to '/home/ubuntu/LyricalDave/ros2ws/build/dave/install.log'

@@ -1,0 +1,38 @@
+[2.788s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/build --no-deps symlink_data --force
+[3.406s] /usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[3.407s]   warnings.warn(msg)
+[3.858s] running develop
+[4.392s] running egg_info
+[4.452s] writing ros2_gopigo3_node.egg-info/PKG-INFO
+[4.454s] writing dependency_links to ros2_gopigo3_node.egg-info/dependency_links.txt
+[4.455s] writing entry points to ros2_gopigo3_node.egg-info/entry_points.txt
+[4.456s] writing requirements to ros2_gopigo3_node.egg-info/requires.txt
+[4.457s] writing top-level names to ros2_gopigo3_node.egg-info/top_level.txt
+[4.582s] reading manifest file 'ros2_gopigo3_node.egg-info/SOURCES.txt'
+[4.587s] writing manifest file 'ros2_gopigo3_node.egg-info/SOURCES.txt'
+[4.652s] running build_ext
+[4.652s] Creating /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages/ros2-gopigo3-node.egg-link (link to .)
+[4.654s] Installing distance_sensor script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.655s] Installing distance_sensor_subscriber script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.656s] Installing gopigo3_node script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.657s] Installing imu_sensor script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.657s] Installing odometer script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.658s] Installing ultrasonic_ranger script to /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/ros2_gopigo3_node
+[4.659s] 
+[4.659s] Installed /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node
+[4.660s] running symlink_data
+[4.660s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/resource/ros2_gopigo3_node -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ament_index/resource_index/packages
+[4.661s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/package.xml -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.662s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/launch/ros2_finmark_state_and_joint.launch.py -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.663s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/launch/ros2_gopi5go_dave_state_and_joint.launch.py -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.663s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/launch/ros2_dave_state_and_joint.launch.py -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.664s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/launch/ros2_gpgMin_state_and_joint.launch.py -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.665s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/finmark.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.665s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/dave.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.666s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/gpgMin.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.666s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/common_properties.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.667s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/gpg3_gopi5go_dave.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.668s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/kilteddave.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.668s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/humbledave2.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.669s] symbolically linking /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/urdf/gopi5go_dave.urdf -> /home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node
+[4.862s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node' returned '0': PYTHONPATH=/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_msg/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/scan_client/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/nav2_gopigo3/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages:/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/build --no-deps symlink_data --force

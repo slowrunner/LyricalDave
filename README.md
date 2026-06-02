@@ -12,4 +12,7 @@ Another re-incarnation of GoPiGo3 Robot Dave
 
 - GoPiGo3 Robot API - New Install Option A: 5/27/26  
 
-- ROS 2 Lyrical Luth Base:  
+- ROS 2 Lyrical Luth Base:  5/30/26
+
+- Lyrical-Dave Awake:
+

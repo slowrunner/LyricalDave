@@ -1,0 +1,424 @@
+[1.413s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces -- -j4 -l4
+[1.498s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[1.498s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[1.499s]   CMake.
+[1.499s] 
+[1.500s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[1.500s]   to tell CMake that the project requires at least <min> but has been updated
+[1.501s]   to work with policies introduced by <max> or earlier.
+[1.501s] 
+[1.502s] [0m
+[1.526s] -- Found ament_cmake: 2.8.7 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[2.114s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[2.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.334s] -- Found rosidl_adapter: 5.2.0 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[2.340s] -- Found std_msgs: 5.9.2 (/opt/ros/lyrical/share/std_msgs/cmake)
+[5.008s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.328s] -- Found Python3: /home/ubuntu/.venv/gopigo3/bin/python3 (found version "3.14.4") found components: Interpreter Development NumPy Development.Module Development.Embed
+[7.546s] -- Found Python3: /home/ubuntu/.venv/gopigo3/bin/python3 (found version "3.14.4") found components: Interpreter
+[7.555s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[7.620s] -- Added test 'lint_cmake' to check CMake code style
+[7.625s] -- Added test 'xmllint' to check XML markup files
+[7.642s] -- Configuring done (6.1s)
+[8.088s] -- Generating done (0.4s)
+[8.238s] -- Build files have been written to: /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces
+[8.430s] [  1%] [1m[34mGenerating type hashes for ROS interfaces[0m
+[10.638s] [  1%] Built target dave_interfaces__rosidl_generator_type_description
+[10.761s] [  2%] [1m[34mGenerating Rust code for ROS interfaces[0m
+[13.193s] [  2%] Built target dave_interfaces__rs
+[13.242s] [  3%] [1m[34mGenerating C code for ROS interfaces[0m
+[20.542s] [  4%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/battery_state__description.c.o[0m
+[20.750s] [  5%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/battery_state__type_support.c.o[0m
+[20.913s] [  7%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dock_status__description.c.o[0m
+[21.148s] [  8%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dock_status__functions.c.o[0m
+[21.475s] [  9%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dock_status__type_support.c.o[0m
+[21.727s] [ 10%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/dock__description.c.o[0m
+[22.019s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/dock__functions.c.o[0m
+[22.455s] [ 12%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/dock__type_support.c.o[0m
+[22.666s] [ 14%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/say__description.c.o[0m
+[22.981s] [ 15%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/say__functions.c.o[0m
+[23.445s] [ 16%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/say__type_support.c.o[0m
+[23.452s] [ 17%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/battery_state__functions.c.o[0m
+[23.659s] [ 18%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/undock__description.c.o[0m
+[23.914s] [ 20%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/undock__functions.c.o[0m
+[23.922s] [ 21%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/undock__type_support.c.o[0m
+[24.126s] [ 22%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/drive_distance__description.c.o[0m
+[24.351s] [ 23%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/drive_distance__functions.c.o[0m
+[24.428s] [ 24%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/drive_distance__type_support.c.o[0m
+[24.736s] [ 25%] [1m[32mLinking C shared library libdave_interfaces__rosidl_generator_c.so[0m
+[24.935s] [ 25%] Built target dave_interfaces__rosidl_generator_c
+[24.985s] [ 27%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[25.037s] [ 28%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[30.061s] [ 28%] Built target dave_interfaces__cpp
+[30.110s] [ 29%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[30.409s] [ 30%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/battery_state__type_support_c.cpp.o[0m
+[31.389s] [ 31%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[32.714s] [ 32%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/battery_state__type_support.cpp.o[0m
+[32.971s] [ 34%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/dock_status__type_support.cpp.o[0m
+[33.238s] [ 35%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/dock__type_support.cpp.o[0m
+[33.444s] [ 36%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/say__type_support.cpp.o[0m
+[33.650s] [ 37%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/undock__type_support.cpp.o[0m
+[33.719s] [ 38%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[33.897s] [ 40%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/drive_distance__type_support.cpp.o[0m
+[34.228s] [ 41%] [1m[32mLinking CXX shared library libdave_interfaces__rosidl_typesupport_c.so[0m
+[34.444s] [ 41%] Built target dave_interfaces__rosidl_typesupport_c
+[34.481s] [ 42%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/battery_state__type_support.cpp.o[0m
+[34.543s] [ 43%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/dock_status__type_support_c.cpp.o[0m
+[35.497s] [ 44%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[37.071s] [ 45%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/dock_status__type_support.cpp.o[0m
+[37.818s] [ 47%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/dock__type_support_c.cpp.o[0m
+[38.045s] [ 48%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/battery_state__type_support.c.o[0m
+[38.230s] [ 49%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/dock_status__type_support.c.o[0m
+[38.412s] [ 50%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/dock__type_support.c.o[0m
+[38.660s] [ 51%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/say__type_support.c.o[0m
+[38.914s] [ 52%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/undock__type_support.c.o[0m
+[39.165s] [ 54%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/drive_distance__type_support.c.o[0m
+[39.416s] [ 55%] [1m[32mLinking C shared library libdave_interfaces__rosidl_typesupport_introspection_c.so[0m
+[39.585s] [ 55%] Built target dave_interfaces__rosidl_typesupport_introspection_c
+[40.133s] [ 57%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/dock__type_support.cpp.o[0m
+[40.133s] [ 57%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/say__type_support_c.cpp.o[0m
+[41.533s] [ 58%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/battery_state__type_support.cpp.o[0m
+[43.255s] [ 60%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/say__type_support.cpp.o[0m
+[43.671s] [ 61%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/undock__type_support_c.cpp.o[0m
+[44.726s] [ 62%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/dock_status__type_support.cpp.o[0m
+[46.156s] [ 63%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/undock__type_support.cpp.o[0m
+[46.868s] [ 64%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/drive_distance__type_support_c.cpp.o[0m
+[47.844s] [ 65%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/dock__type_support.cpp.o[0m
+[48.894s] [ 67%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/drive_distance__type_support.cpp.o[0m
+[49.938s] [ 68%] [1m[32mLinking CXX shared library libdave_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[50.296s] [ 68%] Built target dave_interfaces__rosidl_typesupport_fastrtps_c
+[51.338s] [ 69%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/say__type_support.cpp.o[0m
+[51.724s] [ 70%] [1m[32mLinking CXX shared library libdave_interfaces__rosidl_typesupport_cpp.so[0m
+[52.018s] [ 70%] Built target dave_interfaces__rosidl_typesupport_cpp
+[52.059s] [ 71%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/drive_distance__type_support.cpp.o[0m
+[52.061s] [ 72%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/undock__type_support.cpp.o[0m
+[52.069s] [ 74%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[56.173s] [ 75%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/battery_state__type_support.cpp.o[0m
+[56.180s] [ 76%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/dock_status__type_support.cpp.o[0m
+[56.807s] [ 77%] [1m[32mLinking CXX shared library libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[57.194s] [ 77%] Built target dave_interfaces__rosidl_typesupport_fastrtps_cpp
+[57.239s] [ 78%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/say__type_support.cpp.o[0m
+[57.243s] [ 80%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/dock__type_support.cpp.o[0m
+[58.759s] [ 81%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/undock__type_support.cpp.o[0m
+[58.974s] [ 82%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/drive_distance__type_support.cpp.o[0m
+[62.087s] [ 83%] [1m[32mLinking CXX shared library libdave_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[62.375s] [ 83%] Built target dave_interfaces__rosidl_typesupport_introspection_cpp
+[62.442s] [ 83%] Built target dave_interfaces
+[62.508s] [ 84%] [1m[34mGenerating Python code for ROS interfaces[0m
+[68.456s] [ 84%] Built target dave_interfaces__py
+[68.558s] [ 85%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_battery_state_s.c.o[0m
+[68.561s] [ 87%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_dock_status_s.c.o[0m
+[68.571s] [ 87%] Built target ament_cmake_python_sync_dave_interfaces
+[68.602s] [ 88%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_dock_s.c.o[0m
+[68.643s] [ 89%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_say_s.c.o[0m
+[69.258s] [ 90%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_undock_s.c.o[0m
+[69.384s] [ 91%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_drive_distance_s.c.o[0m
+[70.116s] [ 92%] [1m[32mLinking C shared library libdave_interfaces__rosidl_generator_py.so[0m
+[70.314s] [ 92%] Built target dave_interfaces__rosidl_generator_py
+[70.401s] [ 94%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[70.402s] [ 95%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[70.590s] running egg_info
+[70.728s] writing dave_interfaces.egg-info/PKG-INFO
+[70.730s] writing dependency_links to dave_interfaces.egg-info/dependency_links.txt
+[70.731s] writing top-level names to dave_interfaces.egg-info/top_level.txt
+[71.061s] [ 96%] [1m[32mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[71.078s] [ 97%] [1m[32mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[71.232s] reading manifest file 'dave_interfaces.egg-info/SOURCES.txt'
+[71.235s] [ 97%] Built target dave_interfaces_s__rosidl_typesupport_introspection_c
+[71.240s] writing manifest file 'dave_interfaces.egg-info/SOURCES.txt'
+[71.241s] [ 97%] Built target dave_interfaces_s__rosidl_typesupport_fastrtps_c
+[71.396s] [ 98%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[71.491s] [ 98%] Built target ament_cmake_python_build_dave_interfaces_egg
+[71.962s] [100%] [1m[32mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so[0m
+[72.059s] [100%] Built target dave_interfaces_s__rosidl_typesupport_c
+[72.100s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --build /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces -- -j4 -l4
+[72.105s] Invoking command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces
+[72.133s] -- Install configuration: ""
+[72.134s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces
+[72.135s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Say.json
+[72.136s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Dock.json
+[72.138s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Undock.json
+[72.139s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/DriveDistance.json
+[72.140s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/BatteryState.json
+[72.141s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/DockStatus.json
+[72.143s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.143s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.144s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/drive_distance.h
+[72.144s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/dock.h
+[72.145s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/say.h
+[72.145s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.145s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__functions.h
+[72.146s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__description.c
+[72.146s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__functions.c
+[72.147s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__description.c
+[72.148s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__functions.h
+[72.148s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__struct.h
+[72.149s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__functions.c
+[72.149s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__type_support.c
+[72.150s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__struct.h
+[72.150s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__description.c
+[72.151s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__functions.h
+[72.151s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__functions.c
+[72.152s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__struct.h
+[72.152s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__type_support.h
+[72.153s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__struct.h
+[72.153s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__type_support.h
+[72.154s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__functions.h
+[72.154s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__type_support.h
+[72.155s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__type_support.h
+[72.155s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__type_support.c
+[72.156s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__description.c
+[72.156s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__type_support.c
+[72.157s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__type_support.c
+[72.157s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__functions.c
+[72.158s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/undock.h
+[72.158s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.159s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/battery_state.h
+[72.159s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.160s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__type_support.c
+[72.160s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__functions.c
+[72.160s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__description.c
+[72.161s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__functions.h
+[72.161s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__functions.h
+[72.162s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__type_support.c
+[72.162s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__type_support.h
+[72.163s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__description.c
+[72.163s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__type_support.h
+[72.164s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__struct.h
+[72.164s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__functions.c
+[72.165s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__struct.h
+[72.165s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dock_status.h
+[72.166s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_generator_c__visibility_control.h
+[72.166s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/library_path.sh
+[72.166s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/library_path.dsv
+[72.167s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_c.so
+[72.169s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_c.so" to ""
+[72.169s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.170s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.170s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.170s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__rosidl_typesupport_fastrtps_c.h
+[72.171s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__rosidl_typesupport_fastrtps_c.h
+[72.171s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__rosidl_typesupport_fastrtps_c.h
+[72.171s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__rosidl_typesupport_fastrtps_c.h
+[72.172s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.172s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[72.172s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.173s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__rosidl_typesupport_fastrtps_c.h
+[72.173s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__rosidl_typesupport_fastrtps_c.h
+[72.173s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_c.so
+[72.175s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[72.176s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.176s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.177s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.177s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__rosidl_typesupport_introspection_c.h
+[72.177s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__type_support.c
+[72.178s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__rosidl_typesupport_introspection_c.h
+[72.178s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__rosidl_typesupport_introspection_c.h
+[72.178s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__type_support.c
+[72.179s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__type_support.c
+[72.179s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__rosidl_typesupport_introspection_c.h
+[72.180s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__type_support.c
+[72.180s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.180s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.181s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__type_support.c
+[72.181s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__rosidl_typesupport_introspection_c.h
+[72.181s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__rosidl_typesupport_introspection_c.h
+[72.182s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__type_support.c
+[72.182s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[72.183s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_c.so
+[72.185s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[72.185s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_c.so
+[72.187s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_c.so" to ""
+[72.187s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.187s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.188s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/undock.hpp
+[72.188s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/drive_distance.hpp
+[72.188s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/say.hpp
+[72.189s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.189s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__struct.hpp
+[72.189s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__type_support.hpp
+[72.190s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__type_support.hpp
+[72.191s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__traits.hpp
+[72.191s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__traits.hpp
+[72.191s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__builder.hpp
+[72.192s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__type_support.hpp
+[72.192s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__struct.hpp
+[72.193s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__builder.hpp
+[72.193s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__type_support.hpp
+[72.194s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__traits.hpp
+[72.194s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__builder.hpp
+[72.195s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__traits.hpp
+[72.195s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__struct.hpp
+[72.196s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__builder.hpp
+[72.196s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__struct.hpp
+[72.197s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/dock.hpp
+[72.197s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.198s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dock_status.hpp
+[72.198s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.199s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__builder.hpp
+[72.199s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__traits.hpp
+[72.199s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__type_support.hpp
+[72.200s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__type_support.hpp
+[72.200s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__traits.hpp
+[72.201s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__builder.hpp
+[72.201s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__struct.hpp
+[72.201s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__struct.hpp
+[72.202s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[72.202s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/battery_state.hpp
+[72.203s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.204s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.204s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.204s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[72.205s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__rosidl_typesupport_fastrtps_cpp.hpp
+[72.205s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dds_fastrtps
+[72.205s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__rosidl_typesupport_fastrtps_cpp.hpp
+[72.206s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__rosidl_typesupport_fastrtps_cpp.hpp
+[72.206s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.206s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[72.207s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.207s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dds_fastrtps
+[72.207s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__rosidl_typesupport_fastrtps_cpp.hpp
+[72.208s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__rosidl_typesupport_fastrtps_cpp.hpp
+[72.208s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[72.211s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[72.212s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces
+[72.212s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv
+[72.212s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail
+[72.213s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__type_support.cpp
+[72.213s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__type_support.cpp
+[72.213s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__type_support.cpp
+[72.214s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/drive_distance__rosidl_typesupport_introspection_cpp.hpp
+[72.214s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/undock__rosidl_typesupport_introspection_cpp.hpp
+[72.214s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/dock__rosidl_typesupport_introspection_cpp.hpp
+[72.215s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__rosidl_typesupport_introspection_cpp.hpp
+[72.215s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/say__type_support.cpp
+[72.216s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg
+[72.216s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail
+[72.217s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__type_support.cpp
+[72.217s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__rosidl_typesupport_introspection_cpp.hpp
+[72.217s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/battery_state__type_support.cpp
+[72.218s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dock_status__rosidl_typesupport_introspection_cpp.hpp
+[72.219s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_cpp.so
+[72.222s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[72.222s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_cpp.so
+[72.225s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_cpp.so" to ""
+[72.225s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/pythonpath.sh
+[72.226s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/pythonpath.dsv
+[72.226s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[72.227s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[72.228s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so
+[72.229s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[72.230s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so
+[72.231s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so" to ""
+[72.232s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_py.so
+[72.234s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_py.so" to ""
+[72.234s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/ament_index/resource_index/rust_packages/dave_interfaces
+[72.235s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust
+[72.235s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/Cargo.toml
+[72.236s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src
+[72.236s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/srv
+[72.236s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/srv/rmw.rs
+[72.236s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/msg
+[72.237s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/msg/rmw.rs
+[72.237s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/lib.rs
+[72.238s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/msg.rs
+[72.238s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/src/srv.rs
+[72.238s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/rust/build.rs
+[72.239s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Say.idl
+[72.239s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Dock.idl
+[72.239s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Undock.idl
+[72.240s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/DriveDistance.idl
+[72.240s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/BatteryState.idl
+[72.241s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/DockStatus.idl
+[72.241s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Say.srv
+[72.241s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Dock.srv
+[72.241s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/Undock.srv
+[72.242s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/srv/DriveDistance.srv
+[72.242s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/BatteryState.msg
+[72.243s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/msg/DockStatus.msg
+[72.243s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/ament_index/resource_index/package_run_dependencies/dave_interfaces
+[72.243s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/ament_index/resource_index/parent_prefix_path/dave_interfaces
+[72.244s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/ament_prefix_path.sh
+[72.244s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/ament_prefix_path.dsv
+[72.245s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/path.sh
+[72.245s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/environment/path.dsv
+[72.245s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/local_setup.bash
+[72.246s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/local_setup.fish
+[72.246s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/local_setup.sh
+[72.247s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/local_setup.zsh
+[72.247s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/local_setup.dsv
+[72.247s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.dsv
+[72.248s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/ament_index/resource_index/packages/dave_interfaces
+[72.248s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cExport.cmake
+[72.249s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cExport-noconfig.cmake
+[72.249s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[72.250s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[72.250s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[72.250s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[72.251s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cExport.cmake
+[72.251s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[72.252s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cppExport.cmake
+[72.252s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[72.252s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[72.253s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[72.253s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[72.253s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cppExport.cmake
+[72.254s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[72.254s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_pyExport.cmake
+[72.254s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[72.255s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces-0.0.1-py3.14.egg-info
+[72.255s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces-0.0.1-py3.14.egg-info/top_level.txt
+[72.255s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces-0.0.1-py3.14.egg-info/SOURCES.txt
+[72.256s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces-0.0.1-py3.14.egg-info/dependency_links.txt
+[72.256s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces-0.0.1-py3.14.egg-info/PKG-INFO
+[72.257s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces
+[72.257s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/__init__.py
+[72.257s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/py.typed
+[72.258s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so
+[72.258s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so
+[72.258s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[72.259s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv
+[72.259s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/__init__.py
+[72.259s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_drive_distance.py
+[72.260s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_drive_distance_s.c
+[72.260s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_dock.py
+[72.260s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_undock.py
+[72.261s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_say_s.c
+[72.261s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_undock_s.c
+[72.262s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_say.py
+[72.262s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_dock_s.c
+[72.262s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[72.263s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_c.c
+[72.263s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg
+[72.263s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/__init__.py
+[72.264s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_dock_status.py
+[72.264s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_battery_state_s.c
+[72.264s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_dock_status_s.c
+[72.265s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_battery_state.py
+[72.265s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[72.528s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces'...
+[72.529s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/__init__.py'...
+[72.530s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg'...
+[72.531s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/__init__.py'...
+[72.532s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_battery_state.py'...
+[72.533s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/msg/_dock_status.py'...
+[72.534s] Listing '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv'...
+[72.535s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/__init__.py'...
+[72.536s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_dock.py'...
+[72.537s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_drive_distance.py'...
+[72.537s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_say.py'...
+[72.538s] Compiling '/home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/lib/python3.14/site-packages/dave_interfaces/srv/_undock.py'...
+[72.576s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake-extras.cmake
+[72.578s] -- Installing: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[72.579s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[72.580s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[72.580s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[72.580s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[72.581s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[72.581s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[72.581s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfacesConfig.cmake
+[72.582s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfacesConfig-version.cmake
+[72.582s] -- Up-to-date: /home/ubuntu/LyricalDave/ros2ws/install/dave_interfaces/share/dave_interfaces/package.xml
+[72.589s] Invoked command in '/home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/LyricalDave/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/LyricalDave/ros2ws/install/scan_client:/home/ubuntu/LyricalDave/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/LyricalDave/ros2ws/install/ros2_gopigo3_node:/home/ubuntu/LyricalDave/ros2ws/install/explorer_wanderer:/home/ubuntu/LyricalDave/ros2ws/install/demo_nodes_py:/home/ubuntu/LyricalDave/ros2ws/install/dave:/opt/ros/lyrical /usr/bin/cmake --install /home/ubuntu/LyricalDave/ros2ws/build/dave_interfaces
