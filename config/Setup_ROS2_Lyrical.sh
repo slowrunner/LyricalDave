@@ -65,6 +65,9 @@ sudo apt install ros-lyrical-image-transport
 sudo apt install ros-lyrical-image-transport-plugins
 
 sudo apt install ros-lyrical-apriltag
+sudo apt install ros-lyrical-tf-transformations
+sudo apt install ros-lyrical-teleop-twist-joy
+sudo apt install ros-lyrical-joint-state-publisher
 
 # === Setup colcon_cd in .bashrc
 echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc

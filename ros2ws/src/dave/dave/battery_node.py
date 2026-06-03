@@ -40,6 +40,8 @@ from std_msgs.msg import Header
 
 import numpy as np
 import sys
+sys.path.insert(0,"/home/ubuntu/LyricalDave/plib")
+
 from datetime import datetime as dt
 from easy_ina219 import EasyINA219
 from ina219 import DeviceRangeError

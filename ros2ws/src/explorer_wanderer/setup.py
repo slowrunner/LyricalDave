@@ -16,7 +16,10 @@ setup(
     maintainer='slowrunner',
     maintainer_email='slowrunner@noreply.users.github.com',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='Apache-2.0',
+    classifiers=[
+        'License :: OSI Approved :: Apache Software License',
+    ],
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

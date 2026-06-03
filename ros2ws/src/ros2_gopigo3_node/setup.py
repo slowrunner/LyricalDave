@@ -29,7 +29,10 @@ setup(
     maintainer='slowrunner',
     maintainer_email='slowrunner@users.noreply.github.com',
     description='ROS2 Version of https://github.com/ros-gopigo/gopigo3_node',
-    license='Apache License 2.0',
+    license='Apache-2.0',
+    classifiers=[
+        'License :: OSI Approved :: Apache Software License',
+    ],
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

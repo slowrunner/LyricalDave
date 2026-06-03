@@ -16,15 +16,30 @@ This file starts the needed 9 LyricalDave nodes (8 python processes in status.sh
 
 ////
 
-basedir=LyricalDave
-echo -e "\n*** Switching to ~/${basedir}/ros2ws"
-cd ~/$basedir/ros2ws
 
-echo -e "\n*** Sourcing /opt/ros/kilted/setup.bash"
-. /opt/ros/kilted/setup.bash
+ws="LyricalDave/ros2ws"
+username=ubuntu
 
-echo -e "\n*** Sourcing install/setup.bash"
-. ~/$basedir/ros2ws/install/setup.bash
+if [ -f /opt/ros/lyrical/setup.bash ]; then
+    source /opt/ros/lyrical/setup.bash
+    echo -e "sourced /opt/ros/lyrical setup.bash"
+else
+    echo -e "/opt/ros/lyrical/setup.bash not found"
+
+fi
+
+if [ -f /home/$username/$ws/install/setup.bash ]; then
+    source /home/$username/$ws/install/setup.bash
+    echo -e "sourced $user/$ws/install/setup.bash"
+fi
+
+if [[ -n "$VIRTUAL_ENV" ]]; then
+    VENV_SITE="$("$VIRTUAL_ENV/bin/python3" -c 'import site; print(site.getsitepackages()[0])')"
+    if [[ ":$PYTHONPATH:" != *":$VENV_SITE:"* ]]; then
+        export PYTHONPATH="$VENV_SITE:$PYTHONPATH"
+        echo -e "added $VENV_SITE to PYTHONPATH"
+    fi
+fi
 
 
 echo -e "\n*** Start ROS2 GoPiGo3 node"
@@ -86,6 +101,8 @@ fi
 echo -e "\n*** Start Dave Node"
 echo -e "*** ros2 run dave dave_node & "
 ros2 run dave dave_node  &
+
+sleep 5
 
 /home/ubuntu/LyricalDave/ros2ws/status.sh
 

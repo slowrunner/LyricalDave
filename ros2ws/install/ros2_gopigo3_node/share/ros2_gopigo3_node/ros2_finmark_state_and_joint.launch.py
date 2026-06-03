@@ -1,1 +1,0 @@
-/home/ubuntu/LyricalDave/ros2ws/build/ros2_gopigo3_node/launch/ros2_finmark_state_and_joint.launch.py

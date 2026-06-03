@@ -31,7 +31,7 @@ Example from Carl:
 
 """
 import sys
-HOME='/home/ubuntu/MRGPG'
+HOME='/home/ubuntu/LyricalDave'
 sys.path.insert(1,HOME+'/plib')
 
 import json

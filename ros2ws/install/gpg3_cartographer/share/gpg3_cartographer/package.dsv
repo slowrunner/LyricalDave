@@ -1,8 +1,0 @@
-source;share/gpg3_cartographer/hook/cmake_prefix_path.ps1
-source;share/gpg3_cartographer/hook/cmake_prefix_path.dsv
-source;share/gpg3_cartographer/hook/cmake_prefix_path.sh
-source;share/gpg3_cartographer/local_setup.bash
-source;share/gpg3_cartographer/local_setup.dsv
-source;share/gpg3_cartographer/local_setup.ps1
-source;share/gpg3_cartographer/local_setup.sh
-source;share/gpg3_cartographer/local_setup.zsh

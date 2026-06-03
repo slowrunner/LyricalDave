@@ -12,6 +12,7 @@
 #    Bernardo R Japon: edits for "Hands On ROS for Robotics Programming", Packt Publishing
 #
 # VERSION HISTORY:
+#    2026:  Change DIODE_DROP to 0.52 to match ina219 readings
 #    2024:  Use EasyGoPiGo3 for reset_encoders, and other convenience methods.  Add /stop_status topic.
 #    2021:  Migration to ROS2, and
 #               moved custom msgs to ros2_gopigo3_msg,
@@ -61,7 +62,7 @@ import numpy as np
 # import os
 # import time
 
-NODE_VERSION = '0.6'
+NODE_VERSION = '0.7'
 
 DEBUG = False
 # Uncomment next line for Debugging
@@ -81,7 +82,7 @@ class GoPiGo3Node(Node):
     # Moved the following to __init__() to get from instance instead of class (gopigo3.py v1.3 compatibility)
     # WIDTH = gopigo3.GoPiGo3.WHEEL_BASE_WIDTH * 1e-3
     # CIRCUMFERENCE = gopigo3.GoPiGo3.WHEEL_CIRCUMFERENCE * 1e-3
-    DIODE_DROP = 0.7  # Voltage Drop from reverse polarity protection to make get_voltage() equal actual battery voltage
+    DIODE_DROP = 0.52  # Voltage Drop from reverse polarity protection to make get_voltage() equal actual battery voltage
     POWER_PIN = "23"
     # Move the following to __init__() and the node_cb() for parameterized servo limits
     # PULSE_RANGE = [575, 2425]
