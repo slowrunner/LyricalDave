@@ -1,0 +1,98 @@
+# ******  LyricalDave life.log  ******* 
+# First "life" 2026-05-26 
+# Prior Dockings: 2159 
+# Prior Life:  9637 hrs in unknown sessions
+# Prior Odometry: 3312 m  10865 ft (before GoPi5Go)
+# NEW BATTERY: 2026-04-23 at 2159 dockings, life 9637.1 hrs,  TalentCell YB1203000-USB 12v 3000mAh
+# ********************************
+2026-04-14 18:36|------------ boot ------------
+2026-05-25 21:43|[logMaintenance.py.main]** First Boot of MRGPG3 - New GoPiGo3 Installer over PiOS Trixie-Lite **
+2026-05-25 21:43|[logMaintenance.py.main]** Routine Reboot **
+2026-05-25 21:43|[logMaintenance.py.main]** '' **
+2026-05-25 21:48|[safetyShutdown.py.main]Normal Exit
+2026-05-25 21:49|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.59 volts. **
+2026-05-25 21:49|[safetyShutdown.py.main]Normal Exit
+2026-05-25 21:51|MainProcess.cancel() called
+2026-05-25 21:51|[logMaintenance.py.main]** Routine Reboot **
+2026-05-25 21:51|[logMaintenance.py.main]** 'Current Battery 12.3v EasyGoPiGo3 Reading 11.73v' **
+2026-05-25 22:28|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.61 volts. **
+2026-05-25 22:30|------------ boot ------------
+2026-05-25 22:30|Current Battery 12.4v EasyGoPiGo3 Reading 11.84v
+2026-05-25 22:39|lifelogger.dEmain execution: 0.15
+2026-05-25 22:43|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.60 volts. **
+2026-05-25 22:43|------------ boot ------------
+2026-05-25 22:43|Current Battery 12.2v EasyGoPiGo3 Reading 11.72v
+2026-05-27 20:58|[logMaintenance.py.main]** installed Docker with step 1.sh and step 2.sh, reboot required **
+2026-05-27 20:58|lifelogger.dEmain execution: 46.25
+2026-05-27 20:58|[logMaintenance.py.main]** Routine Reboot **
+2026-05-27 20:58|[logMaintenance.py.main]** 'Current Battery 12.2v EasyGoPiGo3 Reading 11.70v' **
+2026-05-27 21:00|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.63 volts. **
+2026-05-27 21:00|------------ boot ------------
+2026-05-27 21:00|Current Battery 12.3v EasyGoPiGo3 Reading 11.74v
+2026-05-28 00:00|lifelogger.dEmain execution: 3.00
+2026-05-29 12:12|[safetyShutdown.py.main]Continuing after Exception IndexError: list index out of range
+2026-05-29 22:47|------------ boot ------------
+2026-05-29 22:47|Current Battery 12.3v EasyGoPiGo3 Reading 11.75v
+2026-05-29 22:53|lifelogger.dEmain execution: 0.10
+2026-05-29 22:58|MainProcess.cancel() called
+2026-05-29 23:00|------------ boot ------------
+2026-05-29 23:00|Current Battery 12.3v EasyGoPiGo3 Reading 11.81v
+2026-05-29 23:04|MainProcess.cancel() called
+2026-05-30 09:23|------------ boot ------------
+2026-05-30 09:23|Current Battery 12.0v EasyGoPiGo3 Reading 11.06v
+2026-05-30 11:29|lifelogger.dEmain execution: 2.10
+2026-05-30 11:29|MainProcess.cancel() called
+2026-05-30 23:37|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.66 volts. **
+2026-05-30 23:39|------------ boot ------------
+2026-05-30 23:39|Current Battery 12.2v EasyGoPiGo3 Reading 11.72v
+2026-05-31 10:06|lifelogger.dEmain execution: 10.45
+2026-05-31 10:07|[logMaintenance.py.main]** reboot to see if loglife gets started by crontab **
+2026-05-31 10:07|[logMaintenance.py.main]** Routine Reboot **
+2026-05-31 10:07|[logMaintenance.py.main]** 'Current Battery 12.3v EasyGoPiGo3 Reading 11.75v' **
+2026-05-31 11:53|------------ boot ------------
+2026-05-31 11:53|Current Battery 12.3v EasyGoPiGo3 Reading 11.80v
+2026-05-31 11:59|lifelogger.dEmain execution: 0.10
+2026-05-31 12:02|lifelogger.dEmain execution: 0.15
+2026-05-31 12:05|lifelogger.dEmain execution: 0.20
+2026-05-31 12:08|lifelogger.dEmain execution: 0.25
+2026-05-31 12:11|lifelogger.dEmain execution: 0.30
+2026-05-31 12:14|lifelogger.dEmain execution: 0.35
+2026-05-31 12:17|lifelogger.dEmain execution: 0.40
+2026-05-31 12:20|lifelogger.dEmain execution: 0.45
+2026-05-31 12:23|lifelogger.dEmain execution: 0.50
+2026-05-31 12:26|lifelogger.dEmain execution: 0.55
+2026-05-31 12:29|lifelogger.dEmain execution: 0.60
+2026-05-31 12:32|lifelogger.dEmain execution: 0.65
+2026-05-31 12:35|lifelogger.dEmain execution: 0.70
+2026-05-31 12:38|lifelogger.dEmain execution: 0.75
+2026-05-31 12:41|lifelogger.dEmain execution: 0.80
+2026-05-31 12:44|lifelogger.dEmain execution: 0.85
+2026-05-31 12:47|lifelogger.dEmain execution: 0.90
+2026-05-31 12:50|lifelogger.dEmain execution: 0.95
+2026-05-31 12:56|------------ boot ------------
+2026-05-31 12:56|Current Battery 12.2v EasyGoPiGo3 Reading 11.72v
+2026-05-31 12:56|[logMaintenance.py.main]** Routine Reboot **
+2026-05-31 12:56|[logMaintenance.py.main]** '' **
+2026-05-31 12:57|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.62 volts. **
+2026-05-31 12:58|------------ boot ------------
+2026-05-31 12:58|Current Battery 12.2v EasyGoPiGo3 Reading 11.71v
+2026-05-31 12:58|[logMaintenance.py.main]** Routine Reboot **
+2026-05-31 12:58|[logMaintenance.py.main]** 'Current Battery 12.3v EasyGoPiGo3 Reading 11.74v' **
+2026-05-31 13:00|[logMaintenance.py.main]** Starting safetyShutdown.py at 12.65 volts. **
+2026-05-31 13:00|------------ boot ------------
+2026-05-31 13:00|Current Battery 12.3v EasyGoPiGo3 Reading 11.74v
+2026-05-31 18:22|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 11:56|[logMaintenance.py.main]** Starting systests/battery/tillShutdownLife.py **
+2026-06-02 12:21|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 13:50|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 14:29|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 14:39|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 14:47|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 16:32|dave_node.py| ---- LyricalDave node started - Undock:-100 mA  Ready:10.3v  Dock:10.1v
+2026-06-02 18:24|dave_node.py| ---- LyricalDave ROS 2 Docking 2160 : success at battery 10.1v after 21.5 h playtime 
+2026-06-02 18:24|dave_node.py| ---- Successful docking - odometry reset to {0,0,0,1}
+2026-06-02 21:00|dave_node.py| ---- LyricalDave ROS 2 Undocking, Charge Current 98 mA   12.2v after 2.6 h charging
+2026-06-03 02:14|dave_node.py| ---- LyricalDave ROS 2 Docking 2161 : success at battery 10.1v after 5.2 h playtime 
+2026-06-03 02:14|dave_node.py| ---- Successful docking - odometry reset to {0,0,0,1}
+2026-06-03 04:46|dave_node.py| ---- LyricalDave ROS 2 Undocking, Charge Current 95 mA   12.2v after 2.5 h charging
+2026-06-03 09:03|lifelogger.dEmain execution: 68.05

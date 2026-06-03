@@ -1,0 +1,32 @@
+(Cleaning life.log first)
+Read in /home/ubuntu/LyricalDave/logs/life.log
+lines: 100
+lastline: 2026-06-03 09:09|lifelogger.dEmain execution: 68.15
+
+removing: 2026-06-03 09:06|lifelogger.dEmain execution: 68.10
+
+removing: 2026-06-03 09:03|lifelogger.dEmain execution: 68.05
+
+Wrote cleaned /home/ubuntu/LyricalDave/logs/life.log
+lines: 98
+lastline: 2026-06-03 09:09|lifelogger.dEmain execution: 68.15
+
+ 
+*** LyricalDave Dave TOTAL LIFE STATISTICS ***
+This Life:    139.65  hrs (since 25 May 2026)
+Total Life:    9776.65  hrs (since 21 June 2021)
+Lyrical-Dave Playtimes (Undocked-Docked): 2
+Dockings This Life:  2
+Total Dockings:  2161
+New Battery Installed At Docking: 2159
+This Battery At Cycle:  2
+Average playtime (last three) 8.9 hrs 
+Average docked time (last three) 1.7 hrs 
+Sessions (boot):  12
+Average Session:  11.6 hrs
+Safety Shutdowns:  0
+Docking Failures:  0
+Total Travel:  101.2 meters 332.0 feet
+ 
+Last Undocking String:  2026-06-03 04:46|dave_node.py| ---- LyricalDave ROS 2 Undocking, Charge Current 95 mA 12.2v after 2.5 h charging
+Last Docking   String:  2026-06-03 02:14|dave_node.py| ---- LyricalDave ROS 2 Docking 2161 : success at battery 10.1v after 5.2 h playtime +
