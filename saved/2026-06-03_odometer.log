@@ -6867,3 +6867,53 @@
 2026-06-03 09:59:35|start_point - x:  0.030 y:  0.000 z:  0.000 heading:    0
 2026-06-03 09:59:36|stop_point -  x: -0.003 y:  0.000 z:  0.000 heading:    0 - moved:  0.034 meters in 0.6s
 2026-06-03 09:59:52|RESET **** -  x:  0.000 y:  0.000 z:  0.000 heading:    0 - RESET by dave_node
+2026-06-03 12:31:08|start_point - x:  0.000 y:  0.000 z:  0.000 heading:    0
+2026-06-03 12:31:09|stop_point -  x:  0.030 y:  0.000 z:  0.000 heading:    0 - moved:  0.030 meters in 0.6s
+2026-06-03 12:39:19|start_point - x:  0.030 y:  0.000 z:  0.000 heading:    0
+2026-06-03 12:39:30|stop_point -  x:  1.036 y:  0.002 z:  0.000 heading:    1 - moved:  1.007 meters in 11.7s
+2026-06-03 12:40:33|start_point - x:  0.000 y: -0.003 z:  0.000 heading:    0
+2026-06-03 12:40:47|stop_point -  x:  1.005 y: -0.007 z:  0.000 heading:    0 - moved:  1.005 meters in 14.5s
+2026-06-03 12:40:47|start_point - x:  1.005 y: -0.007 z:  0.000 heading:    0
+2026-06-03 12:40:48|stop_point -  x:  1.005 y: -0.007 z:  0.000 heading:    0 - moved:  0.000 meters in 0.0s
+2026-06-03 12:40:59|start_point - x:  0.000 y: -0.007 z:  0.000 heading:    0
+2026-06-03 12:41:14|stop_point -  x:  1.005 y: -0.005 z:  0.000 heading:    0 - moved:  1.005 meters in 14.5s
+2026-06-03 12:41:25|start_point - x: -0.000 y: -0.005 z:  0.000 heading:    0
+2026-06-03 12:41:40|stop_point -  x:  1.004 y: -0.004 z:  0.000 heading:    0 - moved:  1.004 meters in 14.6s
+2026-06-03 12:42:02|start_point - x:  0.000 y: -0.007 z:  0.000 heading:    0
+2026-06-03 12:42:16|stop_point -  x:  1.003 y: -0.008 z:  0.000 heading:    0 - moved:  1.003 meters in 14.5s
+2026-06-03 12:42:26|start_point - x: -0.000 y: -0.008 z:  0.000 heading:    0
+2026-06-03 12:42:41|stop_point -  x:  1.003 y: -0.006 z:  0.000 heading:    0 - moved:  1.003 meters in 14.5s
+2026-06-03 12:43:19|start_point - x:  1.003 y: -0.006 z:  0.000 heading:    0
+2026-06-03 12:43:19|stop_point -  x:  1.003 y: -0.006 z:  0.000 heading:    0 - moved:  0.001 meters in 0.2s
+2026-06-03 12:43:23|start_point - x:  1.003 y: -0.006 z:  0.000 heading:    0
+2026-06-03 12:43:23|stop_point -  x:  1.004 y: -0.006 z:  0.000 heading:   -0 - moved:  0.000 meters in 0.1s
+2026-06-03 12:44:42|start_point - x: -0.000 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:44:46|stop_point -  x:  0.000 y: -0.004 z:  0.000 heading:   33 - moved:  0.013 meters in 4.0s
+2026-06-03 12:44:51|start_point - x:  0.000 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:44:55|stop_point -  x:  0.000 y: -0.004 z:  0.000 heading:   33 - moved:  0.014 meters in 3.9s
+2026-06-03 12:45:37|start_point - x:  0.000 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:45:41|stop_point -  x:  0.000 y: -0.003 z:  0.000 heading:   30 - moved:  0.009 meters in 4.0s
+2026-06-03 12:45:43|start_point - x:  0.000 y: -0.003 z:  0.000 heading:   30
+2026-06-03 12:45:43|stop_point -  x:  0.000 y: -0.003 z:  0.000 heading:   30 - moved:  0.000 meters in 0.1s
+2026-06-03 12:45:47|start_point - x:  0.000 y: -0.003 z:  0.000 heading:    0
+2026-06-03 12:45:51|stop_point -  x:  0.001 y: -0.003 z:  0.000 heading:   30 - moved:  0.012 meters in 4.0s
+2026-06-03 12:46:00|start_point - x:  0.001 y: -0.003 z:  0.000 heading:    0
+2026-06-03 12:46:03|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:  157 - moved:  0.003 meters in 2.5s
+2026-06-03 12:46:30|start_point - x:  0.001 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:46:34|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   27 - moved:  0.009 meters in 4.0s
+2026-06-03 12:46:37|start_point - x:  0.001 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:46:41|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   27 - moved:  0.016 meters in 4.0s
+2026-06-03 12:46:41|start_point - x:  0.001 y: -0.004 z:  0.000 heading:   27
+2026-06-03 12:46:41|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   27 - moved:  0.000 meters in 0.0s
+2026-06-03 12:46:44|start_point - x:  0.001 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:46:48|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   27 - moved:  0.009 meters in 4.1s
+2026-06-03 12:47:00|start_point - x:  0.001 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:47:04|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   25 - moved:  0.008 meters in 4.1s
+2026-06-03 12:47:09|start_point - x:  0.001 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:47:13|stop_point -  x:  0.002 y: -0.004 z:  0.000 heading:   25 - moved:  0.013 meters in 4.0s
+2026-06-03 12:47:24|start_point - x:  0.002 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:47:27|stop_point -  x:  0.002 y: -0.004 z:  0.000 heading:  157 - moved:  0.004 meters in 2.4s
+2026-06-03 12:47:42|start_point - x:  0.002 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:47:46|stop_point -  x:  0.002 y: -0.004 z:  0.000 heading:   24 - moved:  0.012 meters in 4.1s
+2026-06-03 12:47:48|start_point - x:  0.002 y: -0.004 z:  0.000 heading:    0
+2026-06-03 12:47:52|stop_point -  x:  0.001 y: -0.004 z:  0.000 heading:   24 - moved:  0.009 meters in 4.1s
