@@ -14,5 +14,13 @@ Another re-incarnation of GoPiGo3 Robot Dave
 
 - ROS 2 Lyrical Luth Base:  5/30/26
 
-- Lyrical-Dave Awake:
+- Lyrical-Dave Awake: 2026-06
 
+Versions of Dave:
+- 2026-06: 5.0  Lyrical-Dave
+- 2025-05  4.0  Kilted-Dave
+- 2025-04  3.0  HumbleDave2
+- 2024-03  2.0  GoPi5Go-Dave
+- 2023-11  1.0  Humble-Dave
+- 2021-06  0.2  ROSbot-Dave (ROS2 Foxy)
+- 2019     0.1  ROS Kinetic (on Dave's hardware)
