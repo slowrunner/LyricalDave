@@ -1,4 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
-  warnings.warn(msg)
-/home/ubuntu/LyricalDave/ros2ws/install/dave/lib/python3.14/site-packages/dave/say_node.py:26: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
-  -v /dev/snd:/dev/snd \                           <<----
