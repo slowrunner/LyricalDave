@@ -6,6 +6,8 @@ echo "*** ROS 2 Lyrical Luth Base ***"
 
 echo "*** Ubuntu 26.04 Server (64-bit) Resolute Raccoon"
 
+echo "*** ros_gopigo3_node 0.7"
+
 # echo "*** OpenCV 4.5.4"
 
 # echo "*** Custom built libcamera"

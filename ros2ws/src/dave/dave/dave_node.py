@@ -36,6 +36,15 @@
             string saystring
             ---
             bool spoken
+
+
+        NODE_VERSION:
+            2026-06: 5.0  Lyrical-Dave
+            2025-05  4.0  Kilted-Dave
+            2025-04  3.0  HumbleDave2
+            2024-03  2.0  GoPi5Go-Dave
+            2023-11  1.0  Humble-Dave
+            2021-06  0.1  ROSbot-Dave
 """
 
 import rclpy
@@ -76,6 +85,7 @@ GET_READY_TO_DOCK_AT_VOLTS = 10.3
 
 DT_FORMAT = "%Y-%m-%d %H:%M:%S"
 
+NODE_VERSION = "5.0"
 
 class DaveNode(Node):
 

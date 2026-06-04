@@ -12,8 +12,8 @@
 #            with data format:  YYYY-MM-DD HH:MM:SS, nn.nnn
 #            (nn.nnn in volts)
 #
-# The logged value is the gopigo3 reported battery voltage, 
-#   which is 0.6v lower than the actual battery pack voltage
+# The logged value is the gopigo3 reported battery voltage plus rev_diode_drop, 
+#   of 0.6v to match the actual battery pack voltage
 #   due to the reverse polarity protection diode between the pack and gopigo3
 #
 
@@ -24,18 +24,21 @@ import subprocess
 import os
 from subprocess import call
 import csv
-import easygopigo3
+# import easygopigo3
 import sys
-# sys.path.append('/home/pi/Carl/plib')
-# import runLog
+sys.path.append('/home/ubuntu/LyricalDave/plib')
+from noinit_easygopigo3 import EasyGoPiGo3
+import runLog
 
-DIODE_DROP = 0.75  # reverse protection diode drop 0.7v usually
+# DIODE_DROP = 0.75  # reverse protection diode drop 0.7v usually
+DIODE_DROP = 0.6  # reverse protection diode drop to match ina219 2026
 
 # ### Create (protected) instance of EasyGoPiGo3 base class
-egpg = easygopigo3.EasyGoPiGo3(use_mutex=True)
+# egpg = easygopigo3.EasyGoPiGo3(use_mutex=True)
+egpg = EasyGoPiGo3(use_mutex=True, noinit=True)
 
-# runLog.logger.info("Starting logBattV.py at {0:0.2f}".format(egpg.volt()))
-print ("Starting logBattV.py at {0:0.2f}".format(egpg.volt()))
+runLog.logger.info("Starting logBattV.py at {0:0.2f}".format(egpg.volt()+DIODE_DROP))
+print ("Starting logBattV.py at {0:0.2f}".format(egpg.volt()+DIODE_DROP))
 
 header_csv = ("Date Time          ", "Battery Voltage")
 
@@ -82,7 +85,7 @@ try:
 
 
 except KeyboardInterrupt:
-        # runLog.logger.info("Exiting  logBattV.py at {0:0.2f}".format(egpg.volt()))
+        runLog.logger.info("Exiting  logBattV.py at {0:0.2f}".format(egpg.volt()))
         print("Exiting  logBattV.py at {0:0.2f}".format(egpg.volt()))
 
         print('\n')
