@@ -1,0 +1,21 @@
+Summary represents second discharge and second charge 
+shown in logVBatt plot  battlLife-20260603-1538.png
+
+*** LyricalDave Dave TOTAL LIFE STATISTICS ***
+This Life:    163.15  hrs (since 25 May 2026)
+Total Life:    9800.15  hrs (since 21 June 2021)
+Lyrical-Dave Playtimes (Undocked-Docked): 5
+Dockings This Life:  5
+Total Dockings:  2164
+New Battery Installed At Docking: 2159
+This Battery At Cycle:  5
+Average playtime (last three) 5.3 hrs 
+Average docked time (last three) 3.1 hrs 
+Sessions (boot):  12
+Average Session:  13.5 hrs
+Safety Shutdowns:  0
+Docking Failures:  0
+Total Travel:  107.6 meters 353.0 feet
+ 
+Last Undocking String:  2026-06-04 06:04|dave_node.py| ---- LyricalDave ROS 2 Undocking, Charge Current 96 mA 12.2v after 2.5 h charging
+Last Docking   String:  2026-06-04 03:34|dave_node.py| ---- LyricalDave ROS 2 Docking 2164 : success at battery 10.1v after 5.5 h playtime +
