@@ -25,6 +25,8 @@ Versions of Dave:
 - 2021-06  0.2  ROSbot-Dave (ROS2 Foxy)
 - 2019     0.1  ROS Kinetic (on Dave's hardware)
 
+[Remembering Dave's 1k run in the park](https://github.com/slowrunner/slowrunner.github.io/blob/ba15fcd3acea2f9eb4e33929baa72853d08e28b0/pages/ROS_2_GoPiGo3_1k_Run.md)
+
 ```
 === Code and Documentation Lines in /home/ubuntu/LyricalDave on 2026-06-04 ===
 *.py: 21689
