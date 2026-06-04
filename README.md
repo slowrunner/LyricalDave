@@ -24,3 +24,14 @@ Versions of Dave:
 - 2023-11  1.0  Humble-Dave
 - 2021-06  0.2  ROSbot-Dave (ROS2 Foxy)
 - 2019     0.1  ROS Kinetic (on Dave's hardware)
+
+```
+=== Code and Documentation Lines in /home/ubuntu/LyricalDave on 2026-06-04 ===
+*.py: 21689
+*.cpp: 108
+*.sh: 2814
+*.md: 2176
+*.txt: 754
+*.yaml: 3972
+Total Lines: 21689
+```
