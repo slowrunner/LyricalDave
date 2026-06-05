@@ -4,8 +4,8 @@ basedir=LyricalDave
 echo -e "\n*** Switching to ~/${basedir}/ros2ws"
 cd ~/$basedir/ros2ws
 
-echo -e "\n*** Sourcing /opt/ros/kilted/setup.bash"
-. /opt/ros/kilted/setup.bash
+echo -e "\n*** Sourcing /opt/ros/lyrical/setup.bash"
+. /opt/ros/lyrical/setup.bash
 
 echo -e "\n*** Sourcing install/setup.bash"
 . ~/$basedir/ros2ws/install/setup.bash
@@ -23,7 +23,7 @@ ros2 run ros2_gopigo3_node gopigo3_node --ros-args --params-file ./src/ros2_gopi
 
 # UNCOMMENT ONE OF THE ROBOT STATE AND JOINT STATE PUBLISHERS
 echo -e "\n*** Starting Robot_State and Joint_State Publishers"
-echo "*** with URDF file: kilteddave2.urdf"
+echo "*** with URDF file: lyricaldave2.urdf"
 ros2 launch ros2_gopigo3_node ros2_dave_state_and_joint.launch.py &
 
 # Uncomment to publish /distance_sensor/distance topic

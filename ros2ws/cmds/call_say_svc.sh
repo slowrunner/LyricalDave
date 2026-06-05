@@ -4,18 +4,22 @@ basedir=LyricalDave
 echo -e "\n*** Switching to ~/${basedir}/ros2ws"
 cd ~/$basedir/ros2ws
 
-echo -e "\n*** Sourcing /opt/ros/kilted/setup.bash"
-. /opt/ros/kilted/setup.bash
+echo -e "\n*** Sourcing /opt/ros/lyrical/setup.bash"
+. /opt/ros/lyrical/setup.bash
 
 echo -e "\n*** Sourcing install/setup.bash"
 . ~/$basedir/ros2ws/install/setup.bash
 
 
-if [ "$#" -ne 1 ] ;
-	then echo 'Usage:  ./call_say_svc.sh "string to speak" '
+if [ "$#" -ne 3 ] ;
+	then echo 'Usage:  ./call_say_svc.sh "string to speak" volume[20-100] anytime[True|False] '
 	exit
 fi
 
-echo -e "ros2 service call /say dave_interfaces/srv/Say \"${1}\""
+# echo -e "ros2 service call /say dave_interfaces/srv/Say \"${1}\""
 
-ros2 service call /say dave_interfaces/srv/Say "saystring:  '${1}'"
+# ros2 service call /say dave_interfaces/srv/Say "saystring:  '${1}'"
+
+echo -e "ros2 service call /say dave_interfaces/srv/Say \"{saystring: '${1}', volume: ${2}, anytime: ${3}}\""
+
+ros2 service call /say dave_interfaces/srv/Say "{saystring: '${1}', volume: ${2}, anytime: ${3}}"

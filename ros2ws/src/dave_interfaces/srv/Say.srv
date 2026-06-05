@@ -1,3 +1,5 @@
 string saystring
+int8   volume
+bool   anytime
 ---
 bool spoken

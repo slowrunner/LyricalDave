@@ -10,7 +10,7 @@ This file starts the needed 9 LyricalDave nodes (8 python processes in status.sh
 - dave_node             calls /dock when vBatt<10v, and calls /undock when charge current < -175mA
 - odometer              records ROS all /cmd_vel movement (does not record dock/undock movement)
 - joy_node              handles wireless F710 or SNES joy controller to publish /cmd_vel
-- say_node              TTS speech server offers /say {"phrase"} service
+- say_node              TTS speech server offers /say {"phrase" volume anytime} service
 - robot_state_publisher
   joint_state_publisher both started by ros2_dave_state_and_joint.launch.py
 
@@ -67,8 +67,8 @@ ros2 run ros2_gopigo3_node odometer &
 sleep 5
 
 # echo -e "\n*** Start dave.say_node"
-# echo '*** ros2 run dave say_node & '
-# ros2 run dave say_node &
+echo '*** ros2 run dave say_node & '
+ros2 run dave say_node &
 
 sleep 5
 
