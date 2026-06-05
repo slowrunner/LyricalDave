@@ -24,8 +24,8 @@
      - False do not speak the request during quiet hours  
 """
 
-# DEBUG = True
 DEBUG = False
+# DEBUG = True
 
 from dave_interfaces.srv import Say
 
@@ -66,7 +66,7 @@ class SayService(Node):
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
-        self.loghandler = logging.FileHandler('/home/ubuntu/LyricalDave/logs/speak.log')
+        self.loghandler = logging.FileHandler('/home/ubuntu/LyricalDave/logs/ros_speak.log')
 
         logformatter = logging.Formatter('%(asctime)s|%(message)s',"%Y-%m-%d %H:%M")
         self.loghandler.setFormatter(logformatter)
@@ -81,12 +81,13 @@ class SayService(Node):
         vol = request.volume
         anytime = request.anytime
 
+
         logStr='Say request:"{}" vol:{} anytime:{}'.format(text,vol,anytime)
         self.get_logger().info(logStr)
         if DEBUG: 
             dtstr = dt.datetime.now().strftime(DT_FORMAT)
             print(dtstr,logStr)
-
+            print("type(vol):",type(vol)," type(anytime):",type(anytime))
         # wav_file = wave.open(filename, 'w')
         # audio = voice.synthesize(text,wav_file)
         # if DEBUG:
@@ -96,15 +97,19 @@ class SayService(Node):
         # subprocess.check_output(['aplay -D plughw:2,0 -r 22050 -f S16_LE ' + filename], stderr=subprocess.STDOUT, shell=True)
         try:
             # os.system('aplay -D plughw:2,0 -r 22050 -f S16_LE ' + filename)
-            say(text,vol,anytime)
-            response.spoken = True
+            spoken=say(text,vol,anytime)
+            if (spoken != None):
+              response.spoken = spoken
+            else:
+              response.spoken = True
+              if DEBUG: print("response from say() was None, forcing True")
         except Exception as e:
             logStr = "Exception: {}".format(str(e))
             self.get_logger().info(logStr)
             response.spoken = False
         if DEBUG:
             dtstr = dt.datetime.now().strftime(DT_FORMAT)
-            print(dtstr,"say_node: after say()")
+            print(dtstr,"say_node: after say() spoken:",response.spoken)
 
         # if os.path.isfile(filename):  
         #     os.remove(filename)
@@ -112,7 +117,7 @@ class SayService(Node):
         #         dtstr = dt.datetime.now().strftime(DT_FORMAT)
         #         print(dtstr,"say_node: file removed")
 
-        self.logger.info(text + " - spoken: " + str(response.spoken) )
+        self.logger.info("say_node: " + text + " - spoken: " + str(response.spoken) )
 
         return response
 

@@ -15,7 +15,7 @@
 #           reduced speed to 150wpm (default was 175)
 #           switched to espeak-ng (supported, better quality)
 
-#  say(     phrase, vol=125,  anytime=False)
+#  say(     phrase, vol=125,  anytime=False) returns True if spoken aloud
 #  whisper( phrase, vol= 50,  anytime=True)
 #  shout(   phrase, vol=250,  anytime=False)
 
@@ -32,6 +32,7 @@ sys.path.append(HOME+'/plib')
 # import runLog
 import time
 debug = False
+# debug = True    # uncomment for debug operation
 import math
 import logging
 import os
@@ -81,6 +82,7 @@ def say_espeak(phrase,vol=100,anytime=False):
         # subprocess.check_output(['espeak-ng -s150 -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
         subprocess.check_output(['espeak-ng -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
     logger.info(phrase+spoken)
+    return (spoken == "")
 
 def say_piper(phrase,vol=75,anytime=False):
 
@@ -115,11 +117,12 @@ def say_piper(phrase,vol=75,anytime=False):
     logger.info(phrase+spoken)
 
 def say(phrase,vol=75,anytime=False):
-    say_espeak(phrase,vol,anytime)
+    spoken=say_espeak(phrase,vol,anytime)
     # vol = 50 for HP amplified spkr
     # vol = vol + 40  # adjust for flite
     # say_flite(phrase,vol,anytime)
     # say_piper(phrase,vol,anytime)
+    return spoken
 
 def shout(phrase,vol=100,anytime=False):
     say_espeak(phrase,vol,anytime)
