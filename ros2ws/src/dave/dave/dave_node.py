@@ -33,18 +33,14 @@
 
 
         Uses dave_interfaces.srv Say.srv to request say_node speak with Piper-TTS
-            string saystring
-            ---
-            bool spoken
+             string saystring
+             int8   volume
+             bool   anytime
+             ---
+             bool spoken
 
 
-        NODE_VERSION:
-            2026-06: 5.0  Lyrical-Dave
-            2025-05  4.0  Kilted-Dave
-            2025-04  3.0  HumbleDave2
-            2024-03  2.0  GoPi5Go-Dave
-            2023-11  1.0  Humble-Dave
-            2021-06  0.1  ROSbot-Dave
+        NODE_VERSION: 2026-06: 5.0 Lyrical-Dave 2025-05 4.0 Kilted-Dave 2025-04 3.0 HumbleDave2 2024-03 2.0 GoPi5Go-Dave 2023-11 1.0 Humble-Dave 2021-06 0.1 ROSbot-Dave
 """
 
 import rclpy
@@ -86,6 +82,7 @@ GET_READY_TO_DOCK_AT_VOLTS = 10.3
 DT_FORMAT = "%Y-%m-%d %H:%M:%S"
 
 NODE_VERSION = "5.0"
+
 
 class DaveNode(Node):
 
@@ -148,6 +145,8 @@ class DaveNode(Node):
         self.odom_reset_svc_client = self.create_client(Trigger, 'odom/reset')
         self.odom_reset_svc_req = None
         self.odom_reset_svc_future = None
+
+        self.sayMsg = Say.Request()
 
         self.say_svc_client = self.create_client(Say, 'say')
         self.say_svc_req = None
@@ -343,8 +342,10 @@ class DaveNode(Node):
                     try:
                         # Announce Undocking with say service
                         if self.say_svc_client.service_is_ready():
-                            sayMsg = "charging at {:d} milliamps, calling undock service ".format(int(abs(self.battery_state.milliamps)))
-                            self.send_say_svc_req(sayMsg)
+                            self.sayMsg.saystring = "charging at {:d} milliamps, calling undock service ".format(int(abs(self.battery_state.milliamps)))
+                            self.sayMsg.volume=10
+                            self.sayMsg.anytime=False
+                            self.send_say_svc_req(self.sayMsg)
                     except Exception as e:
                         dtstr = dt.datetime.now().strftime(DT_FORMAT)
                         printMsg = "Exception with say service: {}".format(str(e))
@@ -376,8 +377,10 @@ class DaveNode(Node):
                             try:
                                 # Announce odometry reset with say service
                                 if self.say_svc_client.service_is_ready():
-                                    sayMsg = "docking success, odometry reset to 0 0"
-                                    self.send_say_svc_req(sayMsg)
+                                    self.sayMsg.saystring = "docking success, odometry reset to 0 0"
+                                    self.sayMsg.volume=10
+                                    self.sayMsg.anytime=False
+                                    self.send_say_svc_req(self.sayMsg)
                             except Exception as e:
                                 dtstr = dt.datetime.now().strftime(DT_FORMAT)
                                 printMsg = "Exception with say service at odometry reset: {}".format(str(e))
@@ -396,8 +399,10 @@ class DaveNode(Node):
                     try:
                         # Announce transition to playtime with say service
                         if self.say_svc_client.service_is_ready():
-                            sayMsg = "transition to playtime, battery at {:.1f} volts".format(self.battery_state.volts)
-                            self.send_say_svc_req(sayMsg)
+                            self.sayMsg.saystring = "transition to playtime, battery at {:.1f} volts".format(self.battery_state.volts)
+                            self.sayMsg.volume=10
+                            self.sayMsg.anytime=False
+                            self.send_say_svc_req(self.sayMsg)
                     except Exception as e:
                         dtstr = dt.datetime.now().strftime(DT_FORMAT)
                         printMsg = "undocking: Exception with say service: {}".format(str(e))
@@ -412,8 +417,10 @@ class DaveNode(Node):
                     try:
                         # Announce Docking with say service
                         if self.say_svc_client.service_is_ready():
-                            sayMsg = "battery at {:.1f} volts, get ready to dock ".format(self.battery_state.volts)
-                            self.send_say_svc_req(sayMsg)
+                            self.sayMsg.saystring = "battery at {:.1f} volts, get ready to dock ".format(self.battery_state.volts)
+                            self.sayMsg.volume=10
+                            self.sayMsg.anytime=False
+                            self.send_say_svc_req(self.sayMsg)
                     except Exception as e:
                         dtstr = dt.datetime.now().strftime(DT_FORMAT)
                         printMsg = "playtime: Exception with say service: {}".format(str(e))
@@ -434,8 +441,10 @@ class DaveNode(Node):
                     try:
                         # Announce Docking with say service
                         if self.say_svc_client.service_is_ready():
-                            sayMsg = "battery at {:.1f} volts, calling dock service ".format(self.battery_state.volts)
-                            self.send_say_svc_req(sayMsg)
+                            self.sayMsg.saystring = "battery at {:.1f} volts, calling dock service ".format(self.battery_state.volts)
+                            self.sayMsg.volume=10
+                            self.sayMsg.anytime=False
+                            self.send_say_svc_req(self.sayMsg)
                     except Exception as e:
                         dtstr = dt.datetime.now().strftime(DT_FORMAT)
                         printMsg = "Exception with say service: {}".format(str(e))
@@ -471,8 +480,10 @@ class DaveNode(Node):
                     try:
                         # Announce Docking with say service
                         if self.say_svc_client.service_is_ready():
-                            sayMsg = "docking failure at {:.1f} volts, attempting fix".format(self.battery_state.volts)
-                            self.send_say_svc_req(sayMsg)
+                            self.sayMsg.saystring = "docking failure at {:.1f} volts, attempting fix".format(self.battery_state.volts)
+                            self.sayMsg.volume=20
+                            self.sayMsg.anytime=False
+                            self.send_say_svc_req(self.sayMsg)
                     except Exception as e:
                         dtstr = dt.datetime.now().strftime(DT_FORMAT)
                         printMsg = "Exception with say service: {}".format(str(e))

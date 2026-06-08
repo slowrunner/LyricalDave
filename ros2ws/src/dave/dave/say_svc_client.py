@@ -4,11 +4,13 @@
 
 
 """
-    Example of calling the say_node service to speak a phrase with Piper-TextToSpeech
+    Example of calling the say_node service to speak a TTS phrase 
 
 
     Uses dave_interfaces.srv Say.srv:
         string saystring
+        int8   volume
+        bool   anytime
         ---
         bool spoken
 
@@ -31,8 +33,10 @@ class MinimalClientAsync(Node):
             self.get_logger().info('service not available, waiting again...')
         self.req = Say.Request()
 
-    def send_request(self, phrase):
+    def send_request(self, phrase, volume=50, anytime=False):
         self.req.saystring = phrase
+        self.req.volume = volume
+        self.req.anytime = anytime
         return self.cli.call_async(self.req)
 
 
@@ -40,8 +44,8 @@ def main():
     rclpy.init()
 
     minimal_client = MinimalClientAsync()
-    phrase = "Say service client used the say node to speak this phrase"
-    future = minimal_client.send_request(phrase)
+    phrase = "Say service client used the say node to speak this phrase at volume 75, respecting quiet time"
+    future = minimal_client.send_request(phrase,volume=75,anytime=False)
     rclpy.spin_until_future_complete(minimal_client, future)
     response = future.result()
     minimal_client.get_logger().info(
