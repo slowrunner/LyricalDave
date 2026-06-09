@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Dock.srv"
   "srv/Undock.srv"
   "srv/DriveDistance.srv"
+  "srv/State.srv"
   "msg/BatteryState.msg"
   "msg/DockStatus.msg"
   DEPENDENCIES std_msgs

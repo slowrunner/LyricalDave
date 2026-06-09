@@ -7,7 +7,7 @@
 #
 #            includes optional vol parameter (range 10-500 useful)
 #            includes optional ignore (quietTime) parameter 
-#  May2026:  use espeak-ng
+#  May2026:  use espeak-ng -s250 -ven-us+f1 to sound more like a minion
 
 #  Aug2024: Changed to use piper-tts
 
@@ -80,7 +80,7 @@ def say_espeak(phrase,vol=100,anytime=False):
     else:
         # subprocess.check_output(['espeak -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
         # subprocess.check_output(['espeak-ng -s150 -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
-        subprocess.check_output(['espeak-ng -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
+        subprocess.check_output(['espeak-ng -s250 -ven-us+f1 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
     logger.info(phrase+spoken)
     return (spoken == "")
 

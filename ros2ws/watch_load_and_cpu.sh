@@ -20,6 +20,8 @@ do
   cpu=$(bc <<< "100 - $idle")
   echo -e "$d total cpu usage: $cpu% of RPi 4 CPU"
   echo " "
+  vcgencmd measure_temp && vcgencmd measure_clock arm && vcgencmd get_throttled; 
+  echo " "
   free -h
   echo " *** "
   echo " "

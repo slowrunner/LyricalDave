@@ -1,0 +1,6 @@
+# dave_interfaces.srv.State.srv 
+# Request
+---
+# Result
+string state
+string prior_state
