@@ -1,12 +1,12 @@
 #!/bin/bash
 
-botname="Humble Dave 2"
+botname="Lyrical-Dave"
 echo -e "\n********** $botname ROS2 GoPiGo3 Status ***********"; 
 echo -n `date +"%A %D"`; 
 echo ""; 
 uptime; 
 vcgencmd measure_temp && vcgencmd measure_clock arm && vcgencmd get_throttled; 
-# python3 /home/ubuntu/LyricalDave/plib/battery.py; 
+python3 /home/ubuntu/LyricalDave/plib/battery.py; 
 python3 /home/ubuntu/LyricalDave/plib/gopigo3_battery.py; 
 echo ""; 
 free -h; 

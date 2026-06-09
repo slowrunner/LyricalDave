@@ -20,16 +20,9 @@ setup(
     maintainer_email='slowrunner@noreply.com',
     author='mods Alan McDonley',
     keywords=['ROS'],
-    classifiers=[
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python',
-        'Topic :: Software Development',
-    ],
     description='A GoPiGo3 teleoperation node to convert keyboard'
                 'commands to Twist messages.',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'teleop_gopigo3_keyboard = teleop_gopigo3_keyboard:main'

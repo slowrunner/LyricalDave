@@ -20,15 +20,8 @@ setup(
     maintainer_email='slowrunner@noreply.com',
     author='slowrunner',
     keywords=['ROS'],
-    classifiers=[
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python',
-        'Topic :: Software Development',
-    ],
     description='A hack to publish camera images on Unbuntu 22.04',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'libcamera_jpg_pub = libcamera_jpg_pub:main'

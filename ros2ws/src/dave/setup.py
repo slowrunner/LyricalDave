@@ -17,7 +17,6 @@ setup(
     maintainer_email='slowrunner@users.noreply.github.com',
     description='Collection of Dave specific nodes',
     license='wild abandon',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'say_node = dave.say_node:main',
