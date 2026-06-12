@@ -1,0 +1,16 @@
+---
+name: hello dave
+match: ^hello dave$
+run: cmds/say.sh "Howdy"
+---
+name: good evening dave
+match: ^good evening dave$
+run: cmds/say.sh "Evening"
+---
+name: hi dave
+match: ^hi dave$
+run: cmds/say.sh "Hello" 
+---
+name: good morning dave
+match: ^good morning dave$
+run: cmds/say.sh "Morning"

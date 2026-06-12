@@ -163,10 +163,13 @@ def main():
                 "hey dave", 
                 "hello dave", 
                 "hi dave", 
+                "shalom dave", 
                 "good morning dave", 
+                "boker tov dave", 
                 "good afternoon dave", 
                 "good evening dave", 
                 "good night dave", 
+                "lie la tov dave", 
                 "[unk]"
                 ]'''
 
@@ -191,10 +194,20 @@ def main():
                       response=rhr.get_filtered_response()
                       print(response)
                       speak.say(response,anytime=ANYTIME)
+                    elif "shalom dave" in result:
+                      logger.info("shalom dave")
+                      print("shalom")
+                      speak.say("[[sh'ahLohm]]",anytime=ANYTIME)
+                      sleep(5)  # prevent feedback
                     elif "good morning dave" in result:
                       logger.info("good morning dave")
                       print("good morning to you")
                       speak.say("good morning to you",anytime=ANYTIME)
+                      sleep(5)  # prevent feedback
+                    elif "boker tov dave" in result:
+                      logger.info("boker tov dave")
+                      print("boker tov")
+                      speak.say("bokair tov ",anytime=ANYTIME)
                       sleep(5)  # prevent feedback
                     elif "good afternoon dave" in result:
                       logger.info("good afternoon dave")

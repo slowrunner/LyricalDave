@@ -8,8 +8,9 @@ echo "*** Executing rebuild.sh ***"
 echo "*** cd ~/LyricalDave/ros2ws"
 cd ~/LyricalDave/ros2ws
 
-echo "*** rosdep install -i --from-path src"
-rosdep install -i --from-path src
+# echo "*** rosdep install -i --from-path src"
+echo "*** rosdep install -i --from-path src --ignore-src -r -y"
+rosdep install -i --from-path src --ignore-src -r -y
 
 colcon build
 
