@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<root BTCPP_format="4">
+
+  <!-- ======================================================================
+       MAIN TREE
+       Three parallel branches, all must keep running (ParallelAll):
+         1. STT result subscriber  -> pushes onto stt_queue blackboard
+         2. Battery state subscriber -> updates battery_state blackboard
+         3. HelloDave dialog subtree -> matches grammar & responds
+  ======================================================================= -->
+  <BehaviorTree ID="MainTree">
+    <ParallelAll>
+
+      <KeepRunningUntilFailure>
+        <SttResultSubscriber topic_name="/stt/result"/>
+      </KeepRunningUntilFailure>
+
+      <KeepRunningUntilFailure>
+        <BatteryStateSubscriber topic_name="/battery_state"/>
+      </KeepRunningUntilFailure>
+
+      <SubTree ID="HelloDaveDialog"/>
+
+    </ParallelAll>
+  </BehaviorTree>
+
+
+  <!-- ======================================================================
+       HELLO DAVE DIALOG SUBTREE
+       Repeats forever. Each tick tries (in order):
+         1. Match newest single stt_queue entry against grammar
+         2. Match oldest pair of entries (split-phrase across two messages)
+         3. If queue stale/full and nothing matched, discard oldest entry
+         4. Otherwise do nothing this tick
+  ======================================================================= -->
+  <BehaviorTree ID="HelloDaveDialog">
+    <Repeat num_cycles="-1">
+      <ReactiveFallback>
+
+        <!-- Branch 1: single newest entry -->
+        <Sequence>
+          <CheckSttQueueNonEmpty/>
+          <MatchGrammar window="1"
+                        matched_phrase="{matched_phrase}"
+                        consumed_count="{consumed_count}"/>
+          <SubTree ID="DispatchResponse"
+                   matched_phrase="{matched_phrase}"
+                   consumed_count="{consumed_count}"/>
+        </Sequence>
+
+        <!-- Branch 2: oldest pair (split phrase) -->
+        <Sequence>
+          <CheckSttQueueSize min_size="2"/>
+          <MatchGrammar window="2"
+                        matched_phrase="{matched_phrase}"
+                        consumed_count="{consumed_count}"/>
+          <SubTree ID="DispatchResponse"
+                   matched_phrase="{matched_phrase}"
+                   consumed_count="{consumed_count}"/>
+        </Sequence>
+
+        <!-- Branch 3: nothing matched -> discard stale/full entry -->
+        <Sequence>
+          <CheckSttQueueStaleOrFull/>
+          <RemoveSttEntries count="1"/>
+        </Sequence>
+
+        <!-- Branch 4: nothing to do -->
+        <AlwaysSuccess/>
+
+      </ReactiveFallback>
+    </Repeat>
+  </BehaviorTree>
+
+
+  <!-- ======================================================================
+       DISPATCH RESPONSE SUBTREE
+       Given a matched_phrase + consumed_count:
+         - Fixed, no-processing phrases -> SayFixed directly (data-driven
+           from YAML "responses.fixed" map, read inside SayFixed node)
+         - Greeting phrases -> SayRandomGreeting (anti-repeat picker)
+         - Battery phrase -> BuildBatteryReport + SayService
+       In all cases: log to heard.log, then remove consumed entries.
+  ======================================================================= -->
+  <BehaviorTree ID="DispatchResponse">
+    <Sequence>
+
+      <LogHeard phrase="{matched_phrase}"/>
+
+      <Fallback>
+
+        <!-- Greeting phrases: random anti-repeat response -->
+        <Sequence>
+          <CheckPhraseInList phrase="{matched_phrase}" list_key="greeting_phrases"/>
+          <SayRandomGreeting/>
+        </Sequence>
+
+        <!-- Battery report: built from blackboard battery_state -->
+        <Sequence>
+          <CheckPhraseInList phrase="{matched_phrase}" list_key="battery_phrases"/>
+          <BuildBatteryReport report_text="{report_text}"/>
+          <SayService saystring="{report_text}" volume="50" anytime="true"
+                       service_name="/say"/>
+        </Sequence>
+
+        <!-- Everything else: fixed phrase/response from YAML "fixed" map -->
+        <Sequence>
+          <SayFixed phrase="{matched_phrase}" service_name="/say"/>
+        </Sequence>
+
+      </Fallback>
+
+      <RemoveSttEntries count="{consumed_count}"/>
+
+    </Sequence>
+  </BehaviorTree>
+
+</root>
