@@ -1,0 +1,33 @@
+launch:
+
+  # ---------------------------------------------------------------------
+  # Speech-to-text server (voskros). The Hello Dave lifecycle node will
+  # retry /stt/set_grammar until this is ready (~10s typical startup).
+  # ---------------------------------------------------------------------
+  - include:
+      file: $(find-pkg-share voskros)/launch/voskros.launch.yaml
+
+  # ---------------------------------------------------------------------
+  # Text-to-speech server  (Part of Dave, already running)
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # Battery state publisher (Part of Dave, already running))
+  # ---------------------------------------------------------------------
+
+  # ---------------------------------------------------------------------
+  # Hello Dave dialog BT lifecycle node
+  # ---------------------------------------------------------------------
+  - node:
+      pkg: bt_hello_dave
+      exec: hello_dave_lifecycle_node
+      name: hello_dave_bt
+      param:
+        - name: grammar_yaml
+          value: /home/ubuntu/LyricalDave/ros2ws/params/bt_hello_dave_grammar.yaml
+        - name: bt_xml
+          value: /home/ubuntu/LyricalDave/ros2ws/params/bt_hello_dave_tree.xml
+        - name: heard_log_path
+          value: /home/ubuntu/LyricalDave/logs/heard.log
+        - name: tick_period_ms
+          value: 100

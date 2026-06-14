@@ -1,0 +1,96 @@
+grammar:
+  list:
+    - "hey dave"
+    - "hello dave"
+    - "hi dave"
+    - "shalom dave"
+    - "bokair tov dave"
+    - "good morning dave"
+    - "good afternoon dave"
+    - "good evening dave"
+    - "good night dave"
+    - "lie lah tov dave"
+    - "go to sleep dave"
+    - "wake up dave"
+    - "battery state dave"
+    - "[unk]"
+
+responses:
+  normal_volume: 50
+  sleep_wake_volume: 75
+
+  # Phrases handled by SayFixed nodes directly in the BT XML
+  # (no C++ processing / service-only flow)
+  fixed:
+    "shalom dave":
+      text: "[[sh'ahLohm]]"
+      volume: 50
+      anytime: false
+      post_delay: 5.0
+    "bokair tov dave":
+      text: "bokair tov"
+      volume: 50
+      anytime: false
+      post_delay: 5.0
+    "good morning dave":
+      text: "good morning to you"
+      volume: 50
+      anytime: false
+      post_delay: 5.0
+    "good afternoon dave":
+      text: "good afternoon to you"
+      volume: 50
+      anytime: false
+      post_delay: 5.0
+    "good evening dave":
+      text: "good evening to you"
+      volume: 50
+      anytime: false
+      post_delay: 5.0
+    "good night dave":
+      text: "good night, I'll be going to sleep now"
+      volume: 50
+      anytime: true
+      post_delay: 0.0
+      sets_sleep_mode: true
+    "lie lah tov dave":
+      text: "lie la tov, going to sleep now"
+      volume: 50
+      anytime: true
+      post_delay: 0.0
+      sets_sleep_mode: true
+    "go to sleep dave":
+      text: "Going To Sleep Now"
+      volume: 75
+      anytime: true
+      post_delay: 0.0
+      sets_sleep_mode: true
+    "wake up dave":
+      text: "I am awake now"
+      volume: 75
+      anytime: true
+      post_delay: 0.0
+      clears_sleep_mode: true
+
+# Phrases that trigger SayRandomGreeting (custom logic, anti-repeat picker)
+greeting_phrases:
+  - "hey dave"
+  - "hello dave"
+  - "hi dave"
+
+# Phrases that trigger BuildBatteryReport (custom logic, blackboard read)
+battery_phrases:
+  - "battery state dave"
+
+random_pool:
+  - "Hello."
+  - "Hi."
+  - "Greetings."
+  - "Hello there."
+  - "Back at ya."
+  - "Ready to slay dragons."
+  - "[[sh'ahLohm]]"
+  - "Yo."
+  - "I'm here."
+  - "What's up."
+  - "Did you bring me something?"
