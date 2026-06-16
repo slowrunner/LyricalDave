@@ -4,7 +4,7 @@ grammar:
     - "hello dave"
     - "hi dave"
     - "shalom dave"
-    - "bokair tov dave"
+    - "bok air tov dave"
     - "good morning dave"
     - "good afternoon dave"
     - "good evening dave"
@@ -27,7 +27,7 @@ responses:
       volume: 50
       anytime: false
       post_delay: 5.0
-    "bokair tov dave":
+    "bok air tov dave":
       text: "bokair tov"
       volume: 50
       anytime: false
