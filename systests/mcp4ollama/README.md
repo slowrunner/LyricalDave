@@ -14,6 +14,8 @@ pip3 install mcp ollama
 - get_gopigo3_vbatt
 
 3) Add tools to ollama_mcp_client.py
+(hack: only checking first tool if more than one in prompt)
+
 
 4) Run ollama_mcp_client.py
 - ask "What time is it now?"
