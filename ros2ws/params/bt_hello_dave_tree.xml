@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<root BTCPP_format="4" main_tree_to_execute="MainTree>>
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
 
   <!-- ======================================================================
        MAIN TREE
@@ -80,7 +80,7 @@
            awake or asleep).
          - CheckSleepModeBlocksResponse then gates the actual response:
            if Dave is asleep and the phrase isn't "wake up dave", the
-           response Fallback is skipped entirely -- the phrase was
+           response Fallback is skipped entirely; the phrase was
            logged but not acted upon.
          - Otherwise, dispatch as before:
              - Fixed, no-processing phrases -> SayFixed directly (data-driven

@@ -31,7 +31,7 @@ std::string MatchGrammar::normalize(std::string s)
 
 BT::NodeStatus MatchGrammar::tick()
 {
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
 
   int window = 1;
   getInput("window", window);
@@ -51,7 +51,7 @@ BT::NodeStatus MatchGrammar::tick()
     candidate_text = normalize(queue[0].text) + " " + normalize(queue[1].text);
   }
 
-  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("grammar_store");
+  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("@grammar_store");
   YAML::Node grammar = store->snapshot();
 
   std::vector<std::string> phrases;

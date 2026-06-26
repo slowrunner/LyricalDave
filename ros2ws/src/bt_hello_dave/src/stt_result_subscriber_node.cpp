@@ -35,12 +35,12 @@ BT::NodeStatus SttResultSubscriber::onTick(
     RCLCPP_INFO(node->get_logger(), "stt_result received: '%s'", entry.text.c_str());
   }
 
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
   queue.push_back(entry);
   while (queue.size() > MAX_QUEUE_SIZE) {
     queue.pop_front();
   }
-  config().blackboard->set("stt_queue", queue);
+  config().blackboard->set("@stt_queue", queue);
 
   return BT::NodeStatus::SUCCESS;
 }

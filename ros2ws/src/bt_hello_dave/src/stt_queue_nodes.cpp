@@ -23,7 +23,7 @@ BT::PortsList CheckSttQueueNonEmpty::providedPorts()
 
 BT::NodeStatus CheckSttQueueNonEmpty::tick()
 {
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
   return queue.empty() ? BT::NodeStatus::FAILURE : BT::NodeStatus::SUCCESS;
 }
 
@@ -47,7 +47,7 @@ BT::NodeStatus CheckSttQueueSize::tick()
   int min_size = 1;
   getInput("min_size", min_size);
 
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
   return static_cast<int>(queue.size()) >= min_size
     ? BT::NodeStatus::SUCCESS
     : BT::NodeStatus::FAILURE;
@@ -70,7 +70,7 @@ BT::PortsList CheckSttQueueStaleOrFull::providedPorts()
 
 BT::NodeStatus CheckSttQueueStaleOrFull::tick()
 {
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
   if (queue.empty()) {
     return BT::NodeStatus::FAILURE;
   }
@@ -103,11 +103,11 @@ BT::NodeStatus RemoveSttEntries::tick()
   int count = 1;
   getInput("count", count);
 
-  auto queue = config().blackboard->get<SttQueue>("stt_queue");
+  auto queue = config().blackboard->get<SttQueue>("@stt_queue");
   for (int i = 0; i < count && !queue.empty(); ++i) {
     queue.pop_front();
   }
-  config().blackboard->set("stt_queue", queue);
+  config().blackboard->set("@stt_queue", queue);
 
   return BT::NodeStatus::SUCCESS;
 }

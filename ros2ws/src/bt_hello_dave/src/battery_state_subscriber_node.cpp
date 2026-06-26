@@ -38,7 +38,7 @@ BT::NodeStatus BatteryStateSubscriber::onTick(
     entry.ros_time = node->now();
   }
 
-  config().blackboard->set("battery_state", entry);
+  config().blackboard->set("@battery_state", entry);
 
   return BT::NodeStatus::SUCCESS;
 }

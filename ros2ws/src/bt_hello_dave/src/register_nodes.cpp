@@ -50,6 +50,7 @@ void registerAllNodes(
   BT::RosNodeParams say_params;
   say_params.nh = node;
   say_params.default_port_value = "/say";
+  say_params.server_timeout = std::chrono::milliseconds(3000);
   factory.registerNodeType<SayService>("SayService", say_params);
   factory.registerNodeType<SayFixed>("SayFixed", say_params);
   factory.registerNodeType<SayRandomGreeting>("SayRandomGreeting", say_params);

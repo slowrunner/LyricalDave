@@ -30,7 +30,7 @@ BT::NodeStatus CheckSleepModeBlocksResponse::tick()
 {
   bool sleep_mode = false;
   try {
-    sleep_mode = config().blackboard->get<bool>("sleep_mode");
+    sleep_mode = config().blackboard->get<bool>("@sleep_mode");
   } catch (...) {
     sleep_mode = false;
   }
@@ -116,7 +116,7 @@ BT::NodeStatus CheckPhraseInList::tick()
   getInput("phrase", phrase);
   getInput("list_key", list_key);
 
-  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("grammar_store");
+  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("@grammar_store");
   YAML::Node grammar = store->snapshot();
 
   YAML::Node list = grammar[list_key];
@@ -189,7 +189,7 @@ std::string SayRandomGreeting::pickRandomResponse(const YAML::Node & grammar)
 
 bool SayRandomGreeting::setRequest(typename dave_interfaces::srv::Say::Request::SharedPtr & request)
 {
-  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("grammar_store");
+  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("@grammar_store");
   YAML::Node grammar = store->snapshot();
 
   int normal_volume = 50;
@@ -236,7 +236,7 @@ BT::NodeStatus BuildBatteryReport::tick()
 {
   BatteryStateEntry bs;
   try {
-    bs = config().blackboard->get<BatteryStateEntry>("battery_state");
+    bs = config().blackboard->get<BatteryStateEntry>("@battery_state");
   } catch (...) {
     setOutput("report_text", "Battery state is currently unavailable.");
     return BT::NodeStatus::SUCCESS;
@@ -301,7 +301,7 @@ bool SayFixed::setRequest(typename dave_interfaces::srv::Say::Request::SharedPtr
     return false;
   }
 
-  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("grammar_store");
+  auto store = config().blackboard->get<std::shared_ptr<GrammarStore>>("@grammar_store");
   YAML::Node grammar = store->snapshot();
 
   YAML::Node entry = grammar["responses"]["fixed"][phrase];
@@ -328,10 +328,10 @@ BT::NodeStatus SayFixed::onResponseReceived(
   const typename dave_interfaces::srv::Say::Response::SharedPtr & /*response*/)
 {
   if (sets_sleep_mode_) {
-    config().blackboard->set("sleep_mode", true);
+    config().blackboard->set("@sleep_mode", true);
   }
   if (clears_sleep_mode_) {
-    config().blackboard->set("sleep_mode", false);
+    config().blackboard->set("@sleep_mode", false);
   }
   return BT::NodeStatus::SUCCESS;
 }
