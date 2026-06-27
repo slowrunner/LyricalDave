@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# MODIFIED by slowrunner:  wait_passively implementation
+# MODIFIED by slowrunner:  wait_passively implementation and speak using espeak-ng
 
 """A native (non-ROS) GoPiGo3 URML adapter, for Discussion #523.
 
@@ -17,7 +17,7 @@ machine; the real library is only needed when you actually move a robot.
 Everything else on the substrate surface (grasp, dock, detect, capture, listen,
 the drone verbs) is returned as not-supported, not raised, exactly as the other
 zero-ROS educational adapters do: a basic GoPiGo3 has no arm, no camera pipeline,
-no speaker beyond espeak. Add them by extending this class.
+no speaker beyond espeak-ng. Add them by extending this class.
 
 Run it with ``run_gopigo3.py``, which binds to the real ``easygopigo3`` when the
 GoPiGo3 software is installed and falls back to a fake otherwise (no edits either
@@ -58,7 +58,7 @@ _NOT_APPLICABLE = "not_applicable_ground: {capability} has no meaning for a grou
 def _espeak(utterance: str) -> None:
     """Default speech backend: espeak on the Pi.
 
-    Speaks the utterance via espeak, and says so out loud (on stderr) when it
+    Speaks the utterance via espeak-ng, and says so out loud (on stderr) when it
     cannot, so a silent robot is explained rather than mysterious. If your robot
     has its own speech path (for example a ROS say node), pass your own callable
     as ``GoPiGo3Adapter(speak=...)`` instead of relying on espeak.
@@ -77,7 +77,7 @@ def _espeak(utterance: str) -> None:
         return
     if result.returncode != 0:
         print(
-            f"[gopigo3 speak] espeak exited {result.returncode}; {utterance!r} may "
+            f"[gopigo3 speak] espeak-ng exited {result.returncode}; {utterance!r} may "
             "not have been audible (check the Pi's audio output device).",
             file=sys.stderr,
         )
@@ -99,7 +99,7 @@ class GoPiGo3Adapter:
     Implements ``drive_by`` / ``turn_by`` (RFC-0630 RelativeMotionAdapter), so a
     ``URMLRuntime`` dispatches ``drive`` / ``turn`` here, plus ``emit_speech`` and
     ``emit_report``. ``speak`` is injectable (``speak=...``) so tests can record
-    it and a deployment can swap espeak for another backend.
+    it and a deployment can swap espeak-ng for another backend.
     """
 
     BRAND = "gopigo3"
