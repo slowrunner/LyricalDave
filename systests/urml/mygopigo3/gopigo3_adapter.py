@@ -63,8 +63,11 @@ def _espeak(utterance: str) -> None:
     has its own speech path (for example a ROS say node), pass your own callable
     as ``GoPiGo3Adapter(speak=...)`` instead of relying on espeak.
     """
+    result=0
     try:
-        result = subprocess.run(["espeak-ng", utterance], check=False)
+        # result = subprocess.run(["espeak", utterance], check=False)
+        result = subprocess.run(['espeak-ng "%s"' % utterance], shell=True)
+
     except FileNotFoundError:
         print(
             f"[gopigo3 speak] espeak-ng is not installed, so {utterance!r} was not "
@@ -102,7 +105,8 @@ class GoPiGo3Adapter:
     BRAND = "gopigo3"
 
     def __init__(self, *, speak: Callable[[str], None], wait_passively: Callable[[float], None] | None = None) -> None:
-        self._speak = speak or _espeak
+        # self._speak = speak or _espeak
+        self._speak = _espeak or speak
         self._wait_passively = _wait_passively
         self._gpg: Any = None
         self._reports: list[dict[str, Any]] = []
