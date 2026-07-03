@@ -1,0 +1,17 @@
+profile: educational
+behavior:
+  type: sequence
+  on_error: abort_and_report
+  steps:
+  - speak:
+      utterance: Measuring distance
+  - wait:
+      duration: 3
+  - measure:
+      sensor: distance
+      what: distance
+      store_as: dist_value
+  - wait:
+      duration: 3
+  - speak:
+      utterance: The distance was dist_value.

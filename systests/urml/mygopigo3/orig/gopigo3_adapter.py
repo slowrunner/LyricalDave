@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-# MODIFIED by slowrunner:  wait_passively implementation and speak using espeak-ng
-# Incorporates commit 3b86cf6 for Discussion #572
-
 """A native (non-ROS) GoPiGo3 URML adapter, for Discussion #523.
 
 @slowrunner asked for an example runtime that drives a basic GoPiGo3 from a
@@ -18,7 +15,7 @@ machine; the real library is only needed when you actually move a robot.
 Everything else on the substrate surface (grasp, dock, detect, capture, listen,
 the drone verbs) is returned as not-supported, not raised, exactly as the other
 zero-ROS educational adapters do: a basic GoPiGo3 has no arm, no camera pipeline,
-no speaker beyond espeak-ng. Add them by extending this class.
+no speaker beyond espeak. Add them by extending this class.
 
 Run it with ``run_gopigo3.py``, which binds to the real ``easygopigo3`` when the
 GoPiGo3 software is installed and falls back to a fake otherwise (no edits either
@@ -29,11 +26,9 @@ https://github.com/DexterInd/GoPiGo3/blob/main/Installation_FAQ.md
 
 from __future__ import annotations
 
-import math
 import subprocess
 import sys
 from typing import Any, Callable, Literal
-from time import sleep
 
 from urml_ros2_runtime.substrate.base import (
     CaptureResult,
@@ -60,39 +55,26 @@ _NOT_APPLICABLE = "not_applicable_ground: {capability} has no meaning for a grou
 def _espeak(utterance: str) -> None:
     """Default speech backend: espeak on the Pi.
 
-    Speaks the utterance via espeak-ng, and says so out loud (on stderr) when it
+    Speaks the utterance via espeak, and says so out loud (on stderr) when it
     cannot, so a silent robot is explained rather than mysterious. If your robot
     has its own speech path (for example a ROS say node), pass your own callable
     as ``GoPiGo3Adapter(speak=...)`` instead of relying on espeak.
     """
-    result=0
     try:
-        # result = subprocess.run(["espeak", utterance], check=False)
-        result = subprocess.run(['espeak-ng "%s"' % utterance], shell=True)
-
+        result = subprocess.run(["espeak", utterance], check=False)
     except FileNotFoundError:
         print(
-            f"[gopigo3 speak] espeak-ng is not installed, so {utterance!r} was not "
-            "spoken. Install espeak-ng, or pass a speak= backend to GoPiGo3Adapter.",
+            f"[gopigo3 speak] espeak is not installed, so {utterance!r} was not "
+            "spoken. Install espeak, or pass a speak= backend to GoPiGo3Adapter.",
             file=sys.stderr,
         )
         return
     if result.returncode != 0:
         print(
-            f"[gopigo3 speak] espeak-ng exited {result.returncode}; {utterance!r} may "
+            f"[gopigo3 speak] espeak exited {result.returncode}; {utterance!r} may "
             "not have been audible (check the Pi's audio output device).",
             file=sys.stderr,
         )
-
-def _wait_passively(duration_seconds: float) -> None:
-   """ Default wait backend: using OS sleep().
-   """
-   try:
-      result = sleep(duration_seconds)
-   except Exception as e:
-      print(f"_wait_passively exception: {e}")
-
-
 
 
 class GoPiGo3Adapter:
@@ -101,15 +83,13 @@ class GoPiGo3Adapter:
     Implements ``drive_by`` / ``turn_by`` (RFC-0630 RelativeMotionAdapter), so a
     ``URMLRuntime`` dispatches ``drive`` / ``turn`` here, plus ``emit_speech`` and
     ``emit_report``. ``speak`` is injectable (``speak=...``) so tests can record
-    it and a deployment can swap espeak-ng for another backend.
+    it and a deployment can swap espeak for another backend.
     """
 
     BRAND = "gopigo3"
 
-    def __init__(self, *, speak: Callable[[str], None], wait_passively: Callable[[float], None] | None = None) -> None:
-        # self._speak = speak or _espeak
-        self._speak = _espeak or speak
-        self._wait_passively = _wait_passively
+    def __init__(self, *, speak: Callable[[str], None] | None = None) -> None:
+        self._speak = speak or _espeak
         self._gpg: Any = None
         self._reports: list[dict[str, Any]] = []
         self.call_log: list[dict[str, Any]] = []
@@ -165,14 +145,12 @@ class GoPiGo3Adapter:
         """Drive a signed distance (m). With `arc` (signed degrees) follow a curve."""
         gpg = self._robot()
         cm = distance * 100.0
-        if arc is None or arc == 0:
+        if arc is None:
             gpg.drive_cm(cm)
             hw = f"drive_cm({cm:.1f})"
         else:
-            # RFC-0630: `distance` is the path length swept over `arc` degrees, so
-            # the arc radius is distance / arc-in-radians. easygopigo3.orbit takes
-            # (degrees, radius_cm), a radius, not a path length.
-            radius_cm = abs(cm) / abs(math.radians(arc))
+            # easygopigo3.orbit(degrees, radius_cm) sweeps an arc.
+            radius_cm = abs(cm)
             gpg.orbit(arc, radius_cm)
             hw = f"orbit({arc:.1f}, {radius_cm:.1f})"
         self.call_log.append({"method": "drive_by", "distance": distance, "arc": arc, "hw": hw})
@@ -215,7 +193,6 @@ class GoPiGo3Adapter:
         return SubstrateResult(success=True)
 
     def wait_passively(self, *, duration_seconds: float) -> SubstrateResult:
-        self._wait_passively(duration_seconds)
         self.call_log.append({"method": "wait_passively", "duration_seconds": duration_seconds})
         return SubstrateResult(success=True)
 

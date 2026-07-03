@@ -1,0 +1,14 @@
+{
+  "profile": "educational",
+  "behavior": {
+    "type": "sequence",
+    "on_error": "abort_and_report",
+    "steps": [
+      {
+        "speak": {
+          "utterance": "Executing a URML program"
+        }
+      }
+    ]
+  }
+}

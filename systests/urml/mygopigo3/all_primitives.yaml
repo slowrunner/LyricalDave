@@ -1,0 +1,58 @@
+profile: educational
+behavior:
+  type: sequence
+  on_error: abort_and_report
+  steps:
+  - speak:
+      utterance: wait 5 seconds
+  - wait:
+      duration: 5
+
+  - speak:
+      utterance: drive 10cm
+  - drive:
+      distance: 0.1
+
+  - speak:
+      utterance: measure
+  - measure:
+
+  - speak:
+      utterance: wait_for
+  - wait_for
+
+  - speak:
+      utterance: capture
+  - capture
+
+  - speak:
+      utterance: scan
+  - scan
+
+  - speak:
+      utterance: grasp
+  - grasp
+
+  - speak:
+      utterance: move_to
+  - move_to:
+      location: dock_ready
+
+  - speak:
+      utterance: dock
+  - dock
+
+  - speak:
+      utterance: hover
+  - hover
+
+  - speak:
+      utterance: report
+  - report
+
+
+
+
+
+
+

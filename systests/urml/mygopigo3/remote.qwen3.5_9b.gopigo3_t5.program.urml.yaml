@@ -1,0 +1,16 @@
+profile:
+- educational
+behavior:
+  type: sequence
+  on_error: abort_and_report
+  steps:
+  - report:
+      status: failure
+      facts:
+        reason: DriveArgs does not support a radius parameter - only arc angle (degrees
+          swept over distance). The user requests specific radii (5cm, 10cm) which
+          are undeclared capabilities. A `drive` primitive sweeps an arc based on
+          angle+distance combination rather than explicit radius specification per
+          the manifest schema.
+  - turn:
+      angle: -90
