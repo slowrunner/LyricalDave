@@ -1,0 +1,33 @@
+profile:
+- educational
+behavior:
+  type: sequence
+  on_error: abort_and_report
+  steps:
+  - wait_for:
+      condition:
+        sensor_threshold:
+          sensor: distance
+          op: gt
+          value: 0.3
+      on_timeout: continue
+  - speak:
+      utterance: I'm going to explore now
+  - drive:
+      distance: 1.5
+      speed: 0.15
+  - wait_for:
+      condition:
+        sensor_threshold:
+          sensor: distance
+          op: lte
+          value: 20.0
+      on_timeout: continue
+  - speak:
+      utterance: Obstacle AHEAD!
+  - wait:
+      duration: 5.0
+  - turn:
+      angle: 180
+  - speak:
+      utterance: Nobody better bother me here.

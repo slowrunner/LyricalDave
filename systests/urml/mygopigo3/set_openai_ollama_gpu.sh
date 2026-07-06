@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    echo "!!! Must use:  . set_openai_ollama_remote.sh"
+    exit 0
+fi
+
+model="qwen3.5:9b"
+
+# export OPENAI_BASE_URL="http://10.0.0.78:11434/v1"  # VM on Mac
+export OPENAI_BASE_URL="http://10.0.0.226:11434/v1"   # VM on Windows box
+
+echo -e "OPENAI_BASE_URL set to $OPENAI_BASE_URL"
+
+# export OPENAI_API_KEY="qwen2.5:3b"
+# export OPENAI_API_KEY="qwen3.5:4b"
+# export OPENAI_API_KEY="qwen3.5:9b"
+# export OPENAI_API_KEY="ssfdre38/gemma4-nano:latest"
+# export OPENAI_API_KEY="ibm/granite4.1:3b"
+# export OPENAI_API_KEY="gemma4:e4b"
+# export OPENAI_API_KEY="gemma2:9b"
+export OPENAI_API_KEY=$model
+echo -e "OPENAI_API_KEY set to $model"
+
+export URML_OPENAI_TIMEOUT=2400
+echo -e "URML_OPENAI_TIMEOUT set to $URML_OPENAI_TIMEOUT"

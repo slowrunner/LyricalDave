@@ -3,8 +3,6 @@
 # The worked example from Discussion #523, where @slowrunner asked for a native,
 # non-ROS GoPiGo3-URML runtime headstart.
 #
-# With mod by @slowrunner to enable espeak-ng TTS available on all properly setup GoPiGo3
-#
 # The GoPiGo3 is frameless (dead reckoning), so its natural vocabulary is
 # "drive forward X" and "turn X degrees", not "go to the kitchen". URML expresses
 # that with the RFC-0630 `drive` / `turn` primitives, gated by the `educational`
@@ -36,6 +34,3 @@ outputs:
   named_endpoints:
     - speech                   # `speak` / "announce" -> espeak on the Pi
     - run_log
-
-language:
-    tts_engine_class: espeak

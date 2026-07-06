@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-# MODIFIED by slowrunner:  wait_passively implementation and speak using espeak-ng
-# Incorporates commit 3b86cf6 for Discussion #572
-
 """A native (non-ROS) GoPiGo3 URML adapter, for Discussion #523.
 
 @slowrunner asked for an example runtime that drives a basic GoPiGo3 from a
@@ -18,7 +15,7 @@ machine; the real library is only needed when you actually move a robot.
 Everything else on the substrate surface (grasp, dock, detect, capture, listen,
 the drone verbs) is returned as not-supported, not raised, exactly as the other
 zero-ROS educational adapters do: a basic GoPiGo3 has no arm, no camera pipeline,
-no speaker beyond espeak-ng. Add them by extending this class.
+no speaker beyond espeak. Add them by extending this class.
 
 Run it with ``run_gopigo3.py``, which binds to the real ``easygopigo3`` when the
 GoPiGo3 software is installed and falls back to a fake otherwise (no edits either
@@ -65,11 +62,8 @@ def _espeak(utterance: str) -> None:
     has its own speech path (for example a ROS say node), pass your own callable
     as ``GoPiGo3Adapter(speak=...)`` instead of relying on espeak.
     """
-    result=0
     try:
-        # result = subprocess.run(["espeak", utterance], check=False)
         result = subprocess.run(['espeak-ng "%s"' % utterance], shell=True)
-
     except FileNotFoundError:
         print(
             f"[gopigo3 speak] espeak-ng is not installed, so {utterance!r} was not "
@@ -92,23 +86,19 @@ def _wait_passively(duration_seconds: float) -> None:
    except Exception as e:
       print(f"_wait_passively exception: {e}")
 
-
-
-
 class GoPiGo3Adapter:
     """Drives a basic GoPiGo3 from URML intent over ``easygopigo3`` (no ROS).
 
     Implements ``drive_by`` / ``turn_by`` (RFC-0630 RelativeMotionAdapter), so a
     ``URMLRuntime`` dispatches ``drive`` / ``turn`` here, plus ``emit_speech`` and
     ``emit_report``. ``speak`` is injectable (``speak=...``) so tests can record
-    it and a deployment can swap espeak-ng for another backend.
+    it and a deployment can swap espeak for another backend.
     """
 
     BRAND = "gopigo3"
 
-    def __init__(self, *, speak: Callable[[str], None], wait_passively: Callable[[float], None] | None = None) -> None:
-        # self._speak = speak or _espeak
-        self._speak = _espeak or speak
+    def __init__(self, *, speak: Callable[[str], None] | None = None) -> None:
+        self._speak = speak or _espeak
         self._wait_passively = _wait_passively
         self._gpg: Any = None
         self._reports: list[dict[str, Any]] = []
@@ -173,6 +163,7 @@ class GoPiGo3Adapter:
             # the arc radius is distance / arc-in-radians. easygopigo3.orbit takes
             # (degrees, radius_cm), a radius, not a path length.
             radius_cm = abs(cm) / abs(math.radians(arc))
+            arc = -1 * arc   # correct for URML: LFU, and GoPiGo frame Right-Front-Down
             gpg.orbit(arc, radius_cm)
             hw = f"orbit({arc:.1f}, {radius_cm:.1f})"
         self.call_log.append({"method": "drive_by", "distance": distance, "arc": arc, "hw": hw})

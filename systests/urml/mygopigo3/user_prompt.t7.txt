@@ -1,0 +1,1 @@
+If the distance sensor reading is greater than 30 cm, announce "Going to explore now", otherwise announce "Blocking Obstacle ahead".
