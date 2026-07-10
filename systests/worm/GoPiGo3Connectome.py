@@ -8,29 +8,63 @@
 
 # Modifications July 2026
 # - use smbus for i2c (required for Ubuntu 26.04)
-# - give C. Elegans a voice using espeak-ng TTS
+# - give C. Elegans a voice using espeak-ng TTS (option to silence it)
 # - Added try/except KeyboardInterrupts to eliminate need for multiple ctrl-c press
 # - Turn off "eyes" (LEDs) at exit
+# - Reduced speed commands by factor of 4 (from 2.0 to 0.5)
+# - Increased turn time from 0.8s to 3s
+# - Increased drive straight (fwd/bkwd) time from 0.5 to 2s
+# - Added 17cm safety distance check to nose touch to prevent collisions - turns searching for clear path
+
 
 # To run on Ubuntu 26.04 requires di_i2c.py with smbus selected instead of the default periphery driver
 import sys
 sys.path.insert(1,"/home/ubuntu/LyricalDave/plib/")
 
-# Enable using espeak-ng for TTS 
+# Set speak_ok=False to silence annoying audio
+speak_ok=True
+
+# Enable using espeak-ng for TTS (falls through safely if not installed)
 import subprocess
 def speak(utterance):
-   try:
-       subprocess.run(["espeak-ng", utterance], check=False)
-   except KeyboardInterrupt:
-       raise
-   except:
-       pass
+    if speak_ok:
+       try:
+           subprocess.run(["espeak-ng", utterance], check=False)
+       except KeyboardInterrupt:
+           raise
+       except:
+           pass
 
 from easygopigo3 import EasyGoPiGo3 # importing the EasyGoPiGo3 class
 gpg = EasyGoPiGo3(use_mutex=True) # instantiating a EasyGoPiGo3 object
 gpg.reset_all()   # Unconfigure the sensors, disable the motors, and restore the LED to the control of the GoPiGo3 firmware.
-gpg_speed_factor = 2 # the GPG3 has a different speed scale than the GPG2
+# gpg_speed_factor = 2 # the GPG3 has a different speed scale than the GPG2
+gpg_speed_factor = 0.5 #
 my_distance_sensor = gpg.init_distance_sensor()
+
+# Default was turn_time=0.8s, straight_time=0.5s
+turn_time = 3
+straight_time = 2
+wait_time = 0.5
+SAFE_TURN_DIST = 20 # cm
+FOOD_DIST = 30 # cm
+LEFT_TURN = -10
+RIGHT_TURN = 10
+
+def honor_safe_turn_dist(gpg=None, dist_sensor=None, dir=LEFT_TURN):
+    if dist_sensor.read() <= SAFE_TURN_DIST:
+            print(f"Inside SAFE_TURN_DIST ({dist:.0f}cm) - Turning till clear")
+            speak(f"Inside safe turn distance {dist:.0f} centimeters.  Turning left till clear")
+            turned = 0
+            while dist_sensor.read() < SAFE_TURN_DIST:
+                speak("Turning")
+                gpg.turn_degrees(dir)   # GoPiGo3 RFD frame
+                turned += abs(dir)
+                if turned > 360:
+                    print("TRAPPED, I'm going to die soon")
+                    speak("Trapped.  Im going to die soon")
+                    raise KeyboardInterrupt
+
 
 food_color = (10,10,40)
 obstacle_color = (40,10,10)
@@ -212,6 +246,13 @@ def ADLL():
 def ADLR():
         postsynaptic['ADLL'][nextState] = 1 + postsynaptic['ADLL'][thisState]
         postsynaptic['AIAR'][nextState] = 10 + postsynaptic['AIAR'][thisState]
+# MOCK EasyGoPiGo3 CLASS
+
+# Does not need robot, prints to console motor and speed calls
+
+# Usage:  place this file (and mock gopigo3.py) in same folder as a GoPiGo3 program
+#         Distance sensor read() and read_mm() will ask for a value in the console
+#         Voltage calls will ask for a value in the console
         postsynaptic['AIBR'][nextState] = 10 + postsynaptic['AIBR'][thisState]
         postsynaptic['ASER'][nextState] = 1 + postsynaptic['ASER'][thisState]
         postsynaptic['ASHR'][nextState] = 3 + postsynaptic['ASHR'][thisState]
@@ -328,6 +369,13 @@ def AIML():
         postsynaptic['AVHR'][nextState] = 1 + postsynaptic['AVHR'][thisState]
         postsynaptic['AVJL'][nextState] = 1 + postsynaptic['AVJL'][thisState]
         postsynaptic['PVQL'][nextState] = 1 + postsynaptic['PVQL'][thisState]
+# MOCK EasyGoPiGo3 CLASS
+
+# Does not need robot, prints to console motor and speed calls
+
+# Usage:  place this file (and mock gopigo3.py) in same folder as a GoPiGo3 program
+#         Distance sensor read() and read_mm() will ask for a value in the console
+#         Voltage calls will ask for a value in the console
         postsynaptic['RIFL'][nextState] = 1 + postsynaptic['RIFL'][thisState]
         postsynaptic['SIBDR'][nextState] = 1 + postsynaptic['SIBDR'][thisState]
         postsynaptic['SMBVL'][nextState] = 1 + postsynaptic['SMBVL'][thisState]
@@ -4812,6 +4860,7 @@ def createpostsynaptic():
 def motorcontrol():
         global accumright
         global accumleft
+        start_motorcontrol_time = time.perf_counter()
 
         # accumulate left and right muscles and the accumulated values are
         # used to move the left and right motors of the robot
@@ -4825,7 +4874,7 @@ def motorcontrol():
                    postsynaptic[pscheck][thisState] = 0
                    #postsynaptic[pscheck][nextState] = 0
         # We turn the wheels according to the motor weight accumulation
-        # multiply speed by 2 for the GPG3
+        # multiply speed by gpg_speed_factor (default 2) for the GPG3
         new_speed = (abs(accumleft) + abs(accumright)) * gpg_speed_factor
         if new_speed > 150 * gpg_speed_factor:  #GPG3 speed
                 new_speed = 150 * gpg_speed_factor # gpg3 speed
@@ -4842,37 +4891,45 @@ def motorcontrol():
                 turnratio = float(accumright) / float(accumleft)
                 # print "Turn Ratio: ", turnratio
                 if turnratio <= 0.6:
+                         honor_safe_turn_dist(gpg,my_distance_sensor,LEFT_TURN)
                          gpg.left()
-                         time.sleep(0.8)
+                         time.sleep(turn_time)
                 elif turnratio >= 2:
+                         honor_safe_turn_dist(gpg,my_distance_sensor,RIGHT_TURN)
                          gpg.right()
-                         time.sleep(0.8)
+                         time.sleep(turn_time)
                 gpg.backward()
-                time.sleep(0.5)
+                time.sleep(straight_time)
         elif accumright <= 0 and accumleft >= 0:
+                honor_safe_turn_dist(gpg,my_distance_sensor,RIGHT_TURN)
                 gpg.right()
                 time.sleep(.8)
         elif accumright >= 0 and accumleft <= 0:
+                honor_safe_turn_dist(gpg,my_distance_sensor,LEFT_TURN)
                 gpg.left()
                 time.sleep(.8)
         elif accumright >= 0 and accumleft > 0:
                 turnratio = float(accumright) / float(accumleft)
                 # print "Turn Ratio: ", turnratio
                 if turnratio <= 0.6:
+                         honor_safe_turn_dist(gpg, my_distance_sensor, LEFT_TURN)
                          gpg.left()
-                         time.sleep(0.8)
+                         time.sleep(turn_time)
                 elif turnratio >= 2:
+                         honor_safe_turn_dist(gpg, my_distance_sensor, RIGHT_TURN)
                          gpg.right()
-                         time.sleep(0.8)
+                         time.sleep(turn_time)
+                honor_safe_turn_dist(gpg, my_distance_sensor, LEFT_TURN)
                 gpg.forward()
-                time.sleep(0.5)
+                time.sleep(straight_time)
         else:
                 gpg.stop()
          ## End Commented section
         accumleft = 0
         accumright = 0
-        time.sleep(0.5)
-
+        time.sleep(wait_time)
+        stop_motorcontrol_time = time.perf_counter()
+        print(f"motorcontrol execution: {(stop_motorcontrol_time - start_motorcontrol_time):0.3}s")
 
 def dendriteAccumulate(dneuron):
         f = eval(dneuron)
@@ -4892,6 +4949,7 @@ def runconnectome():
         # the threshold
         global thisState
         global nextState
+        start_runconnectome_time = time.perf_counter()
         try:
             for ps in postsynaptic:
                     if ps[:3] not in muscles and abs(postsynaptic[ps][thisState]) > threshold:
@@ -4901,13 +4959,16 @@ def runconnectome():
             thisState,nextState=nextState,thisState
         except KeyboardInterrupt:
             raise
+        end_runconnectome_time = time.perf_counter()
+        print(f"runconnectome execution time {(end_runconnectome_time-start_runconnectome_time):.3f}s")
 
 # Create the dictionary
 createpostsynaptic()
 dist=0
 gpg.set_speed(120)
-print("Voltage: ", gpg.volt()+0.6)
-speak(f"Voltage {gpg.volt()+0.6:.1f}")
+voltage=gpg.volt()+0.6
+print("Voltage: ", voltage)
+speak(f"Voltage {voltage:.1f}")
 tfood = 0
 try:
 ### Here is where you would put in a method to stimulate the neurons ###
@@ -4926,7 +4987,7 @@ try:
 
         #Do we need to switch states at the end of each loop? No, this is done inside the runconnectome()
         #function, called inside each loop.
-        if dist > 0 and dist < 25:
+        if dist > SAFE_TURN_DIST and dist < FOOD_DIST:
             print(f"OBSTACLE (Nose Touch) dist:{dist}")
             gpg.set_eye_color(obstacle_color)
             gpg.open_eyes()
@@ -4942,6 +5003,18 @@ try:
             dendriteAccumulate("OLQVR")
             dendriteAccumulate("OLQVL")
             runconnectome()
+        elif dist <= SAFE_TURN_DIST:
+            print(f"Inside SAFE_TURN_DIST ({dist:.0f}cm) - Turning till clear")
+            speak(f"Inside safe turn distance {dist:.0f} centimeters.  Turning left till clear")
+            turned = 0
+            while my_distance_sensor.read() < SAFE_TURN_DIST:
+                speak("Turning")
+                gpg.turn_degrees(-10)   # GoPiGo3 RFD frame
+                turned += 10
+                if turned > 360:
+                    print("TRAPPED, I'm going to die soon")
+                    speak("Trapped.  Im going to die soon")
+                    raise KeyboardInterrupt
         else:
             if tfood < 2:
                     print("FOOD")
@@ -4958,13 +5031,16 @@ try:
                     dendriteAccumulate("ASJR")
                     dendriteAccumulate("ASJL")
                     runconnectome()
-                    time.sleep(0.5)
+                    time.sleep(wait_time)
                     gpg.close_eyes()
             tfood += 0.5
+            print(f"Satiated Rest: {tfood}")
+            if tfood == 2: speak(f"Satiated Rest")
             # speak(f"tfood {tfood:.1f}")
             # if (tfood > 20):
             if (tfood > 10):
                     tfood = 0
+                    speak("Enough rest, Im hungry again")
 
 
 
@@ -4973,7 +5049,7 @@ except KeyboardInterrupt:
     gpg.stop()
     gpg.close_eyes()
     ## End Comment
-    print("Ctrl+C detected. Program Stopped!")
+    print("\nCtrl+C detected. Program Stopped!")
     speak("Control C detected.  Program stopped")
     # for pscheck in postsynaptic:
     #     print(pscheck,' ',postsynaptic[pscheck][0],' ',postsynaptic[pscheck][1])
