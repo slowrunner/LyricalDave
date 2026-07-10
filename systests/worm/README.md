@@ -44,5 +44,14 @@ First we should define the expected behaviors (Google Search edited for applicab
 
 
 
+### Modifications July 2026
+- use smbus for i2c (required for Ubuntu 26.04)
+- give C. Elegans a voice using espeak-ng TTS (option to silence it)
+- Added try/except KeyboardInterrupts to eliminate need for multiple ctrl-c press
+- Turn off "eyes" (LEDs) at exit
+- Reduced speed commands by factor of 4 (from 2.0 to 0.5)
+- Increased turn time from 0.8s to 3s
+- Increased drive straight (fwd/bkwd) time from 0.5 to 2s
+- Added safety distance check to prevent collisions - turns searching for clear path
 
 
