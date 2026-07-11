@@ -55,3 +55,11 @@ First we should define the expected behaviors (Google Search edited for applicab
 - Added safety distance check to prevent collisions - turns searching for clear path
 
 
+### Final Thoughts:
+
+Reviewing the original GoPiGo code, explains the “boring” aspect.  
+The original code was all about moving, while the GoPiGo3 code has a stop() everywhere there is a “go thought” 
+making the loop time 4 seconds long.
+
+I’m going to leave further explorations into “thinking like a worm”  
+to the next person to “dig the nematodes out of the dirt”.
