@@ -1,5 +1,8 @@
 # My C. Elegans "Worm" Simulation on GoPiGo3 Robots
 
+
+REF:  [Worm Brain Simulator on edu.modrobotics.com](https://edu.modrobotics.com/mod/book/view.php?id=156)
+
 Back in 2015 the C.Elegans "worm" was first simulated on   
 the GoPiGo robot and subsequently in 2019 on the GoPiGo3 robot with a  
 linear neural net model with input from:  
