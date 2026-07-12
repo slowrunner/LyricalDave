@@ -3,6 +3,8 @@
 #include "bt_hello_dave/types.hpp"
 
 #include <chrono>
+#include <iomanip>
+#include <sstream>
 #include <thread>
 
 namespace bt_hello_dave
@@ -83,6 +85,16 @@ CallbackReturn HelloDaveLifecycleNode::on_configure(const rclcpp_lifecycle::Stat
     rclcpp::ServicesQoS(),
     bt_node_client_cb_group_);
 
+  tick_timer_cb_group_ = create_callback_group(
+      rclcpp::CallbackGroupType::MutuallyExclusive);
+
+  // Dedicated callback group for debug/control services so they can
+  // always be serviced regardless of what the tick timer is doing.
+  debug_service_cb_group_ = create_callback_group(
+    rclcpp::CallbackGroupType::Reentrant);
+
+  registerDebugServices();
+
   RCLCPP_INFO(get_logger(), "Configured. Grammar: %s  Tree: %s",
     grammar_yaml_path_.c_str(), bt_xml_path_.c_str());
 
@@ -116,6 +128,12 @@ CallbackReturn HelloDaveLifecycleNode::on_activate(const rclcpp_lifecycle::State
     empty_battery.valid = false;
     root_bb->set("@battery_state", empty_battery);
 
+    // Mute/speaking state -- initialised to "not speaking, not muted"
+    root_bb->set("@speaking", false);
+    auto epoch = std::chrono::steady_clock::now();
+    root_bb->set("@speaking_since", epoch);
+    root_bb->set("@mute_until", epoch);
+
 
 
   } catch (const std::exception & e) {
@@ -129,7 +147,8 @@ CallbackReturn HelloDaveLifecycleNode::on_activate(const rclcpp_lifecycle::State
     std::chrono::milliseconds(period_ms),
     [this]() {
       tree_.tickOnce();
-    });
+    },
+    tick_timer_cb_group_);
 
   RCLCPP_INFO(get_logger(), "Activated. Ticking tree every %d ms.", period_ms);
   return CallbackReturn::SUCCESS;
@@ -159,6 +178,118 @@ CallbackReturn HelloDaveLifecycleNode::on_shutdown(const rclcpp_lifecycle::State
   tree_.haltTree();
   RCLCPP_INFO(get_logger(), "Shutdown.");
   return CallbackReturn::SUCCESS;
+}
+
+void HelloDaveLifecycleNode::registerDebugServices()
+{
+  // -----------------------------------------------------------------
+  // /hello_dave_bt/force_unmute  (std_srvs/Trigger)
+  // Manually clears @speaking and @mute_until so the system can hear
+  // again immediately, in case a stuck-mute isn't auto-cleared yet.
+  // -----------------------------------------------------------------
+  force_unmute_service_ = create_service<std_srvs::srv::Trigger>(
+    "~/force_unmute",
+    [this](
+      const std::shared_ptr<rmw_request_id_t> /*hdr*/,
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> /*req*/,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
+    {
+      if (!blackboard_) {
+        resp->success = false;
+        resp->message = "Blackboard not yet initialised (tree not active)";
+        return;
+      }
+      auto root_bb = tree_.rootBlackboard();
+      auto now = std::chrono::steady_clock::now();
+      root_bb->set("@speaking", false);
+      root_bb->set("@mute_until", now);
+      resp->success = true;
+      resp->message = "Mute cleared";
+      RCLCPP_INFO(get_logger(), "force_unmute: mute cleared by service call");
+    },
+    rclcpp::ServicesQoS(),
+    debug_service_cb_group_);
+
+  // -----------------------------------------------------------------
+  // /hello_dave_bt/get_blackboard_debug  (std_srvs/Trigger)
+  // Returns a human-readable snapshot of the key blackboard entries.
+  // -----------------------------------------------------------------
+  get_blackboard_debug_service_ = create_service<std_srvs::srv::Trigger>(
+    "~/get_blackboard_debug",
+    [this](
+      const std::shared_ptr<rmw_request_id_t> /*hdr*/,
+      const std::shared_ptr<std_srvs::srv::Trigger::Request> /*req*/,
+      std::shared_ptr<std_srvs::srv::Trigger::Response> resp)
+    {
+      if (!blackboard_) {
+        resp->success = false;
+        resp->message = "Blackboard not yet initialised (tree not active)";
+        return;
+      }
+
+      auto root_bb = tree_.rootBlackboard();
+      auto now = std::chrono::steady_clock::now();
+      std::ostringstream oss;
+
+      // @speaking
+      try {
+        bool speaking = root_bb->get<bool>("@speaking");
+        oss << "speaking: " << (speaking ? "true" : "false");
+        if (speaking) {
+          TimePoint since = root_bb->get<TimePoint>("@speaking_since");
+          auto age_ms = std::chrono::duration_cast<std::chrono::milliseconds>(now - since).count();
+          oss << " (for " << age_ms << " ms)";
+        }
+      } catch (...) { oss << "speaking: <unavailable>"; }
+      oss << "\n";
+
+      // @mute_until
+      try {
+        TimePoint mute_until = root_bb->get<TimePoint>("@mute_until");
+        auto remaining_ms = std::chrono::duration_cast<std::chrono::milliseconds>(mute_until - now).count();
+        if (remaining_ms > 0) {
+          oss << "mute_until: active (" << remaining_ms << " ms remaining)\n";
+        } else {
+          oss << "mute_until: expired\n";
+        }
+      } catch (...) { oss << "mute_until: <unavailable>\n"; }
+
+      // @sleep_mode
+      try {
+        bool sleep = root_bb->get<bool>("@sleep_mode");
+        oss << "sleep_mode: " << (sleep ? "true" : "false") << "\n";
+      } catch (...) { oss << "sleep_mode: <unavailable>\n"; }
+
+      // @stt_queue
+      try {
+        SttQueue q = root_bb->get<SttQueue>("@stt_queue");
+        oss << "stt_queue: " << q.size() << " entries";
+        for (size_t i = 0; i < q.size(); ++i) {
+          oss << "\n  [" << i << "] \"" << q[i].text << "\"";
+        }
+        oss << "\n";
+      } catch (...) { oss << "stt_queue: <unavailable>\n"; }
+
+      // @battery_state
+      try {
+        BatteryStateEntry bs = root_bb->get<BatteryStateEntry>("@battery_state");
+        if (bs.valid) {
+          oss << std::fixed << std::setprecision(1);
+          oss << "battery: " << bs.voltage << "V  "
+              << bs.milliamps << "mA  "
+              << bs.watts << "W  "
+              << std::lround(bs.percent) << "%\n";
+        } else {
+          oss << "battery: not yet received\n";
+        }
+      } catch (...) { oss << "battery: <unavailable>\n"; }
+
+      resp->success = true;
+      resp->message = oss.str();
+      RCLCPP_INFO(get_logger(), "get_blackboard_debug:\n%s", oss.str().c_str());
+    },
+    rclcpp::ServicesQoS(),
+    debug_service_cb_group_);
 }
 
 void HelloDaveLifecycleNode::callSetGrammarWithRetries(const std::vector<std::string> & phrases)
@@ -195,14 +326,13 @@ int main(int argc, char ** argv)
   rclcpp::NodeOptions options;
   auto node = std::make_shared<bt_hello_dave::HelloDaveLifecycleNode>(options);
 
-  // EventsCBGExecutor (new in Lyrical Luth) natively supports multiple
-  // callback groups across multiple threads, which is what lets
-  // on_activate()'s blocking call to callSetGrammarWithRetries() work
-  // correctly: the SetGrammar service response callback (on
-  // bt_node_client_cb_group_) can run concurrently with the blocked
-  // default-group callback, rather than deadlocking as it would on a
-  // SingleThreadedExecutor.
-  rclcpp::executors::EventsCBGExecutor executor;
+  // EventsCBGExecutor with 3 threads:
+  //   thread 1: BT tick timer callbacks (high frequency, 10Hz)
+  //   thread 2: ROS service/subscriber callbacks (STT, battery, say)
+  //   thread 3: debug/control services + lifecycle transitions + SIGINT handling
+
+
+  rclcpp::executors::EventsCBGExecutor executor(rclcpp::ExecutorOptions(), 3);
   executor.add_node(node->get_node_base_interface());
   executor.add_node(node->get_bt_node());
   executor.spin();

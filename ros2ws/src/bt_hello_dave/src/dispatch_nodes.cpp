@@ -2,6 +2,7 @@
 #include "bt_hello_dave/types.hpp"
 
 #include <algorithm>
+#include <chrono>
 #include <cmath>
 #include <ctime>
 #include <fstream>
@@ -201,17 +202,27 @@ bool SayRandomGreeting::setRequest(typename dave_interfaces::srv::Say::Request::
   request->volume = static_cast<int8_t>(normal_volume);
   request->anytime = false;
 
+  // Mute STT while /say call is in flight.
+  config().blackboard->set("@speaking", true);
+  config().blackboard->set("@speaking_since", std::chrono::steady_clock::now());
+
   return true;
 }
 
 BT::NodeStatus SayRandomGreeting::onResponseReceived(
-  const typename dave_interfaces::srv::Say::Response::SharedPtr & /*response*/)
+  const typename dave_interfaces::srv::Say::Response::SharedPtr & response)
 {
+  if (response->spoken) {
+    config().blackboard->set("@mute_until",
+      std::chrono::steady_clock::now() + SPEAKING_GRACE_PERIOD);
+  }
+  config().blackboard->set("@speaking", false);
   return BT::NodeStatus::SUCCESS;
 }
 
 BT::NodeStatus SayRandomGreeting::onFailure(BT::ServiceNodeErrorCode error)
 {
+  config().blackboard->set("@speaking", false);
   if (auto node = node_.lock()) {
     RCLCPP_ERROR(node->get_logger(), "SayRandomGreeting failed with error: %d", static_cast<int>(error));
   }
@@ -306,9 +317,6 @@ bool SayFixed::setRequest(typename dave_interfaces::srv::Say::Request::SharedPtr
 
   YAML::Node entry = grammar["responses"]["fixed"][phrase];
   if (!entry) {
-    // No fixed-response entry for this phrase -- not an error, just
-    // "this node doesn't handle it", lets the enclosing Fallback try
-    // (or fail through to) other branches.
     found_entry_ = false;
     return false;
   }
@@ -321,12 +329,22 @@ bool SayFixed::setRequest(typename dave_interfaces::srv::Say::Request::SharedPtr
   request->volume = static_cast<int8_t>(entry["volume"].as<int>());
   request->anytime = entry["anytime"].as<bool>();
 
+  // Mute STT while /say call is in flight.
+  config().blackboard->set("@speaking", true);
+  config().blackboard->set("@speaking_since", std::chrono::steady_clock::now());
+
   return true;
 }
 
 BT::NodeStatus SayFixed::onResponseReceived(
-  const typename dave_interfaces::srv::Say::Response::SharedPtr & /*response*/)
+  const typename dave_interfaces::srv::Say::Response::SharedPtr & response)
 {
+  if (response->spoken) {
+    config().blackboard->set("@mute_until",
+      std::chrono::steady_clock::now() + SPEAKING_GRACE_PERIOD);
+  }
+  config().blackboard->set("@speaking", false);
+
   if (sets_sleep_mode_) {
     config().blackboard->set("@sleep_mode", true);
   }
@@ -339,11 +357,9 @@ BT::NodeStatus SayFixed::onResponseReceived(
 BT::NodeStatus SayFixed::onFailure(BT::ServiceNodeErrorCode error)
 {
   if (!found_entry_) {
-    // setRequest() returned false because there's no fixed entry for
-    // this phrase -- treat as a normal "doesn't apply" FAILURE, no
-    // error log.
     return BT::NodeStatus::FAILURE;
   }
+  config().blackboard->set("@speaking", false);
   if (auto node = node_.lock()) {
     RCLCPP_ERROR(node->get_logger(), "SayFixed failed with error: %d", static_cast<int>(error));
   }

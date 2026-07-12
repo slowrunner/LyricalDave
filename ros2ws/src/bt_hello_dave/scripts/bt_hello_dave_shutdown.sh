@@ -25,7 +25,6 @@ echo "Checking for leftover processes..."
 pkill -f bt_hello_dave.launch.yaml 2>/dev/null
 pkill -f "voskros/lib/voskros/vosk" 2>/dev/null
 pkill -f hello_dave_lifecycle_node 2>/dev/null
-pkill -f say_node 2>/dev/null
 pkill -f battery_state_node 2>/dev/null
 
 echo "Done."

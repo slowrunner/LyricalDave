@@ -5,8 +5,10 @@
 #include <behaviortree_cpp/bt_factory.h>
 #include <behaviortree_ros2/ros_node_params.hpp>
 #include <std_srvs/srv/trigger.hpp>
+#include <dave_interfaces/srv/say.hpp>
 #include <voskros/srv/set_grammar.hpp>
 #include <bt_hello_dave/grammar_store.hpp>
+#include <bt_hello_dave/types.hpp>
 
 #include <memory>
 #include <string>
@@ -28,32 +30,10 @@ using CallbackReturn = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface
 ///   cleanup   -> halt tree.
 ///   shutdown  -> stop timer + halt tree.
 ///
-/// Also exposes /hello_dave/reload_grammar (std_srvs/Trigger) to
-/// hot-reload the grammar YAML (fixed responses, random pool, grammar
-/// list) without restarting the node. The grammar list portion of a
-/// reload re-calls /stt/set_grammar.
-///
-/// NOTE on bt_node_: behaviortree_ros2's RosNodeParams expects an
-/// rclcpp::Node::SharedPtr, but rclcpp_lifecycle::LifecycleNode does
-/// NOT inherit from rclcpp::Node (they implement the node interfaces
-/// independently), so shared_from_this() on this class cannot be used
-/// directly for ROS-aware BT nodes. Instead, a small internal plain
-/// rclcpp::Node ("hello_dave_bt_internal") is created and passed to
-/// registerAllNodes(); it is added to the same EventsCBGExecutor as
-/// this lifecycle node (see main() in hello_dave_lifecycle_node.cpp)
-/// so its subscriptions/services/clients are actually serviced.
-///
-/// NOTE on bt_node_client_cb_group_: callSetGrammarWithRetries() runs
-/// synchronously inside on_activate(), which is itself a callback
-/// dispatched by the executor on bt_node_'s/this node's default
-/// callback group. To let the SetGrammar service *response* callback
-/// run concurrently with that blocking wait (rather than deadlocking,
-/// since a single callback group's callbacks never run in parallel
-/// with each other), set_grammar_client_ is created in its own,
-/// separate callback group on bt_node_. The executor (EventsCBGExecutor,
-/// which supports multiple callback groups/threads) is then free to
-/// service that group's callback while on_activate()'s default-group
-/// callback is still blocked on the future.
+/// Services exposed (all on this lifecycle node):
+///   ~/reload_grammar       (std_srvs/Trigger) -- hot-reload grammar YAML
+///   ~/force_unmute         (std_srvs/Trigger) -- manually clear @speaking mute
+///   ~/get_blackboard_debug (std_srvs/Trigger) -- dump key blackboard state
 class HelloDaveLifecycleNode : public rclcpp_lifecycle::LifecycleNode
 {
 public:
@@ -72,9 +52,12 @@ public:
 
 private:
   void callSetGrammarWithRetries(const std::vector<std::string> & phrases);
+  void registerDebugServices();
 
   rclcpp::Node::SharedPtr bt_node_;
   rclcpp::CallbackGroup::SharedPtr bt_node_client_cb_group_;
+  rclcpp::CallbackGroup::SharedPtr debug_service_cb_group_;
+  rclcpp::CallbackGroup::SharedPtr tick_timer_cb_group_;
 
   std::string grammar_yaml_path_;
   std::string bt_xml_path_;
@@ -86,8 +69,9 @@ private:
 
   rclcpp::TimerBase::SharedPtr tick_timer_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr reload_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr force_unmute_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr get_blackboard_debug_service_;
   rclcpp::Client<voskros::srv::SetGrammar>::SharedPtr set_grammar_client_;
 };
 
 }  // namespace bt_hello_dave
-
