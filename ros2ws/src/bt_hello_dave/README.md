@@ -118,25 +118,54 @@ ROS 2 BehaviorTree.ROS2 "Hello Dave" dialog system.
 ## Layout
 
 ```
+(gopigo3) ubuntu@U26LDave:~/LyricalDave/ros2ws/src$ tree bt_hello_dave/
 bt_hello_dave/
 ├── CMakeLists.txt
+├── config
+│   ├── bt_hello_dave_grammar.yaml
+│   └── bt_hello_dave_tree.xml
+├── include
+│   └── bt_hello_dave
+│       ├── battery_state_subscriber_node.hpp
+│       ├── delay_seconds_node.hpp
+│       ├── dispatch_nodes.hpp
+│       ├── grammar_store.hpp
+│       ├── hello_dave_lifecycle_node.hpp
+│       ├── match_grammar_node.hpp
+│       ├── register_nodes.hpp
+│       ├── say_service_node.hpp
+│       ├── set_grammar_node.hpp
+│       ├── stt_queue_nodes.hpp
+│       ├── stt_result_subscriber_node.hpp
+│       └── types.hpp
+├── launch
+│   └── bt_hello_dave.launch.yaml
 ├── package.xml
-├── include/bt_hello_dave/        # headers
-├── src/                          # implementations + main + test publisher
-├── config/                       # YAML grammar + BT XML tree
-│   ├── bt_hello_dave_grammar.yaml
-│   └── bt_hello_dave_tree.xml
-├── launch/
-│   └── bt_hello_dave.launch.yaml
-└── scripts/    (copied to ros2ws/cmds)
-    ├── bt_hello_dave_launch.sh
-    ├── bt_hello_dave_activate.sh
-    ├── bt_hello_dave_shutdown.sh
-    ├── bt_hello_dave_reload_grammar.sh
-    ├── bt_hello_dave_blackboard_state.sh
-    ├── bt_hello_dave_reload_grammar.sh
-    ├── bt_hello_dave_test_phrase.sh
-    └── bt_hello_dave_clear_mute.sh
+├── README.md
+├── scripts
+│   ├── bt_hello_dave_activate.sh
+│   ├── bt_hello_dave_blackboard_state.sh
+│   ├── bt_hello_dave_clear_mute.sh
+│   ├── bt_hello_dave_launch.sh
+│   ├── bt_hello_dave_reload_grammar.sh
+│   ├── bt_hello_dave_shutdown.sh
+│   ├── bt_hello_dave_test_phrase.sh
+│   ├── compile_debug_bt_hello_dave.sh
+│   └── gdb_bt_hello_dave.sh
+└── src
+    ├── battery_state_subscriber_node.cpp
+    ├── delay_seconds_node.cpp
+    ├── dispatch_nodes.cpp
+    ├── hello_dave_lifecycle_node.cpp
+    ├── match_grammar_node.cpp
+    ├── register_nodes.cpp
+    ├── say_service_node.cpp
+    ├── set_grammar_node.cpp
+    ├── stt_queue_nodes.cpp
+    ├── stt_result_subscriber_node.cpp
+    └── stt_test_publisher.cpp
+
+7 directories, 38 files
 ```
 
 ## Install into your workspace
