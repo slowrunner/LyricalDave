@@ -1,7 +1,13 @@
-# Setup and Configure Ollama For URML
+# URML For Dave
+
+## To bring down latest URML from github
+```
+cd URML
+git pull
+```
 
 
-
+# === Setup and Configure Ollama For URML
 
 - set environment variables:  source set_openai_env.sh
 ```

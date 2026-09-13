@@ -16,7 +16,8 @@ Announce and move 10cm forward:
 
 Test announce and wait primitives: (no movement)  
 ```
-./run_gopigo3.py remot.qwen3.5_9b.gopigo3_t2.program.urml.yaml --execute  
+./run_gopigo3.py -f remote.qwen3.5_9b.gopigo3_t2.program.urml.yaml  
+./run_gopigo3.py -f remote.qwen3.5_9b.gopigo3_t2.program.urml.yaml --execute  
 ```
 
 Examples of sending NLU prompts to a remote LLM to generate URML programs:
