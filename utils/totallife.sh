@@ -34,15 +34,31 @@ priorLife=`(awk -F'Prior Life:' '{sum+=$2}END{print sum;}' $fn)`
 priorDockings=`(awk -F'Prior Dockings:' '{sum+=$2}END{print sum;}' $fn)`
 totalAwake=`(awk -F'execution:' '{sum+=$2}END{print sum;}' $fn)`
 totalNaps=`(awk -F'nap for' '{sum+=$2}END{print sum;}' $fn)`
+# in_totalThisLife=`(echo "scale=1; ($totalAwake + $totalNaps)" )`
+# echo -e "totalThisLife: $in_totalThisLife"
+# in_totalLife=`(echo "scale=1; ($totalAwake + $totalNaps + $priorLife)" )`
+# echo -e "totalLife: $in_totalLife"
+
 totalThisLife=`(echo "scale=1; ($totalAwake + $totalNaps)" | bc)`
 totalLife=`(echo "scale=1; ($totalAwake + $totalNaps + $priorLife)" | bc)`
+
 # weirdness without +'' at end, see ls appended to lastDockingStr??
 lastDockingStr=`(grep "h playtime" $fn | tail -1 )`+''
 # echo "lastDockingStr: " $lastDockingStr " :"
 lastUndockingStr=`(grep "h charging" $fn | tail -1)`
+# echo "lastDockingStr: $lastDockingStr"
 totalDockings=`(awk -F"Docking " '{sub(/ .*/,"",$2);print $2}' <<< $lastDockingStr)`
+# echo "totalDockings: $totalDockings"
+# in_dockingsThisLife=`(echo "scale=1; $totalDockings - $priorDockings")`
+# echo "dockingsThisLife: $in_dockingsThisLife"
+# in_currentBattCycles=`(echo "scale=1; $totalDockings - $newBatteryAtCycle")`
+# echo "currentBattCycles: $in_currentBattCycles"
+
 dockingsThisLife=`(echo "scale=1; $totalDockings - $priorDockings" | bc)`
 currentBattCycles=`(echo "scale=1; $totalDockings - $newBatteryAtCycle" | bc)`
+if [[ "$totalDockings" == ":" ]]; then
+  echo -e "Invalid character notice - last docking was a failure, will clear after first successful docking\n"
+fi
 
 echo "*** LyricalDave Dave TOTAL LIFE STATISTICS ***"
 # echo "Total Awake:  " $totalAwake " hrs"
