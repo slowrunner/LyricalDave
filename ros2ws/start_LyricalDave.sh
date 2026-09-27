@@ -102,7 +102,29 @@ echo -e "\n*** Start Dave Node"
 echo -e "*** ros2 run dave dave_node & "
 ros2 run dave dave_node  &
 
-sleep 5
+sleep 30
+
+echo -e "\n*** Start bt_hello_dave"
+echo -e "*** nohup ros2 launch bt_hello_dave bt_hello_dave.launch.yaml & "
+
+nohup ros2 launch bt_hello_dave bt_hello_dave.launch.yaml &
+
+sleep 60
+
+# Brings the hello_dave_bt lifecycle node from unconfigured -> active.
+
+NODE=/hello_dave_bt
+
+echo "*** Configuring ${NODE}..."
+echo -e "*** ros2 lifecycle set ${NODE} configure"
+
+ros2 lifecycle set ${NODE} configure
+
+echo "*** Activating ${NODE}..."
+echo -e "*** ros2 lifecycle set ${NODE} activate"
+ros2 lifecycle set ${NODE} activate
+
+sleep 60
 
 /home/ubuntu/LyricalDave/ros2ws/status.sh
 
