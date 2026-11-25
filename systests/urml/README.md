@@ -1,5 +1,11 @@
 # URML For Dave
 
+2026-11-25:  Revisting  
+- URML moved from URML-MARS/URML to https://github.com/urml-dev/URML  
+- upgraded from inside gopigo3 venv: ```pip install --upgrade urml-validator urml-llm-bridge urml-conformance urml-ros2-runtime urml-px4-runtime``` 
+
+
+-------- OLD -----
 ## To bring down latest URML from github
 ```
 cd URML
